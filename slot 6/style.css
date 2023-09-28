@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+head {
+    height: 160px;
+    background-image:url("../images/darkwood.jpg") ;
+}
+h1{
+    color: #be1036;
+    text-align: center;
+}
+nav, footer {
+    clear: both;
+    color: #d12525;
+    background-color: #dbd3c3;
+    height:30px;
+}
+nav ul{
+    margin: 0px;
+    padding: 6px 0px 5px 30px;
+    color:#182ea7;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+nav li a{
+    color: #b30707;}
+    nav li a:hover, nav li a. current{
+        color: #702b2b;
+    }
+    section.courses{
+        float: left;
+        width: 659px;
+        border-right: 1px solid #d87e7e;
+    }
+    article{
+        clear: both;
+        overflow: auto;
+        width: 100%;
+    }
+    hgroup{
+        margin-top:40px;
+    }
+figure{
+    float: left;
+    width: 290p;
+    height: 200px;
+    padding:5px;
+    margin: 20px;
+    border: px solid #812121;
+}
+figcaption{
+    font-size: 90%;
+    text-align: left;
+}
+aside{
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+aside section{
+    display: block;
+    padding:10px;
+    border-bottom: 1px solid #be2929;
+}
+aside section a:hover {
+    color: #985d6a;
+    background-color: #8b0a0a;
+}
+a{
+    color: #de6581;
+    text-align: none;
+}
+h1, h2, h3{
+    font-weight: normal;
+}
+h2{
+    margin: 10x 0px 5px 0px;
+    padding: 0px;
+}
+h3{
+    margin: 0px 0px 10px 0px;
+    color: #de6581;
+}
+aside h2{
+    padding: 30px 0px 10px 0px;
+    color: #de6581;
+}
+footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;;
+}
+
