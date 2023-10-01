@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
+    padding: none;
 }
 head {
     height: 160px;
-    background-image:url("../images/darkwood.jpg") ;
+    background-image:url("img/dark-wood.jpg") ;
 }
 h1{
     color: #be1036;
