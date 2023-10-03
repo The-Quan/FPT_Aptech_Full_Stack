@@ -1,0 +1,49 @@
+*{
+    padding; 0;
+    margin: 0;
+    font-family:"roboto",sans-serif;
+}
+.container{
+    width: 980px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+header{
+    width: 980px;
+    height: 100px;
+    background: #cb7802;
+}
+header img{
+    padding-left: 30px;
+
+}
+nav{
+    height: 35px;
+    background: #272f54;
+    margin-bottom: 5px;
+}
+nav .menu ul{
+    list-style: none;
+}
+nav .menu ul li{
+   float: left;
+   line-height: 35px;
+   padding: 0 15px;
+}
+nav .menu ul li a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+nav .search{
+    line-height: 35px;
+    float: right;
+    padding: 0 15px;
+}
+article h3{
+    text-align: center;
+    padding: 15px 0;
+    color: #272f54;
+    text-transform: uppercase;
+    font-weight: bold;
+}

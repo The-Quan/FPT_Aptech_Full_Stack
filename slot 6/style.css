@@ -1,19 +1,24 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: boder-box;
+}
 h1{
     background-image: url(img/header.jpg);
-    width: 100%;
+    width: 900px;
     height:140px;
-    text-indent: -9999;
-    font-size: 0;
-    
+   font-size: 0;
 }
-nav, footer {
+nav{
+    width:900px;
+}
+nav,footer {
     clear: both;
     background-color: #a8a49a;
-    margin-top: 0px;
 }
 nav ul{
-line-height: 30px;
-padding-left: 14px;
+ line-height: 14px;
+ padding: 10px;
 }
 nav li{
     display: inline;
@@ -69,6 +74,7 @@ a{
 }
 h1, h2, h3{
     font-weight: normal;
+
 }
 h2{
     margin: 10x 0px 5px 0px;
@@ -83,7 +89,13 @@ aside h2{
     color: #de6581;
 }
 footer {
-    font-size: 80%;
-    padding: 7px 0px 0px 20px;
+    width: 900px;
+    font-size: 70%;
+    padding: 8px 4px 2px 20px;
     background-image: url(img/header.jpg);
+}
+.wrapper{
+    width: 980px;
+    padding: 50% auto;
+    margin: 100px auto;
 }
