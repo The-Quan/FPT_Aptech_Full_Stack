@@ -44,6 +44,21 @@ article h3{
     text-align: center;
     padding: 15px 0;
     color: #272f54;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
+}
+article .new_list .new_item{
+   width: 28%;
+   padding: 12px;
+   float: left;
+   border: 1px solid #ccc;
+   margin-right: 4%;
+}
+article .new_list .new_item h4{
+    font-size: 16px;
+    color: #ad3f00;
+}
+#fix{
+    margin-right:0;
 }
