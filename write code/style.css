@@ -59,6 +59,15 @@ article .new_list .new_item h4{
     font-size: 16px;
     color: #ad3f00;
 }
+footer{
+    width: 980px;
+    line-height: 40px;
+    background-color: #272f54;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
 #fix{
     margin-right:0;
 }
