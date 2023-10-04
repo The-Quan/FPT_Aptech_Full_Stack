@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+}
+ body{  
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffff;
+    background: #413f3b url(img/bg.jpg);
+    
+}
+.header{
+    margin: 0 auto;
+    background-image: url(img/bg-header.jpg);
+}
+.header .grid-5{
+    
+}
