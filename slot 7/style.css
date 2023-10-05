@@ -14,6 +14,51 @@
     margin: 0 auto;
     background-image: url(img/bg-header.jpg);
 }
-.header .grid-5{
-    
+nav{
+    display:flex;
+}
+nav  .grid-5{
+ padding-left: 100px;
+}
+nav  .grid_7{
+    padding-left: 200px;
+    line-height: 85px;
+    font-size: 17px;
+}
+.logo{
+    margin-bottom: 30px ;
+}
+.wrapper .main-strory{
+    display: flex;
+}
+.wrapper .main-strory img{
+    padding-bottom: 20px;
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.wrapper .grid_6{
+    text-align: left;
+    width: 400px;
+    padding-left: 100px;
+}
+.wrapper .grid_30{
+    display: flex;
+    text-align: left;
+}
+h2{
+    padding-right: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer{
+    background-image: url(img/bg-header.jpg);
+    height: 30px;
+    line-height: 30px;
+    padding-left: 500px;
+}
+article{
+    display: flex;
 }
