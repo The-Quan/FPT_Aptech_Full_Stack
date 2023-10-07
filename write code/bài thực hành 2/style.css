@@ -1,58 +1,60 @@
 *{
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
-body{
-    width: 100%;
-
-}
-.wrapper{
-    width: 100%;
+header{
+    background-color: rgb(59, 175, 221);
+    width: 980px;
+    padding: 0 auto;
     margin: 0 auto;
-    background-color: blue;
+    height: 40px;
+    display: flex;
+    margin-bottom: 10px;
+}
+header .right{
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+}
+header .left{
+    padding-left: 300px;
+    line-height: 40px;
+}
+header .left li{
+      padding-left: 35px;
+      float: left;
+      list-style: none;
+      color: #fff;
+      font-size: 15px;
 
 }
-.header{
-    width:100%;
-    height: 40px;
-    background-color: rgb(87, 176, 235);
-    line-height: 40px;
-    color: white;
+.wrapper .logo{
+    width: 980px;
+    margin: 0 auto;
+} 
+.wrapper .logo img {
+    height: 150px;
+    padding-left: 300px;
 }
-.row{
-    width: 85%;
-    height: 100%;
-    margin: auto;
+.grid1{
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgb(101, 177, 240);
+    height: 30px;
+    margin-top: 10px;
 }
-.header .left{
-    width: 60%;
-    height: 100%;
-    float:left;
-}
-.header .right{
-    width: 40%;
-    height: 100%;
+.grid1 .grid2 li{
     float: left;
-}
-.header ul{
+    padding-left: 45px;
     list-style: none;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
 }
-.header ul li {
-    display:inline-block;
-    line-height: 40px;
-    color: white;
+.grid3{
+    width: 980px;
+    margin: 0 auto;
+    padding-left: 125px;
+    
 }
-.header .right li{
-    padding-left: 20px;
-}
-.logo{
-    width: 100%;
-    height: 200px;
-}
-.logo img{
-    height: 200px;
-    padding-left: 250px;
-}
-.container{
-    background-color: blue;
-}
+
