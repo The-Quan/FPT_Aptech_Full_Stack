@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 980px;
+    height: 100%;
+    margin: 100px auto;
+    padding: auto 0;
+}
+.hinhanh{
+    background-color:#f2796e;
+    float: left; 
+    width: 54%;
+    height: 650px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+h3{
+    font-size: 55px;
+}
+header img{
+    float: left;
+}
+h4{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+.chu{
+    width: 100%;
+    height: 90px;
+}
+.chu h1{
+    padding-top: 30px;
+    padding-left: 590px;
+    font-size: 25px;
+}
+.chu .noidung{
+    padding-top: 15px;
+    padding-left: 590px;
+    font-size: 18px;
+}
+span{
+    padding-left: 53px;
+    font-size: 14px;
+}
+button{
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.button-2{
+    background-color: blue;
+}
+h5{
+    padding-left: 760px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+input{
+    margin-left: 50px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+  
+}
+footer .ptn{
+    margin-top: 250px;
+    margin-left: 50px;
+    height: 50px;
+    width: 330px;
+    background-color: #f2796e;
+    color: #fff;
+}
+.logo{
+    border-radius: 10px;
+}
