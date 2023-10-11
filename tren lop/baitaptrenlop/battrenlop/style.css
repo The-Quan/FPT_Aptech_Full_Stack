@@ -8,6 +8,9 @@ body{
     margin: 100px auto;
     padding: auto 0;
 }
+.wraper{
+    background-color: aqua;
+}
 .hinhanh{
     background-color:#f2796e;
     float: left; 
