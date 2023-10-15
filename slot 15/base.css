@@ -1,14 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 
 body {
   background-color: #979797;
   color: #fff;
   margin: 0;
-  padding: 0;}
+  padding: 0;
+}
 
 .page {
-  max-width: 640px;
+  max-width: 650px;
   margin: 0 auto 30px auto;}
 
 .panel {
