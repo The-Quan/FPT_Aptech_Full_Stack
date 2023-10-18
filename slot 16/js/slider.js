@@ -40,7 +40,7 @@ $('.slider').each(function() {
             } else {
                 move(0);
             }
-        }, 4000);
+        },4000);
     }
     $.each($slides, function(index){
         var $button = $('<button type="button" class="slide-btn">&bull;</button>');
