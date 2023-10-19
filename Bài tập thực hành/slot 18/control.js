@@ -23,5 +23,5 @@ window.onclick = function(event) {
     }
 }
 function loadVideo(keyword) {
-    var YOUTUBE_AIP=
+    var YOUTUBE_AIP=[AIzaSyAWDO4V8ZZL5HR5ttYFMb0-piBk9mpw9oY]
 }
