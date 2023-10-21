@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(event){
             loadVideo(this.value);
         }
     }
-    loadVideo("Hà Anh Tuấn");
+    loadVideo("Đen Vâu");
 });
 //Get the model
 var model = document.getElementById('myModel');
@@ -23,7 +23,7 @@ window.onclick = function(event){
 }
 
 function loadVideo(keyword){
-    var YOUTUBE_API = "https://content.googleapis.com/youtube/v3/search?q=" + keyword + "&type=video&maxResults=20&part=snippet&key=AIzaSyC8EGJ_QxC8Zq-tLGodx8u3-vdufEK4IQI";
+    var YOUTUBE_API = "https://content.googleapis.com/youtube/v3/search?q=" + keyword + "&type=video&maxResults=20&part=snippet&key=AIzaSyBJDY18Bs1vi803K9c1jHmKyaSpEY7RWEw";
     console.log(YOUTUBE_API);
     var xhr = new XMLHttpRequest();
     xhr.open("GET",YOUTUBE_API,true);//goi len youtube

@@ -1,11 +1,10 @@
 let form = document.getElementById("form");
 let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
-let textareaInput = document.getElementById("textarea");
+let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     formValidation();
@@ -15,15 +14,15 @@ let formValidation = () => {
     if (textInput.value === "") {
         console.log("failure");
         msg.innerHTMl = "task cannot be blank";
-    }else{
+    } else {
         console.log("success");
         msg.innerHTML = "";
         acceptData();
-        add.setAttribute("data-bs-dismiss","modal");
+        add.setAttribute("data-bs-dismiss", "modal");
         add.click();
 
         (() => {
-            add.setAttribute("date-bs-dismiss","");
+            add.setAttribute("date-bs-dismiss", "");
         })();
     }
 };
@@ -33,7 +32,7 @@ let acceptData = () => {
     data.push({
         text: textInput.value,
         date: dateInput.value,
-        description: textareaInput.value,
+        description: textarea.value,
     });
     localStorage.setItem("data", JSON.stringify(data));
     console.log(data);
@@ -42,19 +41,19 @@ let acceptData = () => {
 let createTasks = () => {
     tasks.innerHTML = "";
     data.map((x, y) => {
-        return (tasks.innerHTML +=  
-    <div id=${y}>
-    <span class = "fw-bold">${x.text}</span>
-    <span class = "smail text-secondary">${x.date}</span>
-    <p>${x.description}</p>
-    <span class = "options">
-        <i onclick = "editTask(this)" data-bs-toggle="modal" data-bs-target="#from" class="fas fa-edit"></i>
-        <i onclick = "deleteTask(this);createTask()" class="fas fa-trash-alt"></i>
-    </span>
-    </div>
-     );
+        return (tasks.innerHTML += 
+            <div id=${y}>
+                <span class="fw-bold">${x.text}</span>
+                <span class="smail text-secondary">${x.date}</span>
+                <p>${x.description}</p>
+                <span class="options">
+                    <i onclick="editTask(this)" data-bs-toggle="modal" data-bs-target="#from" class="fas fa-edit"></i>
+                    <i onclick="deleteTask(this);createTask()" class="fas fa-trash-alt"></i>
+                </span>
+            </div>
+       );
     });
-    resetFrom();
+    resetForm();
 };
 let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
@@ -72,7 +71,7 @@ let editTask = (e) => {
 let resetFrom = () => {
     textInput.value = "";
     dateInput.value = "";
-    textarea.value = ""; 
+    textarea.value = "";
 };
 (() => {
     data = JSON.parse(localStorage.getItem("data")) || []
