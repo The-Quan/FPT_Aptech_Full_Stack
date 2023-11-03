@@ -33,10 +33,11 @@ header{
     margin-left: 189px;
     background-color: #f6eded;
     line-height: 30px;
+    width: 600px;
 }
 .menu ul li{
     float: left;
-    margin-left: 50px;
+    padding-left: 48px;
     font-size: 17px;
 }
 .menu ul li a{
