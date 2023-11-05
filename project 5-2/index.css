@@ -11,9 +11,10 @@ body {
 
 header {
     display: flex;
-    background-image: url(img/nền\ lịch\ sủ.jpg);
+    background-image: url(img/b.jpg);
     width: 1000px;
     height: 100px;
+    padding-bottom: 10px;
 }
 
 .tieude {
@@ -23,22 +24,25 @@ header {
     text-align: center;
     line-height: 100px;
     font-size: 30px;
-    color: rgb(167, 236, 237);
+    color: rgb(227, 233, 234);
     font-family: 'Courier New', Courier, monospace;
 }
 
 .menu {
     display: flex;
-    margin-top: 10px;
-    height: 30px;
-    margin-bottom: 10px;
+    height: 35px;
+    background-color: bisque;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
 }
 
 nav {
     position: relative;
     display: flex;
-    margin-left: 240px;
+    margin-left: 230px;
     background-color: #f2f0f0;
+    margin-top: 3px;
 }
 
 nav a {
@@ -47,7 +51,7 @@ nav a {
     font-size: 17px;
     text-decoration: none;
     color: black;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 nav #marker {
@@ -59,8 +63,9 @@ nav #marker {
     transition: 0.5s;
     border-radius: 4px;
 }
-button {
-    margin-left: 11px;
+svg {
+    margin-left: 10px;
+    margin-top: 4px;
     width: 14px;
     border: none;
 }
@@ -75,11 +80,6 @@ input {
     padding-left: 5px;
     padding-top: 3px;
 }
-
-.search:hover {
-    border: 1px solid red;
-}
-
 input::placeholder {
     color: rgb(185, 152, 152);
     font-size: 14px;
@@ -94,6 +94,9 @@ input:focus {
     border-radius: 100px;
     width: 220px;
     display: flex;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 
 .search img {
@@ -104,7 +107,7 @@ input:focus {
 footer {
     text-align: center;
     height: 30px;
-    background-image: url(img/nền\ lịch\ sủ.jpg);
+    background-image: url(img/b.jpg);
     color: white;
     line-height: 30px;
     font-size: 17px;
