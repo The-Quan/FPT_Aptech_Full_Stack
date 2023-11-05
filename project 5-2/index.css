@@ -31,7 +31,7 @@ header {
 .menu {
     display: flex;
     height: 35px;
-    background-color: bisque;
+    background-color: #f2f0f0;
     padding-top: 3px;
     padding-bottom: 3px;
 
@@ -41,7 +41,7 @@ nav {
     position: relative;
     display: flex;
     margin-left: 230px;
-    background-color: #f2f0f0;
+    background-color: #e6d7d7;
     margin-top: 3px;
 }
 
@@ -72,7 +72,7 @@ svg {
 
 input {
     border: none;
-    background-color: #f2f0f0;
+    background-color: #e6d7d7;
     margin-left: 5px;
 }
 
@@ -90,7 +90,7 @@ input:focus {
 }
 
 .search {
-    background-color: #f2f0f0;
+    background-color:#e6d7d7;
     border-radius: 100px;
     width: 220px;
     display: flex;
