@@ -13,4 +13,3 @@ root.render(
     <Football />
   </StrictMode>
 );
-reportWebVitals();

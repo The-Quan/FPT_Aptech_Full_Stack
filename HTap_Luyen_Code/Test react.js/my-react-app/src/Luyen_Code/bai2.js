@@ -1,16 +1,17 @@
-import React from "react";
-import  ReactDOM  from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
+function Football() {
+  const shoot = () => {
+    alert("Great Shot!");
+  }
 
-function Football(){
-    const shoot = () => {
-        alert("Great Shot!");
-    }
-
-    return (
-        <button onClick={shoot}>Take the shot!</button>
-    );
+  return (
+    <button onClick={shoot}>Take the shot!</button>
+  );
 }
 
-export default Football;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
 
+              
