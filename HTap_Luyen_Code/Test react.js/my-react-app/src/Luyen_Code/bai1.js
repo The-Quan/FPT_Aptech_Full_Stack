@@ -1,3 +1,4 @@
+import { render } from "react-dom";
 
 const Student = (props) => {
   return (
@@ -16,7 +17,7 @@ function App11() {
   };
 }
 
-render(){
+render{
   return (
     <div className='App'>
       <Student Student={Student} />
