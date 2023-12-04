@@ -3,7 +3,7 @@ function Car (){
     return <h2>I am a car</h2>
 }
 
-function Garage(){
+function Garage1(){
     return (
     <>
     <h1>
@@ -13,4 +13,4 @@ function Garage(){
     </>
     );
 }
-export default Garage;
+export default Garage1;
