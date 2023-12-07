@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { Button, Checkbox, Form } from "semantic-ui-react";
 import axios from "axios";
-import { useHistory } from 'react-router';
-import './App.css';
+import {useHistory} from "react-router-dom";
 
 export default function Create() {
-  let history = useHistory();
+  let History = useHistory();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [Checked, setCheckBox] = useState(false);
   console.log(firstName);
    const postData = () => {
-    axios.post('', { firstName, lastName, Checked })
+    axios.post('https://656ae3dcdac3630cf7276592.mockapi.io/uio', { firstName, lastName, Checked })
       .then(() => {
-        history.push("read");
+        History.push("read");
       });
 
     console.log(lastName);

@@ -1,8 +1,7 @@
 
 import './App.css';
 import Read from './components/read';
-import Create from './components/read';
-import Updata from './components/read';
+import Create from './components/create';
 import { Routes, BrowserRouter as Router } from 'react-router-dom';
 import FormFieldExample from './components/FormFieldExample';
 
@@ -18,7 +17,7 @@ function App() {
       <div style={{marginTop:20}}>
         <Routes exact path='/reand' component ={Read} />
       </div>
-      <Routes path='/Updata' component = {Updata} />
+      {/* <Routes path='/updata' component = {updata} /> */}
     </div>
       <FormFieldExample></FormFieldExample>
     </Router>
