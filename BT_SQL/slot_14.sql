@@ -76,26 +76,3 @@ CREATE VIEW View_KhachHang_ThueBao AS
 SELECT KhachHang.MaKhachHang, TenKhachHang, SoThueBao
 FROM KhachHang
 JOIN ThueBao ON KhachHang.MaKhachHang = ThueBao.MaKhachHang;
-
--- C 
--- SP_TimKH_ThueBao
-CREATE PROCEDURE SP_TimKH_ThueBao
-    @SoThueBao INT
-AS
-BEGIN
-    SELECT KhachHang.*, ThueBao.*
-    FROM KhachHang
-    JOIN ThueBao ON KhachHang.MaKhachHang = ThueBao.MaKhachHang
-    WHERE ThueBao.SoThueBao = @SoThueBao;
-END;
-
--- SP_TimTB_KhachHang
-CREATE PROCEDURE SP_TimTB_KhachHang
-    @TenKhachHang NVARCHAR(255)
-AS
-BEGIN
-    SELECT ThueBao.SoThueBao
-    FROM KhachHang
-    JOIN ThueBao ON KhachHang.MaKhachHang = ThueBao.MaKhachHang
-    WHERE KhachHang.TenKhachHang = @TenKhachHang;
-END;
