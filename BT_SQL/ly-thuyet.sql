@@ -7,3 +7,4 @@ join sales.order_items oi on o.order_id = oi.order_id
 join production.products p on oi.product_id = p.product_id
 where c.first_name like 'monica'
 order by o.order_date desc
+SELECT * from sales.customers WHERE [state] = 'monica'
