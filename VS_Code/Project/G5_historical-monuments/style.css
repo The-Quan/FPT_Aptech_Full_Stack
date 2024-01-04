@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  background-image: url(img/nền\ lịch\ sủ.jpg);
+}
+header .logo{
+    width: 150px;
+    padding-left: 30px;
+    margin-top: 30px;
+    width: 200px;
+}
+header .logo img{
+    background-image: none;
+    width: 150px;
+}
+header h1{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+header .khainiem{
+   margin-top: 50px;
+   font-size: 20px;
+   margin-left: 30px;
+   color: white;
+}
+.menu{
+   
+    width: 1000px;
+    height: 30px;
+    display: flex;
+    background-image: url(img/nền\ lịch\ sủ.jpg);
+   
+}
+.menu .search{
+    width: 500px;
+
+}
+.menu .search input{
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding-left: 10px;
+    height: 25px;
+    margin-top: 3px;
+}
+.menu ul{
+    list-style: none;
+    margin: 0 30px;
+}
+.menu ul li{
+    float: left;
+    margin: 0 25px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.active{
+    text-decoration: underline;
+}

@@ -1,0 +1,141 @@
+.home{
+  width: 1500px;
+  height: 1000px
+}
+.home h1{
+ margin-left: 550px;
+ 
+}
+.home .content{
+  margin-left: 400px;
+  margin-top: 150px;
+}
+.home h4{
+  margin-left: 50px;
+}
+.regiter{
+  width: 1000px;
+  height: 900px;
+}
+.regiter h1{
+  margin-left: 400px;
+}
+ 
+.about h1{
+  padding-left: 550px ;
+}
+.btn{
+ display: flex;
+ width: 1300px;
+ margin: 0 auto;
+}
+.btn-1, .btn-3{
+  width: 450px;
+}
+.btn-2{
+ width: 400px;
+ margin-top: 100px;
+}
+.khoi-1{
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 50%;
+  background-color: rgb(22, 86, 141);
+  
+}
+.khoi-2{
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 50%;
+  margin-top:300px;
+  background-color: rgb(160, 121, 71);
+}
+h3{
+  margin-left: 90px;
+}
+h2{
+  font-size: 20px;
+  margin-left: 40px;
+}
+p{
+  margin-left: 30px;
+}
+.khoi-3{
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 50%;
+  background-color: rgb(40, 102, 102);
+}
+.regiter {
+  width: 1000px;
+  margin: 0 auto;
+}
+.dangki{
+  margin-top: 100px;
+}
+.input, .input1, .input2, .input3{
+  display: flex;
+}
+.input input{
+  width: 350px;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: 100px;
+  border-radius: 6px;
+  border: none;
+}
+.input1 input{
+  width: 350px;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: 140px;
+  border-radius: 6px;
+  border: none;
+}
+.input2 input{
+  width: 350px;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: 80px;
+  border-radius: 6px;
+  border: none;
+}
+.input3 input{
+  width: 350px;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: 120px;
+  border-radius: 6px;
+  border: none;
+}
+.button{
+  margin-left: 270px;
+  margin-top: 10px;
+}
+button{
+  width: 100px;
+  height: 25px;
+  margin-left: 20px;
+  background-color: rgb(141, 192, 107);
+  border: none;
+  border-radius: 6px;
+  color: white;
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
