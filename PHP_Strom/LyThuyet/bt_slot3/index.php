@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     include "StudentManager.php";
     $studentManager = new StudentManager();
 
-    $username = $_POST ["username"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
 
     $sql = "SELECT * FROM Account WHERE username=? AND password=?";
