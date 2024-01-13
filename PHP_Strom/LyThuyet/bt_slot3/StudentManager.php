@@ -71,10 +71,10 @@ class StudentManager
     public  function getMarksDetails()
     {
         $markDetails = [];
-        $sql = "SELECT Students.id AS student_id, students.name as student_name, subjects.name AS subject, marks.marks
+        $sql = "SELECT Students.id AS student_id, students.username as student_name, subjects.username AS subjects, marks.mark
                 FROM students
                 INNER JOIN marks ON students.id = marks.student_id
-                INNER JOIN subject ON marks.subject_id = subjests.id";
+                INNER JOIN subjects ON marks.subject_id = subjects.id";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
 
@@ -90,10 +90,10 @@ class StudentManager
         {
             $students = [];
 
-            $sql = "SELECT students.id, students.name, students.address, COUNT(marks.id) AS mark_count
+            $sql = "SELECT students.id, students.username, students.address, COUNT(marks.id) AS mark_count
         FROM students
-        LEFT JOIN marks ON students.id = marks.stdent_id
-        GROUP BY students.id, students.name, students.address";
+        LEFT JOIN marks ON students.id = marks.student_id
+        GROUP BY students.id, students.username, students.address";
 
             $result = $this->conn->query($sql);
             if ($result->num_rows > 0) {
