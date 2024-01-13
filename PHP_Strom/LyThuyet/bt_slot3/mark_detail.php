@@ -2,11 +2,12 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header(header: "Location: index.php");
+    header( "Location: index.php");
     exit();
 }
+include "StudentManager.php";
 $studentManager = new StudentManager();
-$markDetails = $studentManager->getMarkDetails();
+$markDetails = $studentManager->getMarksDetails();
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,7 +33,7 @@ $markDetails = $studentManager->getMarkDetails();
         <tr>
             <td><?php echo $markDetail['student_id']; ?></td>
             <td><?php echo $markDetail['student_id']; ?></td>
-            <td><?php echo $markDetail['subject']; ?></td>
+            <td><?php echo $markDetail['subjects']; ?></td>
             <td><?php echo $markDetail['mark']; ?></td>
         </tr>
         <?php endforeach; ?>
