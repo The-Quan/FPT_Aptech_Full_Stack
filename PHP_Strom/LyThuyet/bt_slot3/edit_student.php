@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="name"
-                   name="name" value="<?php echo $student['name']; ?>" required>
+                   name="username" value="<?php echo $student['username']; ?>" required>
         </div>
         <div class="form-group">
             <label for="address">Address:</label>
