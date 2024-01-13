@@ -9,18 +9,18 @@ include 'StudentManager.php';
 // ket noi den studentmanager
 $studentManager = new StudentManager();
 //lay danh sach sinh vien va thong tin diem
-$students = $studentManager->getAllStudentsWithMarks();
+$students = $studentManager->getAllStudentWithMarks();
 ?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>dasboard</title>
+    <title>dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/452/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container mt-5">
-    <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+    <h2>Welcome, <?php echo $_SESSION['user_id']; ?>!</h2>
     <p>This is the main page after successful login.</p>
     <a href="logout.php" class="btn btn-danger">Logout</a>
     <h3>Student List</h3>
@@ -36,10 +36,10 @@ $students = $studentManager->getAllStudentsWithMarks();
         </tr>
         </thead>
         <tbody>
-        <?php  foreach ($students as $student) ?>
+        <?php foreach ($students as $student): ?>
         <tr>
             <td><?php echo $student['id']; ?></td>
-            <td><?php echo $student['name']; ?></td>
+            <td><?php echo $student['username']; ?></td>
             <td><?php echo $student['address']; ?></td>
             <td>
                 <a href="edit_student.php?id=<?php echo $student['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
@@ -56,7 +56,7 @@ $students = $studentManager->getAllStudentsWithMarks();
             ?>
             </td>
         </tr>
-        <?php ENDFOREACH; ?>
+            <?php endforeach; ?>
         </tbody>
     </table>
 </div>
