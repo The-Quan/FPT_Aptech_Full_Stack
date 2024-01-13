@@ -1,7 +1,7 @@
 <?php
 // kiem tra thong tin dang nhap
 session_start();
-if (!isset($_SESSION['user_id'])){
+if (!isset($_SESSION['username'])){
     header("location: index.php");
     exit();
 }
@@ -42,7 +42,7 @@ $students = $StudentManager->getAllStudents();
         <?php foreach ($students as $student): ?>
         <tr>
             <td><?php echo $student['id']; ?></td>
-            <td><?php echo $student['name']; ?></td>
+            <td><?php echo $student['username']; ?></td>
         </tr>
         <?php endforeach; ?>
         </tbody>
@@ -68,7 +68,7 @@ $students = $StudentManager->getAllStudents();
         <tr>
             <td><?php echo $student['id'] ?></td>
             </hr>
-            <td><?php echo $student['name'] ?></td>
+            <td><?php echo $student['username'] ?></td>
             </hr>
             <td><?php echo $student['address'] ?></td>
             </hr>
