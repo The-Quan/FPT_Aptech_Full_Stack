@@ -39,7 +39,7 @@ $students = $studentManager->getAllStudentWithMarks();
         <?php foreach ($students as $student): ?>
         <tr>
             <td><?php echo $student['id']; ?></td>
-            <td><?php echo $student['username']; ?></td>
+            <td><?php echo $student['name']; ?></td>
             <td><?php echo $student['address']; ?></td>
             <td>
                 <a href="edit_student.php?id=<?php echo $student['id']; ?>" class="btn btn-warning btn-sm">Edit</a>

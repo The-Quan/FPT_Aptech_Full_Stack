@@ -41,6 +41,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Student Management</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
+
 <body>
 <div class="container mt-5">
     <h2>Login</h2>
@@ -62,8 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button type="submit" class="btn btn-primary">login</button>
     </form>
 
-    <h2>Student Management System</h2>
-    <a href="students.php" class="btn btn-primary">View Students</a>
+
 </div>
 </body>
 </html>
