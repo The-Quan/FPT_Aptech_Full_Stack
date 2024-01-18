@@ -6,14 +6,14 @@ if(isset($_SESSION['user_id'])){
     exit();
 }
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include "dashboard.php";
-    $dasboard = new dasboard();
+    include "config.php";
+    $studentManager = new StudentManager();
 
     $username = $_POST["username"];
     $password = $_POST["password"];
 
     $sql = "SELECT * FROM Account WHERE username=? AND password=?";
-    $stmt = $dasboard->conn->prepare($sql);
+    $stmt = $studentManager ->conn->prepare($sql);
     $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
 
@@ -31,8 +31,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $stmt->close();
 }
 ?>
-
-
 
 <!doctype html>
 <html lang="en">

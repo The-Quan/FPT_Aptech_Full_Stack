@@ -5,11 +5,11 @@ class StudentManager
     public function __construct()
     {
         $host = "localhost:3306";
-        $username = "root";
+        $name = "root";
         $password = "";
         $dbname = "fptaptechdb";
 
-        $this->conn = new mysqli($host, $username, $password, $dbname);
+        $this->conn = new mysqli($host, $name, $password, $dbname);
         if ($this->conn->connect_error) {
             die("Connection failed: " . $this->conn->connect_error);
         }
@@ -71,7 +71,7 @@ class StudentManager
     public  function getMarksDetails()
     {
         $markDetails = [];
-        $sql = "SELECT Students.id AS student_id, students.username as student_name, subjects.username AS subjects, marks.mark
+        $sql = "SELECT Students.id AS student_id, students.name as student_name, subjects.name AS subjects, marks.mark
                 FROM students
                 INNER JOIN marks ON students.id = marks.student_id
                 INNER JOIN subjects ON marks.subject_id = subjects.id";
@@ -90,10 +90,10 @@ class StudentManager
         {
             $students = [];
 
-            $sql = "SELECT students.id, students.username, students.address, COUNT(marks.id) AS mark_count
+            $sql = "SELECT students.id, students.name, students.address, COUNT(marks.id) AS mark_count
         FROM students
         LEFT JOIN marks ON students.id = marks.student_id
-        GROUP BY students.id, students.username, students.address";
+        GROUP BY students.id, students.name, students.address";
 
             $result = $this->conn->query($sql);
             if ($result->num_rows > 0) {
