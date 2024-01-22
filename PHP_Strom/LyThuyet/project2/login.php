@@ -1,17 +1,19 @@
 <?php
 $host ="localhost:3306";
-$username="root";
-$password ="";
+$Username="root";
+$Email="root";
+$Password ="";
 $database = "quanfpt";
 // kết nối csdl
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli($host, $Username,$Email, $Password, $database);
 //kiểm tra kết nối có thành công hay không
 if($conn->connect_error){
     die("kết nối đến csdl ko thành công".$conn->connect_error);
 }
 // xử lý phần login
-$username =$_POST["username"];
-$password =$_POST["password"];
+$username =$_POST["Username"];
+$Email = $_POST['Email'];
+$password =$_POST["Password"];
 
 // thực hiện truy vấn thông tin đăng nhập
 
