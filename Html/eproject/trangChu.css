@@ -1,0 +1,11 @@
+body {
+    margin: auto auto;
+    box-sizing: border-box;
+}
+header{
+   width: 1172;
+   height: 2979;
+   margin: 0 auto;
+   background-color: red;
+   display: flex;
+}
