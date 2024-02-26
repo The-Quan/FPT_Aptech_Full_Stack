@@ -1,0 +1,113 @@
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer-2 {
+    background-color: rgb(248, 231, 209);
+    height: 120px;
+    margin: 20px auto;
+}
+
+.footer-3 {
+    width: 550px;
+    margin: 30px auto;
+    padding-top: 30px;
+}
+
+.link1,
+.link2,
+.link3,
+.link3,
+.link4,
+.link5 {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+}
+
+.contact {
+    width: 1327px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact1 {
+    width: 800px;
+}
+
+ul li {
+    list-style: none;
+    display: block;
+}
+
+.address,
+.phone,
+.email,
+.time {
+    margin-top: 15px;
+}
+
+.logo-footer {
+    margin-left: 40px;
+}
+
+.btn-contact {
+    display: flex;
+    margin-left: 130px;
+    width: 650px;
+    padding-top: 40px;
+}
+
+.contact2,
+.contact4 {
+    width: 160px;
+}
+
+.contact3 {
+    width: 170px;
+}
+
+.contact2 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact2 li a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.contact3 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact3 li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.contact4 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact4 li a {
+    list-style: none;
+    text-decoration: none;
+}
+.iconcontact {
+   width: 20px;
+   height: 20px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid rgb(231, 218, 218);
+}

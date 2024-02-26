@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+
+}
+
+header .logo {
+    padding-left: 300px;
+}
+
+.btn {
+    margin-left: 950px;
+    display: flex;
+    margin-top: 55px;
+    position: relative;
+}
+
+.search,
+.cart,
+.user {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#search-icon1 {
+    cursor: pointer;
+}
+
+#search-form {
+    width: 200px;
+    position: absolute;
+    right: 170px;
+    display: none;
+}
+
+#search-form input#keyword {
+    padding: 6px 9px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #252525;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0. 1);
+}
+
+.menu {
+    width: 100%;
+    height: 30px;
+}
+
+.menu ul {
+    display: flex;
+    padding-left: 670px;
+}
+
+.menu ul a {
+    margin-left: 50px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+.menu ul a:hover {
+    color: red;
+}
+
+.productImages {
+    width: 100%;
+    height: 630px;
+}
+
+.productImages img {
+    width: 100%;
+    height: 630px;
+}
+
+.content {
+    display: flex;
+    height: 100px;
+}
+
+.content,
+.btn-2,
+.btn-3,
+.btn-4 {
+    margin-left: 210px;
+    text-align: center;
+}
+
+
+h2 {
+    padding: 0 23px;
+}
+
+.container {
+    width: 1327px;
+    margin: 0 315px;
+}
+
+.btn-product {
+    display: flex;
+}
+
+.product-1 h3 {
+    width: 230px;
+    height: 35px;
+    padding-top: 8px;
+    margin-left: 190px;
+    background-color: rgb(236, 241, 241);
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+.product-2 h3 {
+    width: 230px;
+    height: 35px;
+    padding-top: 8px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: rgb(236, 241, 241);
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(114, 103, 103);
+}
+
+.selling-1,
+.selling-2,
+.selling-3,
+.selling-4,
+.selling-5,
+.selling-6,
+.selling-7,
+.selling-8 {
+    width: 300px;
+    height: 400px;
+    margin-right: 17px;
+    line-height: none;
+    text-align: center;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    margin-left: 70px;
+}
+
+.addtocart {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 8px;
+}
+
+.addtocart,
+.eye {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.btn-sellingProduct {
+    display: flex;
+    height: 420px;
+    width: 1327px;
+}
+
+.btn-sellingProduct-2 {
+    display: flex;
+    height: 420px;
+}
+
+.stored-1,
+.stored-2,
+.stored-3,
+.stored-4,
+.stored-5,
+.stored-6,
+.stored-7,
+.stored-8 {
+    width: 300px;
+    height: 400px;
+    margin-right: 17px;
+    line-height: none;
+    text-align: center;
+}
+
+.btn-storedProduct-1,
+.btn-storedProduct-2 {
+    display: flex;
+    height: 420px;
+    width: 1327px;
+}
+
+.brand,
+.brand1,
+.brand2,
+.brand3,
+.brand4 {
+    margin-right: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    line-height: 170px;
+    margin-top: 60px;
+    background-color: rgb(248, 231, 209);
+}
+
+.link1,
+.link2,
+.link3,
+.link3,
+.link4,
+.link5 {
+    margin: 0 20px;
+}
+
+.contact {
+    width: 1327px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact1 {
+    width: 800px;
+}
+
+.contact1 ul li {
+    list-style: none;
+}
+
+.address,
+.phone,
+.email,
+.time {
+    margin-top: 15px;
+}
+
+.logo-footer {
+    margin-left: 40px;
+}
+
+.btn-contact {
+    display: flex;
+    margin-left: 130px;
+    width: 650px;
+    padding-top: 40px;
+}
+
+.contact2,
+.contact4 {
+    width: 160px;
+}
+
+.contact3 {
+    width: 170px;
+}
+
+.contact2 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact2 li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.contact3 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact3 li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.contact4 li {
+    list-style: none;
+    margin-top: 7px;
+}
+
+.contact4 li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid rgb(231, 218, 218);
+}

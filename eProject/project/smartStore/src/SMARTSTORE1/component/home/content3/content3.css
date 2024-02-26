@@ -1,0 +1,44 @@
+.content3{
+    width: 1327px;
+    height: auto;
+    margin: 0 auto;
+}
+.btn-sellingProduct-2 {
+    display: flex;
+    height: 420px;
+}
+img {
+    width: 310px;
+    height: 300px;
+}
+.btn-storedProduct-1, .btn-storedProduct-2{
+    display: flex;
+    margin: 10px auto;
+    width: 1327px;
+}
+.stored-1,
+.stored-5{
+    width: 310px;
+    height: 420px;
+    line-height: none;
+    text-align: center;
+}
+
+.stored-2,
+.stored-3,
+.stored-4,
+.stored-6,
+.stored-7,
+.stored-8 {
+    width: 310px;
+    height: 420px;
+    line-height: none;
+    margin-left: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0;
+    width: 130px;
+    height: 30px;
+}

@@ -1,0 +1,45 @@
+.content2 {
+    width: 1327px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+img {
+    width: 310px;
+    height: 300px;
+}
+
+.btn-sellingProduct,
+.btn-sellingProduct-2 {
+    display: flex;
+    margin: 10px auto;
+    width: 1327px;
+}
+
+.selling-1,
+.selling-5 {
+    width: 310px;
+    height: 420px;
+    line-height: none;
+    text-align: center;
+}
+
+.selling-2,
+.selling-3,
+.selling-4,
+.selling-6,
+.selling-7,
+.selling-8 {
+    width: 310px;
+    height: 420px;
+    line-height: none;
+    margin-left: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0;
+    width: 130px;
+    height: 30px;
+}

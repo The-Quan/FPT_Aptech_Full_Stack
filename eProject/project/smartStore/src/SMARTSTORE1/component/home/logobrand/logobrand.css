@@ -1,0 +1,22 @@
+.logobrand {
+    width: 1327px;
+    height: auto;
+    margin: 0 auto;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+.brand1,
+.brand2,
+.brand3,
+.brand4 {
+    margin-top: 10px;
+}
+
+.brand2,
+.brand3,
+.brand4 {
+    margin-left: 32px;
+}
