@@ -1,6 +1,6 @@
 <?php
 
-// Kết nối đến cơ sở dữ liệu (thay đổi thông tin kết nối của bạn)
+// Kết nối đến cơ sở dữ liệu
 $host = "localhost";
 $username = "root";
 $password = "";
