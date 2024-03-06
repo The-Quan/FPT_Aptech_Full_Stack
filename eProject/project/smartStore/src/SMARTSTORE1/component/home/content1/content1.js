@@ -4,6 +4,7 @@ import tuQuanAo from './img/tuQuanAo.png';
 import luutru from './img/luuTru.jpg';
 
 import './content1.css';
+import { Link } from 'react-router-dom';
 
 
 const Content1 = () => {
@@ -13,11 +14,11 @@ const Content1 = () => {
             <div class="btn-product">
                 <div class="product-1">
                     <img className='img' src={tuQuanAo} alt="" />
-                    <p><a href="">Wardrobe</a></p>
+                    <p><Link to="/Products">Wardrobe</Link></p>
                 </div>
                 <div class="product-2">
                     <img className='img' src={luutru} alt="" />
-                    <p><a href="">Storage products</a></p>
+                    <p><Link to="/Strored">Storage products</Link></p>
                 </div>
             </div>
         </div>

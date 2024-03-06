@@ -8,24 +8,26 @@ import tuquanao5 from "./img/tuquanao5.jpg";
 import tuquanao6 from "./img/tuQuanAo6.png";
 import tuquanao7 from "./img/tuquanao7.jpg";
 import tuquanao8 from "./img/tuquanao8.jpg";
+import { Link } from "react-router-dom";
 
 
 
 const Content2 = () => {
+    
     return(
         <div className="content3">
              <h1>II.&nbsp;FAVORITE PRODUCT</h1>
             <div class="btn-sellingProduct">
             <div class="selling-1">
-                <img src=  {tuquanao1} alt="" /><br/>
-                <a href=""><span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span></a><br/>
+                <img className="img-product" src=  {tuquanao1} alt="" /><br/>
+                <Link to='/BuyProduct1' onClick={onClick2}><span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span></Link><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
-                    <button><a href="">Buy product</a></button>
+                    <button><Link to='/BuyProduct1'>Buy product</Link></button>
                 </div>
             </div>
             <div class="selling-2">
-                <img src={tuquanao2}  alt="" /><br/>
+                <img className="img-product" src={tuquanao2}  alt="" /><br/>
                 <a href=""><span>High-end Built-in Glass Door Wardrobe – TQAVP37</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
@@ -33,7 +35,7 @@ const Content2 = () => {
                 </div>
             </div>
             <div class="selling-3">
-                <img src={tuquanao3}  /><br/>
+                <img className="img-product" src={tuquanao3}  /><br/>
                 <a href=""><span>2-Door Wardrobe with Sliding Dressing Table – TQAVP27</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
@@ -41,8 +43,8 @@ const Content2 = () => {
                 </div>
             </div>
             <div class="selling-4">
-                <img src={tuquanao4} alt="" /><br/>
-                <a href=""><span>2-Door 4-Door MDF Wardrobe – TQAVP10</span></a><br/><br/>
+                <img className="img-product" src={tuquanao4} alt="" /><br/>
+                <a href=""><span>2-Door 4-Door MDF Wardrobe – TQAVP10</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
                     <button><a href="">Buy product</a></button>
@@ -52,16 +54,16 @@ const Content2 = () => {
 
          <div class="btn-sellingProduct-2">
             <div class="selling-5">
-                <img src={tuquanao5}  alt="" /><br/>
-                <a href=""><span>10-Door Glass Wardrobe – TQAVP36</span></a><br/><br/>
+                <img className="img-product" src={tuquanao5}  alt="" /><br/>
+                <a href=""><span>10-Door Glass Wardrobe – TQAVP36</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
                     <button><a href="">Buy product</a></button>
                 </div>
             </div>
             <div class="selling-6">
-                <img src={tuquanao6}  alt="" /><br/>
-                <a href=""><span>Square Glass Door Wardrobe – TQAVP45</span></a><br/><br/>
+                <img className="img-product" src={tuquanao6}  alt="" /><br/>
+                <a href=""><span>Square Glass Door Wardrobe – TQAVP45</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
                     <button><a href="">Buy product</a></button>
@@ -69,7 +71,7 @@ const Content2 = () => {
                 </div>
             </div>
             <div class="selling-7">
-                <img src={tuquanao7}  /><br/>
+                <img className="img-product" src={tuquanao7}  /><br/>
                 <a href=""><span>6-Compartment Wardrobe with Dressing Table – TQAVP18</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">
@@ -77,7 +79,7 @@ const Content2 = () => {
                 </div>
             </div>
             <div class="selling-8">
-                <img src={tuquanao8}  alt="" /><br/>
+                <img className="img-product" src={tuquanao8}  alt="" /><br/>
                 <a href=""><span>6-Compartment Wardrobe with Dressing Table – TQAVP18</span></a><br/>
                 <strong>5.000$</strong><br/>
                 <div class="addtocart">

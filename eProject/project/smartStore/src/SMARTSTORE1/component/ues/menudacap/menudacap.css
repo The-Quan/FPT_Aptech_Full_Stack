@@ -1,0 +1,26 @@
+.dropdown {
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.dropdown-select {
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(245, 78, 78);
+    color: white;
+    font-size: 23px;
+}
+
+.limenu2 {
+    list-style: none;
+    text-decoration: none;
+    padding: 30px 0;
+    border-bottom: 1px dashed #000;
+    color: black;
+    font-size: 20px;
+}

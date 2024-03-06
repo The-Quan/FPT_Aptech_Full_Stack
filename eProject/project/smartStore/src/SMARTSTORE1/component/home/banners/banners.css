@@ -1,25 +1,26 @@
-.banners{
-    width:100%;
+.banners {
+    width: 100%;
+    height: 790px;
+    margin-top: 20px;
+    margin: 0;
+}
+.slider{
+    width: 2060px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.btn-slider, .img-slider{
+    width: 2060px;
     height: 700px;
 }
-.productImages {
-    width: 100%;
-    height: 630px;
-    text-align: center;
-}
-
-.productImages img {
-    width: 100%;
-    height: 630px;
-}
-
 .content {
     display: flex;
     height: 100px;
     width: 1327px;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .btn-1,

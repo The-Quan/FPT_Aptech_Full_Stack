@@ -1,11 +1,11 @@
 import React from 'react';
-import Home from "./user/home";
-import Introduce from './user/introduce/introduce';
+import Home from "./user/home/index";
+import './App.css'
 
 function App (){
     return (
-    <div>
-     <Home />
+    <div className='App'>
+    <Home />
     </div>
     )
 }

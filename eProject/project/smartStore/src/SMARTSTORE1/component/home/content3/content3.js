@@ -18,7 +18,7 @@ function Content3(){
         <div class="btn-Product-2">
             <div class="btn-storedProduct-1">
                 <div class="stored-1">
-                    <img src= {sanphamluutru1} alt=""/><br/>
+                    <img className='img-product' src= {sanphamluutru1} alt=""/><br/>
                     <a href=""><span>Plastic Belt Storage Box On Wheels Throughout The Bottom Of The Bed</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -26,7 +26,7 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-2">
-                    <img src= {sanphamluutru2}  alt=""/><br/>
+                    <img className='img-product'  src= {sanphamluutru2}  alt=""/><br/>
                     <a href=""><span>Medicine Box, Multi-purpose Home Medical Equipment Storage.</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -34,7 +34,7 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-3">
-                    <img src={sanphamluutru3}  alt="" /><br/>
+                    <img  className='img-product' src={sanphamluutru3}  alt="" /><br/>
                     <a href=""><span>Shoe box with transparent hard plastic lid, full black box</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -42,7 +42,7 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-4">
-                    <img src={sanphamluutru4}  alt=""/><br/>
+                    <img className='img-product'  src={sanphamluutru4}  alt=""/><br/>
                     <a href=""><span>Cosmetic or stationery storage shelf Available in two colors: pink and
                             white</span></a><br/>
                     <strong>5.000$</strong><br/>
@@ -53,7 +53,7 @@ function Content3(){
             </div>
             <div class="btn-storedProduct-2">
                 <div class="stored-5">
-                    <img src={sanphamluutru5}  alt=""/><br/>
+                    <img className='img-product'  src={sanphamluutru5}  alt=""/><br/>
                     <a href=""><span>box, cloth bag, clothes box</span></a><br/><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -61,7 +61,7 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-6">
-                    <img src={sanphamluutru6}  alt="" /><br/>
+                    <img className='img-product'  src={sanphamluutru6}  alt="" /><br/>
                     <a href=""><span>Document Storage Bag - Important Family Documents</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -69,7 +69,7 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-7">
-                    <img src={sanphamluutru7}  alt=""/><br/>
+                    <img className='img-product'  src={sanphamluutru7}  alt=""/><br/>
                     <a href=""><span>Household transparent foldable double door storage box</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
@@ -77,11 +77,11 @@ function Content3(){
                     </div>
                 </div>
                 <div class="stored-8">
-                    <img src={sanphamluutru8} alt="" /><br/>
+                    <img className='img-product'  src={sanphamluutru8} alt="" /><br/>
                     <a href=""><span>Plastic Shoe Storage Cabinet With Antbox Sound Touch LED Light</span></a><br/>
                     <strong>5.000$</strong><br/>
                     <div class="addtocart">
-                        <button><a href="">Buy product</a></button>
+                        <button className='.btn-button1'><a href="">Buy product</a></button>
                     </div>
                 </div>
             </div>

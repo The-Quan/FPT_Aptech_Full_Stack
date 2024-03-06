@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.productcontent2{
+    width: 100%;
+    width: 100%;
+}
+.prd-content2{
+    width: 1327px;
+    height: 100%;
+    margin: 0 auto;
+}
+.prd-h2{
+    width: 1327px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(67, 65, 221);
+    background-image: url(img/backgroud.jpg);
+    margin-top: 20px;
+}

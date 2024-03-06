@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-0 {
+    width: 100%;
+    height: 850px;
+    margin-top: 30px;
+}
+
+.contact1 {
+    width: 1327px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.btn-contact1 {
+    width: 650px;
+    height: 750px;
+    display: block;
+}
+
+.tact1 {
+    border: 1px solid rgb(205, 212, 210);
+    width: 650px;
+    height: 200px;
+    padding: 20px 20px;
+}
+
+.btn-address {
+    font-size: 20px;
+}
+
+.btn-phone {
+    float: left;
+    margin-top: 30px;
+    font-size: 22px;
+    width: 270px;
+}
+
+.btn-email {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+span {
+    margin-left: 30px;
+}
+
+.h4 {
+    margin-top: 10px;
+}
+
+.tact2 {
+    border: 1px solid rgb(205, 212, 210);
+    width: 650px;
+    height: 600px;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.inputname {
+    width: 610px;
+    height: 40px;
+    border: 1px solid rgb(230, 236, 234);
+    padding-left: 15px;
+    outline: none;
+}
+
+.inputemail {
+    width: 290px;
+    height: 40px;
+    border: 1px solid rgb(230, 236, 234);
+    padding-left: 15px;
+    outline: none;
+}
+
+.inputphone {
+    width: 295px;
+    height: 40px;
+    border: 1px solid rgb(230, 236, 234);
+    padding-left: 15px;
+    outline: none;
+}
+
+.emailphone {
+    display: flex;
+}
+
+.phone {
+    margin-left: 25px;
+}
+
+.noidung {
+    border: 1px solid rgb(230, 236, 234);
+    width: 610px;
+    height: 170px;
+    resize: none;
+    padding-left: 13px;
+    padding-top: 5px;
+    outline: none;
+}
+
+.button {
+    background-color: red;
+    width: 150px;
+    color: white;
+    height: 35px;
+    cursor: pointer;
+}
+
+.bando {
+    width: 660px;
+    height: 510px;
+}
+
+.bando2 {
+    width: 635px;
+    height: 500px;
+    margin-left: 15px;
+}

@@ -5,7 +5,7 @@
     margin-top: 30px;
 }
 
-img {
+.img-product{
     width: 310px;
     height: 300px;
 }
@@ -32,7 +32,7 @@ img {
 .selling-7,
 .selling-8 {
     width: 310px;
-    height: 420px;
+    height: 400px;
     line-height: none;
     margin-left: 20px;
     text-align: center;

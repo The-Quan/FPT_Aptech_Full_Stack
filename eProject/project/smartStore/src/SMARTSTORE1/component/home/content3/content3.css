@@ -2,12 +2,13 @@
     width: 1327px;
     height: auto;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .btn-sellingProduct-2 {
     display: flex;
     height: 420px;
 }
-img {
+.img-product{
     width: 310px;
     height: 300px;
 }
@@ -37,7 +38,7 @@ img {
     text-align: center;
 }
 
-button {
+.btn-button1{
     margin: 10px 0;
     width: 130px;
     height: 30px;
