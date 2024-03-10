@@ -1,13 +1,18 @@
 .content2 {
     width: 1327px;
-    height: auto;
+    height: 970px;
     margin: 0 auto;
-    margin-top: 30px;
 }
 
-.img-product{
-    width: 310px;
-    height: 300px;
+.img-product {
+    width: 280px;
+    margin-top: 10px;
+    height: 290px;
+    transition: all 0.5;
+}
+
+.img-product:hover {
+    
 }
 
 .btn-sellingProduct,
@@ -19,10 +24,13 @@
 
 .selling-1,
 .selling-5 {
+    box-shadow: 0 0 20px rgba(51, 46, 46, 0.3);
     width: 310px;
-    height: 420px;
+    height: 430px;
     line-height: none;
     text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .selling-2,
@@ -32,14 +40,27 @@
 .selling-7,
 .selling-8 {
     width: 310px;
-    height: 400px;
+    height: 430px;
     line-height: none;
     margin-left: 20px;
     text-align: center;
+    box-shadow: 0 0 20px rgba(51, 46, 46, 0.3);
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
-button {
-    margin: 10px 0;
+.BuyProduct {
+    margin-top: 20px;
+    margin-left: 60px;
+    color: white;
     width: 130px;
     height: 30px;
+    background-color: rgb(113, 243, 109);
+    border: 1px solid rgb(235, 226, 226);
+    box-shadow: 0 0 10px rgba(141, 123, 123, 0.3);
+    border-radius: 3px;
+}
+
+.strong-btn {
+    font-size: 20px;
 }

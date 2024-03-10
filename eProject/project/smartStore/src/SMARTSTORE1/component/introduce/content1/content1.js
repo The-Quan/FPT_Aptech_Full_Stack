@@ -7,7 +7,7 @@ import anh3 from './img/gioithieusp3.png';
 
 function Content1() {
     return (
-        <div class="content1">
+        <div class="content1-btn1">
         <a href='https://noithatgiakhanh.com/?gad_source=1&gclid=CjwKCAiA0PuuBhBsEiwAS7fsNYWgxhyqO2NmMUmbj_5CagLbIyl28Cx0imJA_AuuOGjSzC9XTbX1TxoCCQYQAvD_BwE' ><h2 className='ndh2'>1, Gia Khanh Furniture - a reputable place to sell imported wardrobes in Hanoi</h2></a>
             <p>Gia Khanh has more than 24 years of experience (Since 2000), from a small furniture factory serving
                 customers

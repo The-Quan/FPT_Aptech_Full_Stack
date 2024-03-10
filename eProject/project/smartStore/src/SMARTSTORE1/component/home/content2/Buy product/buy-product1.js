@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, {  useEffect,useState } from 'react';
 import Header from '../../../ues/header/Header';
 import Menu from '../../../ues/menu/menu';
 import Footer from '../../../ues/footer/footer'
 import anh1 from './img/tuQuanAo.png';
 import './buy-product.css';
+
+import { createRoot } from 'react-dom/client';
+
+
 
 function BuyProduct1() {
   const [quantity, setQuantity] = useState(1);
@@ -22,12 +26,16 @@ function BuyProduct1() {
     // Thêm logic xử lý khi nhấn nút "Add To Cart" ở đây
     alert('Đã thêm vào giỏ hàng!');
   };
+
+
   return (
+    
     <div className='buyproduct1'>
-      <Header />
+      <div className='btn-neo'><Header /></div>
+      
       <Menu />
-      <div className='sp1'>
-        <p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p>
+      <div className='sp1' >
+      <div><p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p></div>
       </div>
       <div className='product-btn1'>
         <div className='sanpham'><img className='anh-product-1' src={anh1} /></div>
@@ -35,11 +43,12 @@ function BuyProduct1() {
           <h3 className='text-2'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</h3> <br />
           <strong className='gia'>5.000$</strong>
           <div className='btn-buy'>
+          
             <div>
               <button className='buttonbtn' onClick={decreaseQuantity}>-</button>
               <span>{quantity} &nbsp; &nbsp; &nbsp;</span>
               <button className='buttonbtn' onClick={increaseQuantity}>+</button>
-              <button className='muahang' onClick={handleAddToCart}>Add To Cart</button>
+              <button className='muahang' onClick={handleAddToCart} >Add To Cart</button>
             </div>
           </div>
           <div className='chitiet'>

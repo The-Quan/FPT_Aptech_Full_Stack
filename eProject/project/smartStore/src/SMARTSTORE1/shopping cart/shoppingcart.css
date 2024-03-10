@@ -1,0 +1,146 @@
+.ShoppingCart {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn-cart {
+    width: 1327px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-cart2 {
+    width: 1327px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+.pay {
+    margin-left: 25px;
+    width: 427px;
+    height: 480px;
+    border: 1px solid rgb(196, 168, 168);
+}
+
+.sum {
+    width: 360px;
+    height: 90px;
+    border-bottom: 1px solid rgb(196, 168, 168);
+    margin: 0 auto;
+    display: flex;
+}
+
+.sum,
+.total-money {
+    line-height: 80px;
+    font-size: 25px;
+
+}
+
+.btn-monny {
+    margin-left: 140px;
+    font-size: 20px;
+}
+
+.btn-cn {
+    width: 370px;
+    margin: 30px auto;
+}
+
+.btn-cn .libt {
+    margin: 20px 0;
+}
+
+.btn-Pay {
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pay2 {
+    margin-top: 20px;
+    height: 50px;
+    width: 370px;
+    font-size: 23px;
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-cn2 {
+    width: 370px;
+    border: 1px solid rgb(218, 187, 187);
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.btn-cn2 p {
+    margin-top: 15px;
+}
+
+.btn-cart1 {
+    width: 890px;
+    height: 300px;
+}
+.cart-product{
+    width: 890px;
+    display: flex;
+    margin-top: 30px;
+}
+.img-cart{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border: 2px solid rgb(218, 187, 187);
+    border-radius: 10px;
+}
+.img-cart2{
+    width: 80px;
+    height: 80px;
+}
+.cart-qty{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 2px solid rgb(218, 187, 187);
+    line-height: 40px;
+}
+.cart-qty, .btn-title{
+    font-size: 27px;
+}
+.name-cart1{
+ margin-top: 10px;
+ margin-left: 20px;
+ width: 400px;
+ text-align: left;
+}
+.btn-mn1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.tanggiam{
+    text-align: center;
+    margin-top: 20px;
+}
+.delete{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.delete:hover{
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+}

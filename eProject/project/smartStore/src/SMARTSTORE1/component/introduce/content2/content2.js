@@ -6,7 +6,7 @@ import anh6 from './img/gioithieusp6.png';
 
 function Content2() {
     return (
-        <div class="content2">
+        <div class="content2-btn2">
            <a href='https://acado.vn/'><h2 className='ndh2'>2, Acado Furniture - specializing in high-end wardrobes in Hanoi</h2></a>
             <p>If you are looking for a high-end address to sell wardrobes in Hanoi, stop by Acado. This brand is more
                 about field

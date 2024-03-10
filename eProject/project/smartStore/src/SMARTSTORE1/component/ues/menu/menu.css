@@ -4,17 +4,18 @@
 }
 
 .menu2 {
-    width: 800px;
+    width: 1327px;
     height: 30px;
-    margin: 0 auto;
     display: flex;
-    border-bottom: 1px solid rgb(231, 218, 218);
+    margin: 0 auto;
+    padding-left: 279px;
 }
 
 .menu2 li {
     text-align: center;
     width: 200px;
     list-style: none;
+    border-bottom: 1px solid rgb(231, 218, 218);
 }
 
 .menu2 li a {

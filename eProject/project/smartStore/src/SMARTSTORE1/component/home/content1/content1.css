@@ -1,6 +1,6 @@
-.content1 {
+.content-1 {
     width: 1327px;
-    height: auto;
+    height: 580px;
     margin: 0 auto;
 }
 
@@ -12,43 +12,23 @@
 }
 
 .img {
-    width: 660px;
+    width: 630px;
     height: 450px;
+    border-radius: 4px;
+    border: 1px solid rgb(206, 176, 176);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .product-1,
 .product-2 {
-    width: 620px;
+    width: 630px;
     height: auto;
     margin-top: 10px;
 }
 
-.product-1 p {
-    width: 300px;
-    height: 35px;
-    margin-left: 160px;
-    margin-top: 10px;
-    background-color: rgb(236, 241, 241);
-    text-decoration: none;
-    list-style: none;
-    line-height: 35px;
-    text-align: center;
-}
 
-.product-2 img {
-    margin-left: 20px;
-}
-
-.product-2 p{
-    width: 300px;
-    height: 35px;
-    margin-left: 190px;
-    margin-top: 10px;
-    background-color: rgb(236, 241, 241);
-    text-decoration: none;
-    list-style: none;
-    line-height: 35px;
-    text-align: center;
+.product-2{
+    margin-left: 40px;
 }
 
 a {
@@ -57,4 +37,14 @@ a {
 }
 a:hover{
     color: red;
+}
+.btn-btn{
+    width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 200px;
+    background-color: rgb(113, 243, 109);
+    border: 1px solid rgb(235, 226, 226);
+    box-shadow: 0 0 10px rgba(141, 123, 123, 0.3);
+    border-radius: 3px;
 }

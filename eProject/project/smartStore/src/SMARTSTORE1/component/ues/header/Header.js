@@ -4,14 +4,15 @@ import search from './img/search.png';
 import cart from './img/cart.png';
 import user from './img/user.png';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
 
     return (
         <div className='container'>
-            <div className='logo'>
-            <img src={logo} alt="Logo" />
+            <div className='logo' >
+                <img src={logo} alt="Logo" />
             </div>
             <div className="btn">
                 <div className="search">
@@ -21,10 +22,11 @@ function Header() {
                     </form>
                 </div>
                 <div className="cart">
-                    <img src={cart} alt="Cart Icon"/>
+                 <Link to='/ShoppingCart'> <img id='cart-icon1' src={cart} alt="Cart Icon" />
+                    <span className='quatity'>0</span></Link>  
                 </div>
                 <div className="user">
-                    <img src={user} alt="User Icon" />
+                    <img id='user-icon1' src={user} alt="User Icon" />
                 </div>
             </div>
         </div>
