@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import Header from "../../component/ues/header/Header";
 import './index.css';
 import Menu from "../../component/ues/menu/menu";
@@ -12,6 +12,7 @@ import Footer from "../../component/ues/footer/footer";
 
 
 function Home(){
+   
     return(
         <div className="container1">
             <Header />

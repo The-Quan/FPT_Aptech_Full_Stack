@@ -45,7 +45,8 @@
     margin-top: 50px;
     margin-left: 20px;
 }
-.gia{
+
+.gia {
     font-size: 20px;
 }
 
@@ -58,6 +59,14 @@
     font-size: 20px;
     margin-top: 10px;
 }
+.datontai{
+    background-color: rgb(113, 243, 109);
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    line-height: 40px;
+    color: white;
+}
 
 .buttonbtn {
     border: 1px solid rgb(231, 223, 223);
@@ -65,34 +74,48 @@
 }
 
 .muahang {
-    margin-left: 30px;
+    margin: 20px 0;
     height: 40px;
     width: 100px;
+    background-color: rgb(113, 243, 109);
+    color: white;
 }
-.chitiet{
+.muahang:hover{
+    background-color: rgb(236, 56, 56);
+}
+
+.chitiet {
     margin-top: 10px;
 }
-.mota{
+
+.mota {
     width: 1327px;
     margin: 0 auto;
     margin-top: 30px;
 }
-.describe{
+
+.describe {
     font-size: 20px;
 }
-table{
+
+table {
     width: 1327px;
 }
-table, th, td{
-border: 1px solid black;
-border-collapse: collapse;
-padding: 8px;
-font-size: 19px;
-margin-top: 10px;
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    font-size: 19px;
+    margin-top: 10px;
 }
-.vanban{
+
+.vanban {
     margin-top: 20px;
 }
-.textcolor{
+
+.textcolor {
     color: blue;
 }

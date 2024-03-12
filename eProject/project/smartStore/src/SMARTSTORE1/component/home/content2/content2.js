@@ -18,7 +18,7 @@ const Content2 = () => {
             <div class="btn-sellingProduct">
                 <div class="selling-1">
                     <img className="img-product" src={tuquanao1} alt="" /><br />
-                    <Link to='/BuyProduct1#Neo11' >Beautiful modern wooden wardrobe with sliding doors – TQAVP09</Link><br />
+                    <Link to='/BuyProduct1' >Beautiful modern wooden wardrobe with sliding doors – TQAVP09</Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
                         <button className="BuyProduct"><Link to='/BuyProduct1#btn-neo'>Buy product</Link></button>
@@ -29,7 +29,7 @@ const Content2 = () => {
                     <Link to="/BuyProduct2"><span>High-end Built-in Glass Door Wardrobe – TQAVP37</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct2#Neo11'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct2'>Buy product</Link></button>
                     </div>
                 </div>
                 <div class="selling-3">

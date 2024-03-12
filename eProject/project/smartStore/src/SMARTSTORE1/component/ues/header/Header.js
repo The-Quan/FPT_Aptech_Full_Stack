@@ -7,7 +7,11 @@ import './header.css';
 import { Link } from 'react-router-dom';
 
 
-function Header() {
+function Header({ quantity, setShowCart }) {
+
+    const ShowCart = () => {
+        setShowCart(true);
+    }
 
     return (
         <div className='container'>
@@ -21,9 +25,9 @@ function Header() {
                         <input type="text" name="keyword" id="keyword" placeholder="Search" />
                     </form>
                 </div>
-                <div className="cart">
-                 <Link to='/ShoppingCart'> <img id='cart-icon1' src={cart} alt="Cart Icon" />
-                    <span className='quatity'>0</span></Link>  
+                <div className="cart" onClick={ShowCart}>
+                     <img id='cart-icon1'  src={cart} alt="Cart Icon" />
+                        <span className='quatity'>{quantity}</span>
                 </div>
                 <div className="user">
                     <img id='user-icon1' src={user} alt="User Icon" />
