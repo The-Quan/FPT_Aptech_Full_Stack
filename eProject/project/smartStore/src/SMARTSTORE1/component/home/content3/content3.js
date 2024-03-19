@@ -23,7 +23,7 @@ function Content3(){
                     <Link to='/BuyProductStored1'><span>Plastic Belt Storage Box On Wheels Throughout The Bottom Of The Bed</span></Link><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored1'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored1'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-2">
@@ -31,7 +31,7 @@ function Content3(){
                     <Link to='/BuyProductStored2'><span>Medicine Box, Multi-purpose Home Medical Equipment Storage.</span></Link><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored2'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored2'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-3">
@@ -39,7 +39,7 @@ function Content3(){
                     <Link to='/BuyProductStored3'><span>Shoe box with transparent hard plastic lid, full black box</span></Link><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored3'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored3'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-4">
@@ -48,7 +48,7 @@ function Content3(){
                             white</span></Link><br/>
                             <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored4'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored4'>Details</Link></button>
                 </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ function Content3(){
                     <Link to='/BuyProductStored5'><span>box, cloth bag, clothes box</span></Link><br/><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored5'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored5'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-6">
@@ -66,7 +66,7 @@ function Content3(){
                     <Link to='/BuyProductStored6'><span>Document Storage Bag - Important Family Documents</span></Link><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored6'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored6'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-7">
@@ -74,7 +74,7 @@ function Content3(){
                     <Link to='/BuyProductStored7'><span>Household transparent foldable double door storage box</span></Link><br/>
                     <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored7'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored7'>Details</Link></button>
                 </div>
                 </div>
                 <div class="stored-8">
@@ -82,7 +82,7 @@ function Content3(){
                     <Link to='/BuyProductStored8'><span>Plastic Shoe Storage Cabinet With Antbox Sound Touch LED Light</span></Link><br/>
                      <div class="addtocart">
                     <strong className="strong-btn">5.000$</strong>
-                    <button className="BuyProduct"><Link to='/BuyProductStored8'>Buy product</Link></button>
+                    <button className="BuyProduct"><Link to='/BuyProductStored8'>Details</Link></button>
                 </div>
                 </div>
             </div>

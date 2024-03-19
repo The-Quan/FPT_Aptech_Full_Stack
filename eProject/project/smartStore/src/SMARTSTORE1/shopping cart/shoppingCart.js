@@ -1,83 +1,123 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './shoppingcart.css';
+import { Link } from 'react-router-dom';
+import anh1 from './img/tuQuanAo.png';
+import anh2 from './img/anh1.jpg';
+import anh3 from './img/anh2.jpg';
+import anh4 from './img/anh3.jpg';
+import anh5 from './img/gt1.webp';
 
 
-function ShoppingCart({ Cart, setShowCart, setCart }) {
-    const [tongtien, settongtien] = useState(0);
+function ShoppingCart() {
 
-    const thaydoisoluong = (sanpham, s1) => {
-        //tim sp trong cart va thay doi slg
-        const idx = Cart.indexOf(sanpham);
-        const arr = [...Cart];
-        arr[idx].amount += s1;
-        if (arr[idx].amount == 0) arr[idx].amount = 1;
-        setCart([...arr]);
-    };
+    const [quantity, setQuantity] = useState(1);
 
-    const removeProduct = (sanpham) => {
-        const arr = Cart.filter(sp => sp.id !== sanpham.id);
-        setCart([...arr])
+    const decreaseQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
     }
 
-
-    const tinhtongtien = () => {
-        let tt = 0;
-        Cart.map((sp) => {
-            tt += sp.price * sp.amount;
-        })
-        settongtien(tt);
+    const increaseQuantity = () => {
+        setQuantity(quantity + 1);
     }
-
-    const closeCart = () => {
-        setShowCart(false)
-    }
-    useEffect(() => {
-        tinhtongtien();
-    })
-
-
     return (
-        <>
-            <div className="ShoppingCart">
-                <div className="btn-cart">
-                    <h1 className="title">Shopping Cart</h1>
-                </div>
-                <div className="btn-cart2">
-                    <div className="btn-cart1">
-                        <div className="cart-qty">
-                            <span className="btn-title">Your cart</span>
-                            <p className="quantity">You currently have <strong>{Cart.map((product) => (product.amount))}</strong>  product in your cart</p>
-                        </div>
+        <div className="ShoppingCart">
+            <div className="btn-cart">
+                <h1 className="title">Shopping Cart</h1>
+            </div>
+            <div className="btn-cart2">
+                <div className="btn-cart1">
+                    <div className="cart-qty">
+                        <p className="btn-title">Your cart</p>
+                        <p className="quantity">You currently have <strong>5</strong>  product in your cart</p>
                     </div>
-                </div>
-
-                {Cart.map((product) => (
-
-                    <div className='ShoppingCart2'>
-                        <div className='cart-img'>
-                            <img className='btn-cart-img' src={product.src} width={"100%"}></img>
-                        </div>
-                        <div className='cart-name'>
-                            <p>{product.name}. <br /><br /><strong> {product.price}</strong>$</p>
-                        </div>
-                        <div className='btn-qty'>
-                            <button className='bton-qty' onClick={() => thaydoisoluong(product, 1)}>+</button>
-                            <p className='amount'>{product.amount}</p>
-                            <button className='bton-qty' onClick={() => thaydoisoluong(product, -1)}>-</button>
-                        </div>
-                        <div className='sum-monny'>
-                            {product.price * product.amount} $
-                        </div>
-                        <button className='remove' onClick={() => removeProduct(product)}>Remove</button>
-                    </div>
-                ))}
-                <div className='close'>
-                    <hr />
-                    <h2>Tong thanh tien: {tongtien}</h2>
-                    <button className='btn-close' onClick={closeCart}> close Cart</button>
                 </div>
             </div>
-        </>
+            <div className='btn-cart-product'>
+                <div className='img-cart-product1'><img className='img-cart-product2' src={anh1} /></div>
+                <div className='nameProduct'>
+                    <p>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p>
+                    <div className='price'>5.000$ x1</div>
+
+
+                </div>
+                <div className='quantityy'>
+                    <button className='but-qty' onClick={decreaseQuantity}>-</button>
+                    <input className='input-qty' type="text" value={quantity} />
+                    <button className='but-qty' onClick={increaseQuantity}>+</button>
+                </div>
+                <button className='remove'>Remove</button>
+            </div>
+            <div className='btn-cart-product'>
+                <div className='img-cart-product1'><img className='img-cart-product2' src={anh2} /></div>
+                <div className='nameProduct'>
+                    <p>High-end Built-in Glass Door Wardrobe – TQAVP37</p>
+                    <div className='price'>5.000$ x1</div>
+
+
+                </div>
+                <div className='quantityy'>
+                    <button className='but-qty' onClick={decreaseQuantity}>-</button>
+                    <input className='input-qty' type="text" value={quantity} />
+                    <button className='but-qty' onClick={increaseQuantity}>+</button>
+                </div>
+                <button className='remove'>Remove</button>
+            </div>
+            <div className='btn-cart-product'>
+                <div className='img-cart-product1'><img className='img-cart-product2' src={anh3} /></div>
+                <div className='nameProduct'>
+                    <p>6-Compartment Wardrobe with Dressing Table – TQAVP18</p>
+                    <div className='price'>5.000$ x1</div>
+
+
+                </div>
+                <div className='quantityy'>
+                    <button className='but-qty' onClick={decreaseQuantity}>-</button>
+                    <input className='input-qty' type="text" value={quantity} />
+                    <button className='but-qty' onClick={increaseQuantity}>+</button>
+                </div>
+                <button className='remove'>Remove</button>
+            </div>
+            <div className='btn-cart-product'>
+                <div className='img-cart-product1'><img className='img-cart-product2' src={anh4} /></div>
+                <div className='nameProduct'>
+                    <p>Square Glass Door Wardrobe – TQAVP45</p>
+                    <div className='price'>5.000$ x1</div>
+
+
+                </div>
+                <div className='quantityy'>
+                    <button className='but-qty' onClick={decreaseQuantity}>-</button>
+                    <input className='input-qty' type="text" value={quantity} />
+                    <button className='but-qty' onClick={increaseQuantity}>+</button>
+                </div>
+                <button className='remove'>Remove</button>
+            </div>
+            <div className='btn-cart-product'>
+                <div className='img-cart-product1'><img className='img-cart-product2' src={anh5} /></div>
+                <div className='nameProduct'>
+                    <p>10-Door Glass Wardrobe – TQAVP36</p>
+                    <div className='price'>5.000$ x1</div>
+
+
+                </div>
+                <div className='quantityy'>
+                    <button className='but-qty' onClick={decreaseQuantity}>-</button>
+                    <input className='input-qty' type="text" value={quantity} />
+                    <button className='but-qty' onClick={increaseQuantity}>+</button>
+                </div>
+                <button className='remove'>Remove</button>
+            </div>
+            <div className='close-2'>
+                <h2>Total money: 25.000$</h2>
+                <Link to='/home'><button className='btn-close'> close Cart</button></Link>
+                <Link to ='/Payment'><button className='btn-Payment'>Proceed to Checkout</button> </Link>
+            </div>
+
+        </div>
+
     )
 }
-export default ShoppingCart; 
+
+export default ShoppingCart;

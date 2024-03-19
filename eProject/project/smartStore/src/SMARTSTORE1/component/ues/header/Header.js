@@ -7,12 +7,7 @@ import './header.css';
 import { Link } from 'react-router-dom';
 
 
-function Header({ quantity, setShowCart }) {
-
-    const ShowCart = () => {
-        setShowCart(true);
-    }
-
+function Header() {
     return (
         <div className='container'>
             <div className='logo' >
@@ -25,12 +20,14 @@ function Header({ quantity, setShowCart }) {
                         <input type="text" name="keyword" id="keyword" placeholder="Search" />
                     </form>
                 </div>
-                <div className="cart" onClick={ShowCart}>
-                     <img id='cart-icon1'  src={cart} alt="Cart Icon" />
-                        <span className='quatity'>{quantity}</span>
-                </div>
+                <Link to='/shoppingcart'>
+                   <div className="cart">
+                        <img id='cart-icon1' src={cart} alt="Cart Icon" />
+                        <sup className='quatity'>5</sup>
+                    </div>
+                </Link>
                 <div className="user">
-                    <img id='user-icon1' src={user} alt="User Icon" />
+                    <Link to="/login"> <img id='user-icon1' src={user} alt="User Icon" /></Link>
                 </div>
             </div>
         </div>

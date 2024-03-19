@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 250px;
+    height: 120px;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 200px;
+    height: 120px;
+    border: 1px solid rgb(233, 222, 222);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
+
+}
+
+.btn {
+    margin-left: 889px;
+    width: 160px;
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    width: 1327px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.search {
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
+    border: 3px solid rgb(221, 208, 208);
+    border-radius: 5px;
+}
+
+.search:hover {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.cart {
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
+    border: 3px solid rgb(221, 208, 208);
+    border-radius: 5px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+}
+
+.cart:hover {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.quantity {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    bottom: 0;
+    right: 0;
+}
+
+.user {
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
+    border: 3px solid rgb(221, 208, 208);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.user:hover {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+#search-icon1 {
+    width: 25px;
+    height: 25px;
+
+}
+
+#cart-icon1 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#user-icon1 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#search-icon1 {
+    cursor: pointer;
+}
+
+#search-form {
+    width: 200px;
+    position: absolute;
+    right: 170px;
+    display: none;
+}
+
+#search-form input#keyword {
+    padding: 6px 9px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #252525;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}

@@ -10,12 +10,13 @@ import LogoBrand from "../../component/ues/logobrand/logobrand";
 import Footer from "../../component/ues/footer/footer";
 
 
-
 function Home(){
-   
+    const [isShowCart, setShowCart] = useState(false);
+    const [Cart, setCart] = useState([]);
+
     return(
         <div className="container1">
-            <Header />
+            <Header quantity={Cart.length} setShowCart={setShowCart} />
             
             <Menu />
 

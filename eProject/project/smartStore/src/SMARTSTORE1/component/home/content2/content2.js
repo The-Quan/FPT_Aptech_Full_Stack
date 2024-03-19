@@ -21,7 +21,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct1' >Beautiful modern wooden wardrobe with sliding doors – TQAVP09</Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct1#btn-neo'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct1#btn-neo'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-2">
@@ -29,7 +29,7 @@ const Content2 = () => {
                     <Link to="/BuyProduct2"><span>High-end Built-in Glass Door Wardrobe – TQAVP37</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct2'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct2'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-3">
@@ -37,7 +37,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct3'><span>2-Door Wardrobe with Sliding Dressing Table – TQAVP27</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct3'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct3'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-4">
@@ -45,7 +45,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct4'><span>2-Door 4-Door MDF Wardrobe – TQAVP10</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct4'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct4'>Details</Link></button>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct5'><span>10-Door Glass Wardrobe – TQAVP36</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct5'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct5'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-6">
@@ -64,7 +64,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct6'><span>Square Glass Door Wardrobe – TQAVP45</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct6'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct6'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-7">
@@ -72,7 +72,7 @@ const Content2 = () => {
                     <Link to='/BuyProduct7'><span>6-Compartment Wardrobe with Dressing Table – TQAVP18</span></Link><br />
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct7'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct7'>Details</Link></button>
                     </div>
                 </div>
                 <div class="selling-8">
@@ -81,7 +81,7 @@ const Content2 = () => {
 
                     <div class="addtocart">
                         <strong className="strong-btn">5.000$</strong>
-                        <button className="BuyProduct"><Link to='/BuyProduct8'>Buy product</Link></button>
+                        <button className="BuyProduct"><Link to='/BuyProduct8'>Details</Link></button>
                     </div>
                 </div>
 

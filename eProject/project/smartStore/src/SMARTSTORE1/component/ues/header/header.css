@@ -21,7 +21,7 @@
 
 .btn {
     margin-left: 889px;
-    width: 160px;
+    width: 200px;
     display: flex;
     margin-top: 80px;
     position: relative;
@@ -32,7 +32,6 @@
     width: 1327px;
     height: 140px;
     margin: 0 auto;
-
 }
 
 .search {
@@ -58,9 +57,8 @@
     box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
     border: 3px solid rgb(221, 208, 208);
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
-    display: flex;
 }
 
 .cart:hover {
@@ -72,12 +70,10 @@
     position: absolute;
     background-color: red;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+    line-height: 17px;
     color: white;
-    bottom: 0;
-    right: 0;
+    width: 17px;
+    height: 17px;
 }
 
 .user {
@@ -88,7 +84,7 @@
     box-shadow: 0 0 10px rgba(117, 81, 81, 0.3);
     border: 3px solid rgb(221, 208, 208);
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .user:hover {
@@ -106,6 +102,7 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
+    margin: 5px auto;
 }
 
 #user-icon1 {

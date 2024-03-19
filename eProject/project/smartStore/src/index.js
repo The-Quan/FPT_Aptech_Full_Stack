@@ -28,6 +28,8 @@ import BuyProductStored6 from "./SMARTSTORE1/component/home/content3/Buy product
 import BuyProductStored7 from "./SMARTSTORE1/component/home/content3/Buy product 7/buy-product1.js";
 import BuyProductStored8 from "./SMARTSTORE1/component/home/content3/Buy product 8/buy-product1.js";
 import ShoppingCart from "./SMARTSTORE1/shopping cart/shoppingCart.js";
+import Login from "./SMARTSTORE1/login/login.js";
+import Payment from "./SMARTSTORE1/thanhToan/Payment.js";
 
 
 
@@ -63,6 +65,8 @@ root.render(
         <Route path="/BuyProductStored7" exact Component={BuyProductStored7}></Route>
         <Route path="/BuyProductStored8" exact Component={BuyProductStored8}></Route>
         <Route path="/ShoppingCart" exact Component={ShoppingCart}></Route>
+        <Route path="/Login" exact Component={Login}></Route>
+        <Route path="/Payment" exact Component={Payment}></Route>
       </Routes>
     </Router>
   </StrictMode>

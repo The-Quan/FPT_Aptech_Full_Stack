@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import anhContent1 from './img/anhsp2.jpg';
 import anhContent2 from './img/ánhp3.jpg';
 import anhContent3 from './img/ánhp4.avif';
@@ -20,30 +20,30 @@ function Banners() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-      };
+        autoplaySpeed: 1000,
+    };
     return (
         <div className='banners'>
-          <div className='slider'>
-          <Slider className='btn-slider' {...settings}>
-      <div>
-        <img className='img-slider' src={anhContent1} />
-      </div>
-      <div>
-      <img className='img-slider' src={anhContent2} />
-      </div>
-      <div>
-      <img className='img-slider' src={anhContent3} />
-      </div>
-      <div>
-      <img className='img-slider' src={anhContent4} />
-      </div>
-      <div>
-      <img className='img-slider' src={anhContent5} />
-      </div>
-    </Slider>
-            
-          </div>
+            <div className='slider'>
+                <Slider className='btn-slider' {...settings}>
+                    <div>
+                        <img className='img-slider' src={anhContent1} />
+                    </div>
+                    <div>
+                        <img className='img-slider' src={anhContent2} />
+                    </div>
+                    <div>
+                        <img className='img-slider' src={anhContent3} />
+                    </div>
+                    <div>
+                        <img className='img-slider' src={anhContent4} />
+                    </div>
+                    <div>
+                        <img className='img-slider' src={anhContent5} />
+                    </div>
+                </Slider>
+
+            </div>
 
 
             <div class="content">

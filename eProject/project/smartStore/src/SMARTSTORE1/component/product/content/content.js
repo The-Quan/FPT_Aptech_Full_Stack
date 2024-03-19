@@ -43,7 +43,7 @@ function Productcontent() {
          </div>
          <div className='product-btn-1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh1}></img><br />
+               <img className='imgproduct1' src={anh1}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -65,7 +65,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh5}></img><br />
+               <img className='imgproduct1' src={anh5}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -87,7 +87,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh9}></img><br />
+               <img className='imgproduct1' src={anh9}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -109,7 +109,7 @@ function Productcontent() {
          </div>
           <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh13}></img><br />
+               <img className='imgproduct1' src={anh13}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -131,7 +131,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh17}></img><br />
+               <img className='imgproduct1' src={anh17}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -153,7 +153,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh21}></img><br />
+               <img className='imgproduct1' src={anh21}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -175,7 +175,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh25}></img><br />
+               <img className='imgproduct1' src={anh25}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>
@@ -197,7 +197,7 @@ function Productcontent() {
          </div>
          <div className='product-btn1'>
             <div className='product-anh1'>
-               <img className='imgproduct' src={anh29}></img><br />
+               <img className='imgproduct1' src={anh29}></img><br />
                <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
                <strong>7.000$</strong>
             </div>

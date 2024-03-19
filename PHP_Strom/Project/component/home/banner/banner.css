@@ -1,0 +1,32 @@
+.banners {
+    width: 100%;
+    height: 790px;
+    margin: 25px auto;
+}
+.slider{
+    width: 2060px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.btn-slider, .img-slider{
+    width: 2060px;
+    height: 700px;
+}
+.content {
+    display: flex;
+    height: 100px;
+    width: 1327px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4 {
+    width: 500px;
+    height: 100px;
+    padding-top: 20px;
+}

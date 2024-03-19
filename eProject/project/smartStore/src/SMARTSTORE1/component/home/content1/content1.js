@@ -1,5 +1,4 @@
 import React from 'react';
-import phuonghuong from './img/phuongHuong.png';
 import tuQuanAo from './img/tuQuanAo.png';
 import luutru from './img/luuTru.jpg';
 

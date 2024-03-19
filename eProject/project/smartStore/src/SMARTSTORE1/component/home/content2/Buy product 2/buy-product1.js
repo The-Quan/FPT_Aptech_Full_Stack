@@ -3,44 +3,39 @@ import Header from '../../../ues/header/Header';
 import Menu from '../../../ues/menu/menu';
 import Footer from '../../../ues/footer/footer'
 import anh1 from './img/tuquanao2.jpg';
-import './buy-product.css';
 
-function BuyProduct2() {
-  const [quantity, setQuantity] = useState(1);
 
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-  };
 
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
 
-  const handleAddToCart = () => {
-    // Thêm logic xử lý khi nhấn nút "Add To Cart" ở đây
-    alert('Đã thêm vào giỏ hàng!');
-  };
+
+const BuyProduct1 = () => {
+   const onClick = () =>{
+
+    alert ('Add to cart successfully');
+  
+  }
   return (
     <div className='buyproduct1'>
-      <Header />
+
+      <div className='btn-neo'><Header /></div>
       <Menu />
-      <div className='sp1'>
-        <p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p>
+      <div className='sp1' >
+        <div><p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p></div>
       </div>
       <div className='product-btn1'>
-        <div className='sanpham'><img className='anh-product-1' src={anh1} /></div>
+        <div className='sanpham-btn'><img className='anh-product-btn1' src={anh1} /></div>
         <div className='buy'>
           <h3 className='text-2'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</h3> <br />
+          <div className='imgproduct'>
+            <img className='imgproduct2' src={anh1} />
+            <img className='imgproduct3' src={anh1} />
+            <img className='imgproduct4' src={anh1} />
+            <img className='imgproduct5' src={anh1} />
+            <img className='imgproduct6' src={anh1} />
+          </div>
           <strong className='gia'>5.000$</strong>
           <div className='btn-buy'>
-            <div>
-              <button className='buttonbtn' onClick={decreaseQuantity}>-</button>
-              <span>{quantity} &nbsp; &nbsp; &nbsp;</span>
-              <button className='buttonbtn' onClick={increaseQuantity}>+</button>
-              <button className='muahang' onClick={handleAddToCart}>Add To Cart</button>
-            </div>
+            <button className='muahangbtn' onClick={onClick} >Add To Cart</button>
           </div>
           <div className='chitiet'>
             <p>Beautiful modern wooden wardrobe with sliding doors – TQAVP09 is designed in a modern style,
@@ -95,18 +90,19 @@ function BuyProduct2() {
         </table>
 
         <p className='vanban'><span className='textcolor'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09 </span> is a great choice for optimizing storage space in the bedroom.
-           With high quality MDF material, the product is not only durable but also easy to preserve. 
-           The color combination of yellow and gray creates an aesthetic and modern highlight for the interior space.</p><br/>
-           <p>This wardrobe is designed with spacious space and flexible shelves, helping you organize clothes and accessories effectively. 
-            Besides, the door opens and the drawers are easy to access, bringing convenience in daily use.</p><br/>
-            <p>With delicate design lines, careful material details and solid structure, this MDF industrial wood wardrobe is not only an ideal place to store
-               clothes but also an interesting highlight in interior decoration. bedroom .</p><br/>
-               <p>The wardrobe is suitable for many spaces, from the master bedroom to the children's bedroom,
-                 creating luxury and convenience for your living space.</p><br/>
-                 <p>Don't miss the opportunity to own high-end industrial wood wardrobe models to bring a luxurious and sophisticated living space to your home at CaCo Furniture, which is always ready to support you quickly and professionally. Karma. </p>
+          With high quality MDF material, the product is not only durable but also easy to preserve.
+          The color combination of yellow and gray creates an aesthetic and modern highlight for the interior space.</p><br />
+        <p>This wardrobe is designed with spacious space and flexible shelves, helping you organize clothes and accessories effectively.
+          Besides, the door opens and the drawers are easy to access, bringing convenience in daily use.</p><br />
+        <p>With delicate design lines, careful material details and solid structure, this MDF industrial wood wardrobe is not only an ideal place to store
+          clothes but also an interesting highlight in interior decoration. bedroom .</p><br />
+        <p>The wardrobe is suitable for many spaces, from the master bedroom to the children's bedroom,
+          creating luxury and convenience for your living space.</p><br />
+        <p>Don't miss the opportunity to own high-end industrial wood wardrobe models to bring a luxurious and sophisticated living space to your home at CaCo Furniture, which is always ready to support you quickly and professionally. Karma. </p>
       </div>
       <Footer />
     </div>
+
   )
 }
-export default BuyProduct2;
+export default (BuyProduct1); 

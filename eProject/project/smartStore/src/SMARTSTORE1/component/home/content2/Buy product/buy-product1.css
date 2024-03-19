@@ -1,0 +1,147 @@
+.buyproduct1 {
+    height: 100%;
+    width: 100%;
+}
+
+.sp1 {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    background-image: url(img/backgroud.jpg);
+    margin-top: 20px;
+}
+
+.sp1,
+.text {
+    font-size: 25px;
+    color: rgb(67, 65, 221);
+}
+
+.product-btn1 {
+    width: 1327px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.sanpham-btn {
+    width: 600px;
+    height: 500px;
+    border: 1px solid rgb(231, 223, 223);
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(75, 71, 71, 0.3);
+}
+
+.anh-product-btn1 {
+    margin-top: 17px;
+    border: 3px solid rgb(216, 199, 199);
+    width: 550px;
+    height: 460px;
+    border-radius: 5px;
+}
+
+.buy {
+    width: 650px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.gia {
+    font-size: 20px;
+}
+
+.buy .text-2 {
+    width: 600px;
+    font-size: 25px;
+}
+
+.btn-buy {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.imgproduct {
+    display: flex;
+    width: 300px;
+    height: 130px;
+}
+
+.imgproduct2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    border: 3px solid rgb(177, 165, 165);
+    box-shadow: 0 0 10px rgba(75, 71, 71, 0.3);
+    border-radius: 10px;
+}
+
+.imgproduct3,
+.imgproduct4,
+.imgproduct5,
+.imgproduct6 {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: 3px solid rgb(177, 165, 165);
+    box-shadow: 0 0 10px rgba(75, 71, 71, 0.3);
+    border-radius: 10px;
+}
+
+.datontai {
+    background-color: rgb(113, 243, 109);
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-weight: 3px;
+}
+
+.muahangbtn {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(55, 82, 231);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+
+.chitiet {
+    margin-top: 10px;
+}
+
+.mota {
+    width: 1327px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.describe {
+    font-size: 20px;
+}
+
+table {
+    width: 1327px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.vanban {
+    margin-top: 20px;
+}
+
+.textcolor {
+    color: blue;
+}

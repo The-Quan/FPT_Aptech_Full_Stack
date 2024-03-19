@@ -3,44 +3,41 @@ import Header from '../../../ues/header/Header';
 import Menu from '../../../ues/menu/menu';
 import Footer from '../../../ues/footer/footer'
 import anh1 from './img/sanphamluutru5.webp';
-import './buy-product.css';
 
-function BuyProductStored5() {
-  const [quantity, setQuantity] = useState(1);
 
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-  };
 
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
 
-  const handleAddToCart = () => {
-    // Thêm logic xử lý khi nhấn nút "Add To Cart" ở đây
-    alert('Đã thêm vào giỏ hàng!');
-  };
+
+const BuyProduct1 = () => {
+  const onClick = () => {
+
+    alert('Add to cart successfully');
+
+  }
   return (
     <div className='buyproduct1'>
-      <Header />
+
+      <div className='btn-neo'><Header /></div>
       <Menu />
-      <div className='sp1'>
-        <p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p>
+      <div className='sp1' >
+        <div><p className='text'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</p></div>
       </div>
       <div className='product-btn1'>
-        <div className='sanpham'><img className='anh-product-1' src={anh1} /></div>
+        <div className='sanpham-btn'><img className='anh-product-btn1' src={anh1} /></div>
         <div className='buy'>
+
           <h3 className='text-2'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</h3> <br />
+
+          <div className='imgproduct'>
+            <img className='imgproduct2' src={anh1} />
+            <img className='imgproduct3' src={anh1} />
+            <img className='imgproduct4' src={anh1} />
+            <img className='imgproduct5' src={anh1} />
+            <img className='imgproduct6' src={anh1} />
+          </div>
           <strong className='gia'>5.000$</strong>
           <div className='btn-buy'>
-            <div>
-              <button className='buttonbtn' onClick={decreaseQuantity}>-</button>
-              <span>{quantity} &nbsp; &nbsp; &nbsp;</span>
-              <button className='buttonbtn' onClick={increaseQuantity}>+</button>
-              <button className='muahang' onClick={handleAddToCart}>Add To Cart</button>
-            </div>
+            <button className='muahangbtn' onClick={onClick} >Add To Cart</button>
           </div>
           <div className='chitiet'>
             <p>Beautiful modern wooden wardrobe with sliding doors – TQAVP09 is designed in a modern style,
@@ -107,6 +104,7 @@ function BuyProductStored5() {
       </div>
       <Footer />
     </div>
+
   )
 }
-export default BuyProductStored5;
+export default (BuyProduct1); 
