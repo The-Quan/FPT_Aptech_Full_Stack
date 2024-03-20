@@ -37,13 +37,14 @@ const Login = () => {
     return (
         <>
             <div className="login" >
-                <div className="btn-title-2"> <h1>Login</h1></div>
+                <div className="btn-title-2"> <h1>Wellcome</h1></div>
                 <div className="emai-password">
-                    <i class="fa-regular fa-eye"></i>
-                    <p>Email or Password</p>
+                    <i class="fa-regular fa-eye"></i>   
                 </div>
                 <div className="submit">
-                    <input className="btn-input" type='email' placeholder="Email"
+                    <form>
+                        <label htmlFor='email'><p>Email or Password</p></label>
+                    <input className="btn-input" type='email' name="email" placeholder="Email"
                         value={email} onChange={(event) => setEmail(event.target.value)}></input>
                     <div className="btn-password">
                         <input className="btn-input1" type={isShowPassword === true ? "text" : 'password'}
@@ -52,22 +53,17 @@ const Login = () => {
                         <FontAwesomeIcon
                             icon={isShowPassword ? faEye : faEyeSlash}
                             onClick={() => setIsShowPassword(!isShowPassword)}
-                            className={isShowPassword ? "eye" : "eye2"}
-                        />
-
-
+                            className={isShowPassword ? "eye" : "eye2"}/>
                     </div>
                     <div className="btn-dk">
                         <p className="qmp">Forgot password ?</p>
                         <p className="dk">Register</p>
                     </div>
-
-
-
                     <button id="btn-button" className={email && password ? "btn-button" : ""} type="submit"
                         disabled={email && password ? false : true}
                         onClick={() => handleLogin()}
                     >Login</button>
+                    </form>
                 </div>
 
                 <Link to='/home'><div className="close">Exit</div></Link>

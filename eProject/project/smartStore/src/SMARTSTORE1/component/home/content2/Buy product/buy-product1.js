@@ -3,6 +3,11 @@ import Header from '../../../ues/header/Header';
 import Menu from '../../../ues/menu/menu';
 import Footer from '../../../ues/footer/footer'
 import anh1 from './img/tuQuanAo.png';
+import anh2 from './img/418972684_738224868417464_8978392210997798722_n.png';
+import anh3 from './img/noithatsonghong_Tu5KinhLBanve.png';
+import anh4 from './img/418738949_1640734746463063_1346954372895159075_n.png';
+import anh5 from './img/hymazt8d.jpg';
+
 import './buy-product1.css';
 
 
@@ -26,15 +31,13 @@ const BuyProduct1 = () => {
       <div className='product-btn1'>
         <div className='sanpham-btn'><img className='anh-product-btn1' src={anh1} /></div>
         <div className='buy'>
-
           <h3 className='text-2'>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</h3> <br />
-
-          <div className='imgproduct'>
+          <div className='imgproduct-1'>
             <img className='imgproduct2' src={anh1} />
-            <img className='imgproduct3' src={anh1} />
-            <img className='imgproduct4' src={anh1} />
-            <img className='imgproduct5' src={anh1} />
-            <img className='imgproduct6' src={anh1} />
+            <img className='imgproduct-3' src={anh2} />
+            <img className='imgproduct-4' src={anh3} />
+            <img className='imgproduct-5' src={anh4} />
+            <img className='imgproduct-6' src={anh5} />
           </div>
           <strong className='gia'>5.000$</strong>
           <div className='btn-buy'>

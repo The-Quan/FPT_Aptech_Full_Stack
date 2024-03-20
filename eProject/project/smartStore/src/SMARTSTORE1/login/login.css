@@ -82,6 +82,7 @@ button:disabled {
     position: absolute;
     top: 13px;
     right: 20px;
+    cursor: pointer;
 
 }
 
@@ -91,7 +92,7 @@ button:disabled {
     position: absolute;
     top: 13px;
     right: 20px;
-
+    cursor: pointer;
 }
 
 .close {
@@ -113,9 +114,11 @@ button:disabled {
     margin-left: 180px;
     font-size: 15px;
     color: red;
+    cursor: pointer;
 }
 
 .qmp {
     font-size: 15px;
     color: red;
+    cursor: pointer;
 }

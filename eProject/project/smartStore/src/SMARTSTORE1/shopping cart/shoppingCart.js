@@ -6,6 +6,9 @@ import anh2 from './img/anh1.jpg';
 import anh3 from './img/anh2.jpg';
 import anh4 from './img/anh3.jpg';
 import anh5 from './img/gt1.webp';
+import Header from '../component/ues/header/Header';
+import Menu from '../component/ues/menu/menu';
+import Footer from '../component/ues/footer/footer';
 
 
 function ShoppingCart() {
@@ -23,6 +26,8 @@ function ShoppingCart() {
     }
     return (
         <div className="ShoppingCart">
+            <Header />
+            <Menu />
             <div className="btn-cart">
                 <h1 className="title">Shopping Cart</h1>
             </div>
@@ -112,9 +117,9 @@ function ShoppingCart() {
             <div className='close-2'>
                 <h2>Total money: 25.000$</h2>
                 <Link to='/home'><button className='btn-close'> close Cart</button></Link>
-                <Link to ='/Payment'><button className='btn-Payment'>Proceed to Checkout</button> </Link>
+                <Link to='/Payment'><button className='btn-Payment'>Proceed to Checkout</button> </Link>
             </div>
-
+            <Footer />
         </div>
 
     )

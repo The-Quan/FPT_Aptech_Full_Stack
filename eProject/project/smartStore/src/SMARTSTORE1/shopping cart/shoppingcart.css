@@ -6,8 +6,9 @@
 
 .btn-cart {
     width: 1327px;
-    height: 100%;
+    height: 80px;
     margin: 0 auto;
+    line-height: 80px;
 }
 
 .title {
@@ -19,7 +20,7 @@
     width: 1327px;
     height: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .btn-cart1 {
@@ -46,7 +47,7 @@
 .close-2 {
     width: 100%;
     text-align: center;
-    height: 50px;
+    height: 100px;
     line-height: 50px;
 }
 

@@ -1,0 +1,224 @@
+.body-pay {
+    width: 100%;
+    height: 1200px;
+}
+
+.payment {
+    width: 100%;
+    height: 100%;
+}
+
+.payment-title {
+    width: 100%;
+    height: 80px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 100px;
+}
+
+.payment-title2 {
+    font-size: 32px;
+}
+
+.btn-pay {
+    width: 1327px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btn-pay1 {
+    width: 900px;
+    height: 1000px;
+}
+
+
+
+.title-details {
+    width: 200px;
+    height: 40px;
+    border-bottom: 2px solid black;
+    font-size: 27px;
+}
+
+.table {
+    width: 880px;
+    border: 2px solid rgb(219, 183, 183);
+}
+
+
+.td {
+    border: 0;
+    border-left: 2px solid rgb(226, 204, 204);
+}
+
+.tr {
+    border-bottom: 2px solid rgb(202, 167, 167);
+}
+
+.thanhtien {
+    justify-content: right;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.info-customer {
+    width: 880px;
+    height: 100%;
+}
+
+.customer {
+    width: 240px;
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.customer-title {
+    font-size: 25px;
+
+}
+
+.first-last {
+    width: 880px;
+    height: 90px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.first-name {
+    width: 430px;
+    height: 70px;
+
+}
+
+.last-name {
+    width: 430px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.input-name {
+    border: 2px solid rgb(211, 192, 192);
+    outline: none;
+    width: 430px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.phone-number {
+    border: 2px solid rgb(211, 192, 192);
+    width: 880px;
+    height: 35px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.address-btn {
+    margin-top: 20px;
+    width: 880px;
+    height: 80px;
+}
+
+.tochuc {
+    width: 18px;
+    height: 18px;
+}
+
+.nametc {
+    display: flex;
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.note {
+    width: 270px;
+    height: 35px;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-note {
+    width: 880px;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    border: 2px solid rgb(211, 192, 192);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-pay2 {
+    background-color: rgb(245, 245, 245);
+    width: 427px;
+    height: 470px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.thanhtoansp {
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.total-1 {
+    width: 410px;
+    height: 40px;
+}
+
+.text-btn {
+    width: 410px;
+    font-size: 15px;
+    color: #857171;
+    padding-left: 20px;
+}
+
+.radio {
+    margin-top: 30px;
+}
+
+.nametc-1 {
+    width: 410px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.dieuk-1 {
+    font-size: 15px;
+    color: #857171;
+}
+
+.button-pay {
+    width: 410px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.button-pay2 {
+    background-color: white;
+    border: 2px solid rgb(189, 169, 169);
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}

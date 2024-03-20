@@ -30,6 +30,8 @@ import BuyProductStored8 from "./SMARTSTORE1/component/home/content3/Buy product
 import ShoppingCart from "./SMARTSTORE1/shopping cart/shoppingCart.js";
 import Login from "./SMARTSTORE1/login/login.js";
 import Payment from "./SMARTSTORE1/thanhToan/Payment.js";
+import DonHang from "./SMARTSTORE1/donhang/donhang.js";
+
 
 
 
@@ -67,6 +69,7 @@ root.render(
         <Route path="/ShoppingCart" exact Component={ShoppingCart}></Route>
         <Route path="/Login" exact Component={Login}></Route>
         <Route path="/Payment" exact Component={Payment}></Route>
+        <Route path="/donhang" exact Component={DonHang}></Route>
       </Routes>
     </Router>
   </StrictMode>

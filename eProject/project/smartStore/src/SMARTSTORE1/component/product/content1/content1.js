@@ -14,61 +14,61 @@ import anh8 from './img/anh8.jpg';
 import Footer from '../../ues/footer/footer';
 
 function ProductContent1() {
-    return(
-    <div className='productcontent1'>
-        <Header />
-        <Menu />
-        <Menudacap/>
-        <div className='prd-content1'>
-         <h2 className='prd-h2'>Noi That Gia Khanh</h2>
-        
-        <div className='prd-content-anh'>
-        <div className='product-anh1'>
-               <img className='imgproduct1' src={anh1}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-        <div className='product-anh1'>
-               <img className='imgproduct1' src={anh2}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-            <div className='product-anh1'>
-               <img className='imgproduct1' src={anh3}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-            <div className='product-anh1'>
-               <img className='imgproduct1' src={anh4}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
+   return (
+      <div className='productcontent1'>
+         <Header />
+         <Menu />
+         <Menudacap />
+         <div className='prd-content1'>
+            <h2 className='prd-h2'>Noi That Gia Khanh</h2>
+
+            <div className='prd-content-anh'>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh1}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh2}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh3}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh4}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
             </div>
             <div className='prd-content-anh'>
-        <div className='product-anh1'>
-               <img className='imgproduct1' src={anh5}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh5}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh6}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh7}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
+               <div className='product-anh1'>
+                  <img className='imgproduct1' src={anh8}></img><br />
+                  <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                  <strong>7.000$</strong>
+               </div>
             </div>
-        <div className='product-anh1'>
-               <img className='imgproduct1' src={anh6}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-            <div className='product-anh1'>
-               <img className='imgproduct1' src={anh7}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-            <div className='product-anh1'>
-               <img className='imgproduct1' src={anh8}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
-               <strong>7.000$</strong>
-            </div>
-            </div>
-        </div>
-          <Footer />
-    </div>
-    )
+         </div>
+         <Footer />
+      </div>
+   )
 }
 export default ProductContent1;
