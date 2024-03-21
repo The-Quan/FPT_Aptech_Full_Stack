@@ -43,8 +43,13 @@ function Productcontent() {
             </div>
             <div className='product-btn-1'>
                 <div className='product-anh1'>
-                    <img className='imgproduct1' src={anh1}></img><br />
-                    <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                    <Link to='/BuyProduct1'>
+                        <img className='imgproduct1' src={anh1}></img><br />
+                        <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+                        <strong>7.000$</strong>
+
+                    </Link>
+
                 </div>
                 <div className='product-anh1'>
                     <img className='imgproduct1' src={anh2}></img><br />

@@ -1,0 +1,25 @@
+.menu-admin {
+    width: 400px;
+    height: 2000px;
+    background-color: rgb(84, 236, 236);
+}
+
+.li-ad {
+    border-top: 1px solid rgb(182, 161, 161);
+}
+
+.btn-admenu li {
+    width: 380px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(168, 149, 149);
+    list-style: none;
+    padding-left: 20px;
+
+}
+
+.btn-admenu li link {
+    color: white;
+}

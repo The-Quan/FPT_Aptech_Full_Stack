@@ -31,6 +31,13 @@ import ShoppingCart from "./SMARTSTORE1/shopping cart/shoppingCart.js";
 import Login from "./SMARTSTORE1/login/login.js";
 import Payment from "./SMARTSTORE1/thanhToan/Payment.js";
 import DonHang from "./SMARTSTORE1/donhang/donhang.js";
+import Dashboard from "./SMARTSTORE1/admin/dashboard/dashboard.js";
+import User from "./SMARTSTORE1/admin/user/user.js";
+import Admin from "./SMARTSTORE1/admin/admin-index/admin.js";
+import Category from "./SMARTSTORE1/admin/category/category.js";
+import Product from "./SMARTSTORE1/admin/productadmin/product-admin.js";
+import Order from "./SMARTSTORE1/admin/order/order.js";
+
 
 
 
@@ -70,6 +77,12 @@ root.render(
         <Route path="/Login" exact Component={Login}></Route>
         <Route path="/Payment" exact Component={Payment}></Route>
         <Route path="/donhang" exact Component={DonHang}></Route>
+        <Route path="/admin" exact Component={Admin}></Route>
+        <Route path="/dashboard" exact Component={Dashboard}></Route>
+        <Route path="/user" exact Component={User}></Route>
+        <Route path="/category" exact Component={Category}></Route>
+        <Route path="/product" exact Component={Product}></Route>
+        <Route path="/order" exact Component={Order}></Route>
       </Routes>
     </Router>
   </StrictMode>

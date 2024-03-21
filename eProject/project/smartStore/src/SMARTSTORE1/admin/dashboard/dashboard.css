@@ -1,0 +1,64 @@
+.body-dashboard {
+    width: 1720px;
+    height: 100%;
+}
+
+.title-dahos {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.table-ts {
+    width: 1720px;
+    height: 200px;
+}
+
+.table-ts2 {
+    margin: 0 auto;
+    border: 0;
+}
+
+.btn-ts {
+    width: 400px;
+    height: 70px;
+    background-color: aqua;
+    border: 0;
+    border: 0;
+}
+
+.btn-tpsp {
+    background-color: rgb(202, 226, 114);
+    border: 0;
+}
+
+.btn-tpsp2 {
+    background-color: rgb(190, 140, 74);
+    border: 0;
+}
+
+.btn-tpsp3 {
+    background-color: antiquewhite;
+    border: 0;
+}
+
+.btn-tpsp4 {
+    width: 330px;
+    background-color: rgb(221, 151, 60);
+    border: 0;
+}
+
+.chart-container {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.bar-chart {
+    margin-left: 50px;
+}
+.menuadmin{
+    display: flex;
+}

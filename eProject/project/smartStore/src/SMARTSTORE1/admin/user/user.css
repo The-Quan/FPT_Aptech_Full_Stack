@@ -1,0 +1,15 @@
+.user-bnt {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.title-user {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.edit {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
