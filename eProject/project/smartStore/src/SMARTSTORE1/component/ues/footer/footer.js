@@ -41,15 +41,14 @@ function Footer() {
                             <div class="phone1">
                                 <img class="iconcontact" src={phone} lt="" />
                                 <strong>&nbsp; Phone :</strong>
-                                <span className='span'> 09678549283</span>
-
+                                <a href="tel:09678549283"> 09678549283</a>
                             </div>
                         </li>
                         <li>
                             <div class="email1">
                                 <img class="iconcontact" src={email} alt="" />
                                 <strong>&nbsp; Email :</strong>
-                                <span className='span'> abchghhu@gamil.com</span>
+                                <a href=""> abchghhu@gamil.com</a>
                             </div>
                         </li>
                         <li>

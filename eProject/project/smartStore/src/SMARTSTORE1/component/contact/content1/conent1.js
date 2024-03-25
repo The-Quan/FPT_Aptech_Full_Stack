@@ -42,12 +42,12 @@ function Contact1() {
                         <div className="btn-phone">
                             <img className="iconcontact" src={phone} alt="" />
                             <strong>&nbsp; Phone :</strong><br />
-                            <span> 09678549283</span>
+                            <a href="tel:09678549283"> 09678549283</a>
                         </div>
                         <div className="btn-email">
                             <img className="iconcontact" src={email} alt="" />
                             <strong>&nbsp; Email :</strong><br />
-                            <span> abchghhu@gamil.com</span>
+                            <a href="">abchghhu@gamil.com</a>
                         </div>
                     </div>
                     <div className='tact2'>

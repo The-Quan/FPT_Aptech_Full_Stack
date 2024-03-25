@@ -23,88 +23,88 @@ function Strored(){
         <div className='prd-content-anh'>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh1}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh2}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh3}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh4}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             </div>
             <div className='prd-content-anh'>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh5}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh6}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh7}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh8}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             </div>
             <div className='prd-content-anh'>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh1}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh2}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh3}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh4}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             </div>
             <div className='prd-content-anh'>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh5}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
         <div className='product-anh1'>
                <img className='imgproduct1' src={anh6}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh7}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             <div className='product-anh1'>
                <img className='imgproduct1' src={anh8}></img><br />
-               <span>Tủ quần áo gỗ MDF thiết kế sang trọng hiện đại GHS-51259</span><br />
+               <span>Beautiful modern wooden wardrobe with sliding doors – TQAVP09</span><br />
                <strong>7.000$</strong>
             </div>
             </div>
