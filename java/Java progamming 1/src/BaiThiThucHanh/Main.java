@@ -4,39 +4,48 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        AccountBank account1 = new AccountBank();
+        account1.setAccountNumber("0362716567");
+        account1.setAccountHolderName("Quan");
+        account1.setBalance(1000.0);
+
+        AccountBank account2 = new AccountBank();
+        account2.setAccountNumber("0987654321");
+        account2.setAccountHolderName("Nga");
+        account2.setBalance(500.0);
+
         Scanner scanner = new Scanner(System.in);
 
-        // Create a new AccountBank object
-        AccountBank account = new AccountBank();
+        System.out.println("chào!");
+        System.out.println("1. nạp thì bấm vào đây");
+        System.out.println("2. rút đi ");
+        System.out.println("3. chuyển tiền");
+        System.out.print("nhập số rồi Enter: ");
+        int choice = scanner.nextInt();
 
-        // Input account information
-        System.out.println("Enter account number:");
-        account.setAccountNumber(scanner.nextLine());
-        System.out.println("Enter account holder name:");
-        account.setAccountHolderName(scanner.nextLine());
-        System.out.println("Enter initial balance:");
-        account.deposit(scanner.nextDouble());
+        switch (choice) {
+            case 1:
+                System.out.print("nhập số tiền nạp: ");
+                double depositAmount = scanner.nextDouble();
+                account1.deposit(depositAmount);
+                break;
+            case 2:
+                System.out.print("nhập số tiền rút: ");
+                double withdrawalAmount = scanner.nextDouble();
+                account1.withdraw(withdrawalAmount);
+                break;
+            case 3:
+                System.out.print("nhập số tiền chuyển: ");
+                double transferAmount = scanner.nextDouble();
+                account1.transfer(account2, transferAmount);
+                break;
+            default:
+                System.out.println("lựa chọn không hợp lệ");
+        }
 
-        // Test transactions
-        account.displayAccountInfo();
-
-        System.out.println("Enter deposit amount:");
-        account.deposit(scanner.nextDouble());
-        account.displayAccountInfo();
-
-        System.out.println("Enter withdrawal amount:");
-        account.withdraw(scanner.nextDouble());
-        account.displayAccountInfo();
-
-        System.out.println("Enter transfer amount:");
-        double transferAmount = scanner.nextDouble();
-        System.out.println("Enter destination account number:");
-        String destinationAccountNumber = scanner.next();
-        AccountBank destinationAccount = new AccountBank();
-        destinationAccount.setAccountNumber(destinationAccountNumber);
-        account.transfer(destinationAccount, transferAmount);
-        account.displayAccountInfo();
-        destinationAccount.displayAccountInfo();
+        System.out.println("hiển thị thông tin sau khi hành động : ");
+        account1.displayAccountInfo();
+        account2.displayAccountInfo();
 
         scanner.close();
     }
