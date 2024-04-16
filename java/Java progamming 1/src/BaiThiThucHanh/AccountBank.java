@@ -1,4 +1,4 @@
-package bank;
+package BaiThiThucHanh;
 
 public class AccountBank {
     private String accountNumber;
