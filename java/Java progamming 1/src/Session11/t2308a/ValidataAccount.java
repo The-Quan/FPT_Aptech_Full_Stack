@@ -1,4 +1,4 @@
-package Session11.bank.t2308a;
+package Session11.t2308a;
 
 public class ValidataAccount {
     // kiểm tra đăng nhập
@@ -15,7 +15,7 @@ public class ValidataAccount {
                 return false;
             }
         }else{
-            System.out.println("kiểm tra lại số điện thoại hoặc ");
+            System.out.println("kiểm tra lại số điện thoại hoặc mật khẩu");
             return false;
         }
     }

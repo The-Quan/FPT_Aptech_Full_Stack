@@ -1,4 +1,4 @@
-package Session11.bank.t2308a;
+package Session11.t2308a;
 
 import java.util.Scanner;
 
@@ -32,8 +32,8 @@ public class Application {
                    break;
                case 3:
                    System.out.println("Lịch sử giao dịch: ");
-                   long hist = controller.getHistory();
-                   System.out.println(Controller.formatMoney(hist));
+                   controller.getHistory();
+                   System.out.println();
                    break;
                case 0:
                sc.close();

@@ -1,4 +1,4 @@
-package Session11.bank.t2308a;
+package Session11.t2308a;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -39,18 +39,22 @@ public class Controller {
         this.beneficiaryAccount = sc.nextInt();
         System.out.println("Nhập số tiền muốn chuyển: ");
         this.transferAmount = sc.nextInt();
-
-        balanceNumber -= transferAmount;
-        this.listHistory.add((int) balanceNumber);
-
+        if (balanceNumber >= transferAmount){
+            balanceNumber -= transferAmount;
+            this.listHistory.add((int) balanceNumber);
+        }else {
+            System.out.println("số du của bạn không đủ");
+            System.out.println();
+        }
         transfer(transferAmount);
     }
     public long getHistory(){
         //In danh sách lịch sử giao dịch
         for (Integer lichsu : listHistory){
-            System.out.println(String.format("Số dư hiện tại là: " + lichsu));
+            System.out.println(String.format("số tiền chuyển là: " + transferAmount));
+            System.out.println(String.format("số tai khoan thụ hương là: " + beneficiaryAccount));
+            System.out.println();
         }
-
         return 0;
     }
 
