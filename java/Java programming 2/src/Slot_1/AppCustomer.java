@@ -117,19 +117,19 @@ public class AppCustomer {
             int nhap = sc.nextInt();
             switch (nhap){
                 case 1:
-                    viewCustomer();
+                     searchCustomer();
                     break;
                 case 2:
-                    searchCustomer();
-                    break;
-                case 3:
                     addCustomer();
                     break;
+                case 3:
+                    updateCustomer();
+                    break;
                 case 4:
-                   updateCustomer();
+                    deleteCustomer();
                     break;
                 case 5:
-                    deleteCustomer();
+                   ;viewCustomer();
                     break;
                 case 0:
                     sc.close();
@@ -143,11 +143,11 @@ public class AppCustomer {
     }
     public static void menu(){
         System.out.println("-------- Menu -------");
-        System.out.println("1. Xem  ");
-        System.out.println("2. Tim kiem");
-        System.out.println("3. Them ");
-        System.out.println("4. Sua ");
-        System.out.println("5. Xoa");
+        System.out.println("1. Tim kiem  ");
+        System.out.println("2. Them");
+        System.out.println("3. Sua ");
+        System.out.println("4. Xoa ");
+        System.out.println("5. Xem");
         System.out.println("0. Thoat");
         System.out.println();
         System.out.print("lua chon cua ban: ");
