@@ -55,6 +55,7 @@ public class AppCustomer {
     }
 
     public static void addCustomer() throws SQLException{
+        System.out.println("vui long nhap thong tin ");
         Scanner sc = new Scanner(System.in);
         System.out.print("ID: ");
         int id = sc.nextInt();
@@ -80,7 +81,7 @@ public class AppCustomer {
     public static void deleteCustomer() throws SQLException{
         Connection connection = MySQLConnectDB.getMySQLConnecttion();
         Statement stm = connection.createStatement();
-        System.out.print("Xoa du lu theo ID: ");
+        System.out.print("Xoa khach hang theo ID: ");
         Scanner sc = new Scanner(System.in);
         int xoa = sc.nextInt();
         String delete = "DELETE FROM customers WHERE customer_id = "+xoa+" ";
@@ -88,7 +89,26 @@ public class AppCustomer {
         System.out.println("da xoa " + count + " ban ghi");
     }
 
-    public static void updateCustomer() throws SQLException{}
+    public static void updateCustomer() throws SQLException{
+        Connection connection = MySQLConnectDB.getMySQLConnecttion();
+        Statement stm = connection.createStatement();
+        System.out.print("nhap ID: ");
+        Scanner sc = new Scanner(System.in);
+        int upDate = sc.nextInt();
+        System.out.print("Sua first name: ");
+        Scanner sc2 = new Scanner(System.in);
+        String firstname = sc2.nextLine();
+        System.out.print("Sua last name: ");
+        Scanner sc3 = new Scanner(System.in);
+        String lastname = sc3.nextLine();
+        System.out.print("Sua email: ");
+        Scanner sc4 = new Scanner(System.in);
+        String email = sc4.nextLine();
+
+        String upData = "UPDATE customers Set  first_name = '"+firstname+"', last_name =' "+lastname+"', email = '"+email+"'  Where customer_id = "+upDate+" ";
+        int count = stm.executeUpdate(upData);
+        System.out.println("da sua " + count + " ban ghi");
+    }
 
     public static void main(String[] args) throws SQLException {
         Scanner sc = new Scanner(System.in);
@@ -103,11 +123,10 @@ public class AppCustomer {
                     searchCustomer();
                     break;
                 case 3:
-                    System.out.println("vui long nhap thong tin ");
                     addCustomer();
                     break;
                 case 4:
-                    System.out.println();
+                   updateCustomer();
                     break;
                 case 5:
                     deleteCustomer();
