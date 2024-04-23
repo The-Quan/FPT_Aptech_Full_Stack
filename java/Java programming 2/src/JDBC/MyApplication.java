@@ -35,7 +35,7 @@ public class MyApplication {
         // đọc bản ghi trên Resulset
         while (rs.next()){
             int cusId = rs.getInt(1);
-//            int cusID = rs.getInt("customer_id");
+//            int cusID = rs.getInt("customer_id"); theo tên
             String FirstName = rs.getString(2);
             String LastName = rs.getString(3);
             String Email = rs.getString(4);
