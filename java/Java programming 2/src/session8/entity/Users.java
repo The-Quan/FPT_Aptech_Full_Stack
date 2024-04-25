@@ -1,4 +1,4 @@
-package statementss8.entity;
+package session8.entity;
 
 // Entity <=> table
 public class Users {

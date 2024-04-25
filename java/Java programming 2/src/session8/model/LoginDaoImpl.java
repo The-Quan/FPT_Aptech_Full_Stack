@@ -1,8 +1,6 @@
-package statementss8.model;
+package session8.model;
 
-import statementss8.entity.Users;
-import statementss8.model.DBConnection;
-import statementss8.model.LoginDAO;
+import session8.entity.Users;
 
 import java.sql.*;
 
@@ -23,6 +21,7 @@ public class LoginDaoImpl implements LoginDAO {
     public String checkLoginStatement(Users user) {
         String query = "SELECT username FROM users WHERE username = '"+user.getUsername()+"'" + "AND password = '"+user.getPassword()+"'";
         try{
+            //tạo lại
             stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(query);
             while (rs.next()){
@@ -41,6 +40,7 @@ public class LoginDaoImpl implements LoginDAO {
     public String CheckLoginPreparedStatement(Users user) {
         String query = "SELECT username FROM users WHERE username like ? and password like ?";
         try {
+            //tái sử dụng lại preparedStatement
             pstm = conn.prepareStatement(query);
             pstm.setString(1, user.getUsername());
             pstm.setString(2, user.getPassword());

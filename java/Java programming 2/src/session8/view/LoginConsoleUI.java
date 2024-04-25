@@ -1,7 +1,7 @@
-package statementss8.view;
+package session8.view;
 
-import statementss8.controller.LoginController;
-import statementss8.entity.Users;
+import session8.controller.LoginController;
+import session8.entity.Users;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -31,7 +31,7 @@ public class LoginConsoleUI {
         String password = sc.nextLine();
         users.setUsername(username);
         users.setPassword(password);
-
+        // step 1 goi controller
         String result = loginController.loginStatementController(users);
         System.out.println(result);
     }

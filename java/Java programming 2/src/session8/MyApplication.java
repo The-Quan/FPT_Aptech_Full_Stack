@@ -1,6 +1,6 @@
-package statementss8;
+package session8;
 
-import statementss8.view.LoginConsoleUI;
+import session8.view.LoginConsoleUI;
 
 import java.io.IOException;
 

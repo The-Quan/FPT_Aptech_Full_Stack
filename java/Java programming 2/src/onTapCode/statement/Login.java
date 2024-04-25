@@ -1,6 +1,6 @@
 package onTapCode.statement;
 
-import statementss8.model.DBConnection;
+import session8.model.DBConnection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

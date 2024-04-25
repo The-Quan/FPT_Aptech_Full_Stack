@@ -1,7 +1,7 @@
-package statementss8.controller;
+package session8.controller;
 
-import statementss8.model.LoginDaoImpl;
-import statementss8.entity.Users;
+import session8.model.LoginDaoImpl;
+import session8.entity.Users;
 
 public class LoginController {
     LoginDaoImpl loginDao = new LoginDaoImpl();
@@ -9,7 +9,7 @@ public class LoginController {
 
     //step 1
     public String loginStatementController(Users user){
-        //step 2
+        //step 2 ,3 call model and return to view
         return loginDao.checkLoginStatement(user);
     }
     public String loginPreparedController(Users user){

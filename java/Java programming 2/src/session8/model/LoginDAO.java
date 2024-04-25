@@ -1,6 +1,6 @@
-package statementss8.model;
+package session8.model;
 
-import statementss8.entity.Users;
+import session8.entity.Users;
 
 public interface LoginDAO {
     public String checkLoginStatement(Users user);
