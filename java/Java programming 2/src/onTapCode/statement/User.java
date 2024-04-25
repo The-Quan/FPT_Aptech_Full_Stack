@@ -1,19 +1,14 @@
-package statementss8;
+package onTapCode.statement;
 
-// Entity <=> table
-public class Users {
+public class User {
     private int id;
     private String username;
     private String password;
 
-    public Users(int id, String username, String password) {
+    public User(int id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
-    }
-
-    public Users() {
-
     }
 
     public int getId() {
@@ -32,8 +27,8 @@ public class Users {
         this.username = username;
     }
 
-    public String getPassword(String password) {
-        return this.password;
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
@@ -42,11 +37,10 @@ public class Users {
 
     @Override
     public String toString() {
-        return "Users{" +
+        return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
-
 }

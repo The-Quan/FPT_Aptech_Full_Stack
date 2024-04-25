@@ -1,4 +1,4 @@
-package statementss8;
+package statementss8.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

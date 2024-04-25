@@ -1,8 +1,12 @@
-package statementss8;
+package statementss8.model;
+
+import statementss8.entity.Users;
+import statementss8.model.DBConnection;
+import statementss8.model.LoginDAO;
 
 import java.sql.*;
 
-public class LoginDaoImpl implements LoginDAO{
+public class LoginDaoImpl implements LoginDAO {
     private static final Connection conn;
 
     static {
@@ -16,8 +20,8 @@ public class LoginDaoImpl implements LoginDAO{
     private PreparedStatement pstm = null;
 
     @Override
-    public String checkLoginStatement(Users user, String password) {
-        String query = "SELECT username FROM users WHERE username = '"+user.getUsername()+"'" + "AND password = '"+user.getPassword(password)+"'";
+    public String checkLoginStatement(Users user) {
+        String query = "SELECT username FROM users WHERE username = '"+user.getUsername()+"'" + "AND password = '"+user.getPassword()+"'";
         try{
             stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(query);
@@ -37,18 +41,18 @@ public class LoginDaoImpl implements LoginDAO{
     public String CheckLoginPreparedStatement(Users user) {
         String query = "SELECT username FROM users WHERE username like ? and password like ?";
         try {
-            pstm = conn.prepareCall(query);
+            pstm = conn.prepareStatement(query);
             pstm.setString(1, user.getUsername());
-            pstm.setString(2, user.getPassword(query));
-            ResultSet rs = pstm.executeQuery(query);
+            pstm.setString(2, user.getPassword());
+            ResultSet rs = pstm.executeQuery();
             while (rs.next()) {
                 System.out.println("username is: " + rs.getString("username"));
                 return rs.getString("username");
             }
-
+           return "not in the database";
         } catch (SQLException e) {
             e.printStackTrace();
+            return "false";
         }
-        return query;
     }
 }

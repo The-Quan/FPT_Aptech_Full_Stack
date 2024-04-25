@@ -1,7 +1,9 @@
-package statementss8;
+package statementss8.view;
+
+import statementss8.controller.LoginController;
+import statementss8.entity.Users;
 
 import java.io.IOException;
-import java.sql.Statement;
 import java.util.Scanner;
 
 public class LoginConsoleUI {
@@ -28,7 +30,7 @@ public class LoginConsoleUI {
         System.out.println("nhap password");
         String password = sc.nextLine();
         users.setUsername(username);
-        users.getPassword(password);
+        users.setPassword(password);
 
         String result = loginController.loginStatementController(users);
         System.out.println(result);
@@ -39,9 +41,9 @@ public class LoginConsoleUI {
         System.out.println("nhap password");
         String password = sc.nextLine();
         users.setUsername(username);
-        users.getPassword(password);
+        users.setPassword(password);
 
-        String result = loginController.loginStatementController(users);
+        String result = loginController.loginPreparedController(users);
         System.out.println(result);
     }
     public void start(){
