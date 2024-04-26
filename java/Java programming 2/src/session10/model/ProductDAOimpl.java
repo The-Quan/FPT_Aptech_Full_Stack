@@ -1,0 +1,97 @@
+package session10.model;
+
+import session10.dao.DBConnection;
+import session10.entity.Product;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ProductDAOimpl implements ProductDAO{
+    private final Connection connection = DBConnection.DataBase();
+    private final String SQL_CREATE_PRODUCT = "insert into products values (?,?,?,?)";
+    private final String SQL_GET_PRODUCT_BY_ID =  "select * from products where product_id = ?";
+    private final String SQL_GET_ALL_PRODUCT = "select * from products";
+    private final String SQL_UPDATE_PRODUCT ="update products set product_name like ? where product_id = ?";
+    private final String SQL_DELETE_PRODUCT = "delete from products where product_id= ?";
+
+    public ProductDAOimpl() throws SQLException {
+    }
+
+    @Override
+    public void createProduct(Product product) throws SQLException {
+        PreparedStatement pstm = connection.prepareStatement(SQL_CREATE_PRODUCT);
+        pstm.setInt(1,product.getProduct_id());
+        pstm.setString(2,product.getProductName());
+        pstm.setString(3,product.getProductDesc());
+        pstm.setDouble(4,product.getPrice());
+
+        System.out.println("da them " + pstm.executeUpdate() +" product ");
+    }
+
+    @Override
+    public Product getProductById(int prodId) throws SQLException {
+        Product product = new Product();
+        PreparedStatement pstm = connection.prepareStatement(SQL_GET_PRODUCT_BY_ID);
+        pstm.setInt(1,prodId);
+        ResultSet rs = pstm.executeQuery();
+        if (rs.next()) {
+            product = new Product();
+            product.setProduct_id(rs.getInt("product_id"));
+            product.setProductName(rs.getString("product_name"));
+            product.setProductDesc(rs.getString("description"));
+            product.setPrice(rs.getDouble("price"));
+        }
+        return product;
+    }
+
+    @Override
+    public ArrayList<Product> getAllProduct() throws SQLException {
+        ArrayList<Product> allProducts = new ArrayList<>();
+        PreparedStatement pstm = connection.prepareStatement(SQL_GET_ALL_PRODUCT);
+       ResultSet rs = pstm.executeQuery();
+        while (rs.next()) {
+            Product product = new Product();
+            product.setProduct_id(rs.getInt("product_id"));
+            product.setProductName(rs.getString("product_name"));
+            product.setProductDesc(rs.getString("description"));
+            product.setPrice(rs.getDouble("price"));
+            allProducts.add(product);
+        }
+        return allProducts;
+    }
+
+    @Override
+    public void updateProduct(Product product) throws SQLException {
+        PreparedStatement pstm = connection.prepareStatement(SQL_UPDATE_PRODUCT);
+        pstm.setInt(1,product.getProduct_id());
+        pstm.setString(2,product.getProductName());
+        pstm.executeUpdate();
+    }
+
+    @Override
+    public boolean deleteProduct(int prodId) throws SQLException {
+        PreparedStatement pstm = connection.prepareStatement(SQL_DELETE_PRODUCT);
+        pstm.setInt(1, prodId);
+        pstm.executeUpdate();
+        int rowsAffected = pstm.executeUpdate(); // Execute the SQL statement
+        return rowsAffected > 0;
+    }
+
+    public static void main(String[] args) throws SQLException {
+//        Product product = new Product(12, "oppo", "A new phone", 50.0);
+
+        ProductDAOimpl pd = new ProductDAOimpl();
+
+//        ArrayList<Product> allProducts = pd.getAllProduct();
+//        System.out.println(allProducts);
+
+//        boolean delete = pd.deleteProduct(6);
+//        System.out.println("da xoa product "+ delete );
+        
+    }
+
+}
