@@ -8,14 +8,22 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class ProductDAOimpl implements ProductDAO{
-    private final Connection connection = DBConnection.DataBase();
-    private final String SQL_CREATE_PRODUCT = "insert into products values (?,?,?,?)";
+    private static final Connection connection;
+
+    static {
+        try {
+            connection = DBConnection.DataBase();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private final String SQL_CREATE_PRODUCT = "insert into products values(?,?,?,?)";
     private final String SQL_GET_PRODUCT_BY_ID =  "select * from products where product_id = ?";
-    private final String SQL_GET_ALL_PRODUCT = "select * from products";
-    private final String SQL_UPDATE_PRODUCT ="update products set product_name like ? where product_id = ?";
+    private static final String SQL_GET_ALL_PRODUCT = "select * from products";
+    private final String SQL_UPDATE_PRODUCT ="UPDATE products SET product_name = ? WHERE product_id = ? ";
     private final String SQL_DELETE_PRODUCT = "delete from products where product_id= ?";
 
     public ProductDAOimpl() throws SQLException {
@@ -52,23 +60,26 @@ public class ProductDAOimpl implements ProductDAO{
     public ArrayList<Product> getAllProduct() throws SQLException {
         ArrayList<Product> allProducts = new ArrayList<>();
         PreparedStatement pstm = connection.prepareStatement(SQL_GET_ALL_PRODUCT);
-       ResultSet rs = pstm.executeQuery();
-        while (rs.next()) {
-            Product product = new Product();
-            product.setProduct_id(rs.getInt("product_id"));
-            product.setProductName(rs.getString("product_name"));
-            product.setProductDesc(rs.getString("description"));
-            product.setPrice(rs.getDouble("price"));
-            allProducts.add(product);
-        }
+        ResultSet rs = pstm.executeQuery();
+            while (rs.next()){
+                Product product = new Product();
+                product.setProduct_id(rs.getInt("product_id"));
+                product.setProductName(rs.getString("product_name"));
+                product.setProductDesc(rs.getString("description"));
+                product.setPrice(rs.getDouble("price"));
+                allProducts.add(product);
+            }
+        rs.close();
+        pstm.close();
         return allProducts;
+
     }
 
     @Override
     public void updateProduct(Product product) throws SQLException {
         PreparedStatement pstm = connection.prepareStatement(SQL_UPDATE_PRODUCT);
-        pstm.setInt(1,product.getProduct_id());
-        pstm.setString(2,product.getProductName());
+        pstm.setString(1,product.getProductName());
+        pstm.setInt(2,product.getProduct_id());
         pstm.executeUpdate();
     }
 
@@ -80,18 +91,4 @@ public class ProductDAOimpl implements ProductDAO{
         int rowsAffected = pstm.executeUpdate(); // Execute the SQL statement
         return rowsAffected > 0;
     }
-
-    public static void main(String[] args) throws SQLException {
-//        Product product = new Product(12, "oppo", "A new phone", 50.0);
-
-        ProductDAOimpl pd = new ProductDAOimpl();
-
-//        ArrayList<Product> allProducts = pd.getAllProduct();
-//        System.out.println(allProducts);
-
-//        boolean delete = pd.deleteProduct(6);
-//        System.out.println("da xoa product "+ delete );
-        
-    }
-
 }
