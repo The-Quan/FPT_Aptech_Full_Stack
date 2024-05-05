@@ -4,9 +4,14 @@ import session10.entity.Product;
 import session10.model.ProductDAOimpl;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ControllerProduct {
     ProductDAOimpl productDAOimpl = new ProductDAOimpl();
+
+    public ControllerProduct() throws SQLException {
+    }
+
     public void productUpdateController (Product product) throws SQLException {
         productDAOimpl.updateProduct(product);
     }
@@ -16,9 +21,8 @@ public class ControllerProduct {
     public void productCreateController(Product product) throws SQLException{
         productDAOimpl.createProduct(product);
     }
-    public void getAllProduct() throws SQLException {
-       productDAOimpl.getAllProduct();
-    }
-    public ControllerProduct() throws SQLException {
+    public ArrayList<Product> getAllProduct() throws SQLException {
+        ArrayList<Product> gellProduct = productDAOimpl.getAllProduct();
+        return gellProduct;
     }
 }

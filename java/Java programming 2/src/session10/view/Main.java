@@ -11,6 +11,14 @@ public class Main {
         System.out.println("3. Order");
         System.out.println("0. exit");
     }
+public void menuCustomer(){
+    System.out.println("===== Menu Customer =====");
+    System.out.println("1. create Customer");
+    System.out.println("2. update Customer");
+    System.out.println("3. delete Customer");
+    System.out.println("4. getAll Customer");
+    System.out.println("0. exet");
+}
     public void menuProduct(){
         System.out.println("===== Menu product =====");
         System.out.println("1. create product");
@@ -19,7 +27,7 @@ public class Main {
         System.out.println("4. getAll product");
         System.out.println("0. exet");
     }
-    public void menuOrder(){
+    public void menuOrder() {
         System.out.println("===== Menu order =====");
         System.out.println("1. create order");
         System.out.println("2. update order");
@@ -27,6 +35,7 @@ public class Main {
         System.out.println("4. getAll order");
         System.out.println("0. exet");
     }
+
     public void start() throws SQLException {
         while (true){
             menu();
@@ -37,6 +46,30 @@ public class Main {
             switch (choice){
                 case 0:
                     System.exit(0);
+                    break;
+                case 1:
+                    menuCustomer();
+                    System.out.println("lua chon cua ban: ");
+                    int choice3 = sc.nextInt();
+                    System.out.println();
+                    ControllerCustomerIU controllerCustomerIU = new ControllerCustomerIU();
+                    switch (choice3){
+                        case 0:
+                            System.exit(0);
+                            break;
+                        case 1:
+                            controllerCustomerIU.createCustomer();
+                            break;
+                        case 2:
+                            controllerCustomerIU.updateCustomer();
+                            break;
+                        case 3:
+                             controllerCustomerIU.deleteCustomer();
+                            break;
+                        case 4:
+                            controllerCustomerIU.allCustomer();
+                            break;
+                    }
                     break;
                 case 2:
                     menuProduct();
@@ -80,10 +113,10 @@ public class Main {
                             controllerOderIU.updateOder();
                             break;
                         case 3:
-
+                            controllerOderIU.deleteOrder();
                             break;
                         case 4:
-
+                            controllerOderIU.getAllOrder();
                             break;
                     }
             }

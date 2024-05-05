@@ -54,8 +54,8 @@ public class ControllerProductIu {
         System.out.println("da xoa san pham co ID = " + product.getProduct_id());
     }
     public void getAllProductIu() throws SQLException {
-        ProductDAOimpl productDAO = new ProductDAOimpl();
-        ArrayList<Product> allProducts = productDAO.getAllProduct();
+        ControllerProduct controllerProduct = new ControllerProduct();
+        ArrayList<Product> allProducts = controllerProduct.getAllProduct();
         for (Product product : allProducts) {
             System.out.println("Product ID: " + product.getProduct_id());
             System.out.println("Product Name: " + product.getProductName());
@@ -63,6 +63,5 @@ public class ControllerProductIu {
             System.out.println("Price: " + product.getPrice());
             System.out.println("--------------------------------------");
         }
-        controller.getAllProduct();
     }
 }

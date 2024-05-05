@@ -3,9 +3,14 @@ package session10.view;
 import session10.controller.ControllerOrder;
 import session10.entity.Order;
 import session10.entity.Product;
+import session10.model.OrderDetail;
 import session10.model.OrderImpl;
+import session10.model.ProductDAOimpl;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -43,5 +48,23 @@ public class ControllerOderIU {
         controllerOrder.updateOrder(order);
         System.out.println("name da duoc doi thanh " + order.getCustomerid());
     }
+    public void deleteOrder() throws SQLException {
+        System.out.println("Nhap ID: ");
+        int id = sc.nextInt();
+        Order order = new Order();
+        order.setOrder_id(id);
+        controllerOrder.deleteOrder(order);
+        System.out.println("da xoa orser co ID = " + order.getOrder_id());
 
+    }
+    public void getAllOrder() throws SQLException {
+        ControllerOrder controllerOrder = new ControllerOrder();
+        ArrayList<Order> allOrder = controllerOrder.getAllOrder();
+        for (Order order : allOrder) {
+            System.out.println("order ID: " + order.getOrder_id());
+            System.out.println("customer ID: " + order.getCustomerid());
+            System.out.println("date:  " + order.getDate());
+            System.out.println("--------------------------------------");
+        }
+    }
 }
