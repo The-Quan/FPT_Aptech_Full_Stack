@@ -10,5 +10,6 @@ public interface StoreImpl {
     public void searchProduct(Product product) throws SQLException;
     public void deleteProduct(Product product) throws SQLException;
     public List<Product> allProduct(Product product2) throws SQLException;
+    public List<Product> showProductHet(Product product) throws SQLException;
 
 }

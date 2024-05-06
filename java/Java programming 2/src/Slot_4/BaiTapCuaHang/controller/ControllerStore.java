@@ -23,4 +23,9 @@ public class ControllerStore {
         products = store1.allProduct(product2);
         return products;
     }
+    public List<Product> showAllProductHet(Product product) throws SQLException {
+        List<Product> products;
+        products = store.showProductHet(product);
+        return products;
+    }
 }

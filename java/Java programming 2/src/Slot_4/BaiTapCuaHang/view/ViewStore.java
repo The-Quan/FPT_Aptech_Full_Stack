@@ -65,9 +65,21 @@ public class ViewStore {
             System.out.println("--------------------");
         }
     }
+    public void showAllProductHet() throws SQLException {
+        System.out.println("----- Show products that are out of stock -----");
+        Product product = new Product();
+        List<Product> products = controllerStore.showAllProductHet(product);
+        for (Product product1 : products){
+            System.out.println("Product ID: "+product1.getProduct_id());
+            System.out.println("Product Name: "+product1.getProduct_name());
+            System.out.println("Price: "+product1.getPrice());
+            System.out.println("Status: "+product1.isStatus());
+            System.out.println("--------------------");
+        }
+    }
 
     public static void main(String[] args) throws SQLException {
         ViewStore viewStore = new ViewStore();
-        viewStore.allProduct();
+        viewStore.showAllProductHet();
     }
 }

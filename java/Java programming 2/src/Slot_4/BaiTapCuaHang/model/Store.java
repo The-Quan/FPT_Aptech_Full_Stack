@@ -2,6 +2,7 @@ package Slot_4.BaiTapCuaHang.model;
 
 import Slot_4.BaiTapCuaHang.database.DateBaseCuaHang;
 import Slot_4.BaiTapCuaHang.entity.Product;
+import Slot_4.BaiTapThuVien.entity.NewBook;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,6 +25,7 @@ public class Store implements StoreImpl{
     public final String deleteProduct = "DELETE FROM product WHERE product_id = ?";
     public final String searchProduct = "SELECT * FROM product WHERE product_id LIKE ? ";
     public final String allProduct = "SELECT * FROM product";
+    public final String showProduct = "SELECT * FROM product where status = false";
 
     @Override
     public void addProduct(Product product) throws SQLException {
@@ -67,6 +69,22 @@ public class Store implements StoreImpl{
             product.setPrice(rs.getDouble(3));
             product.setStatus(rs.getBoolean(4));
             products.add(product);
+        }
+        return products;
+    }
+
+    @Override
+    public List<Product> showProductHet(Product product) throws SQLException {
+        List<Product> products = new ArrayList<>();
+        PreparedStatement pstm = connection.prepareStatement(showProduct);
+        ResultSet rs = pstm.executeQuery();
+        while (rs.next()){
+            Product product1 = new Product();
+            product1.setProduct_id(rs.getInt(1));
+            product1.setProduct_name(rs.getString(2));
+            product1.setPrice(rs.getDouble(3));
+            product1.setStatus(rs.getBoolean(4));
+            products.add(product1);
         }
         return products;
     }

@@ -10,6 +10,7 @@ public class Main {
         System.out.println("2. Search Product");
         System.out.println("3. Delete Product");
         System.out.println("4. Show All Products");
+        System.out.println("5.Show products that are out of stock");
         System.out.println("0. Exit");
         System.out.print("Lua chon cua ban: ");
     }
@@ -31,6 +32,9 @@ public class Main {
                     break;
                 case 4:
                     viewStore.allProduct();
+                    break;
+                case 5:
+                    viewStore.showAllProductHet();
                     break;
                 case 0:
                     System.exit(0);
