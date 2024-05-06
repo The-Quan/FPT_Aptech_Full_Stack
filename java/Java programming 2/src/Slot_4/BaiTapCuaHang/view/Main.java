@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Main {
     public void menu(){
-        System.out.println();
         System.out.println("----- menu -----");
         System.out.println("1. Add Product");
         System.out.println("2. Search Product");
@@ -26,8 +25,12 @@ public class Main {
                      break;
                 case 2:
                     viewStore.searchProduct();
+                    break;
                 case 3:
                     viewStore.deleteProduct();
+                    break;
+                case 4:
+                    viewStore.allProduct();
                     break;
                 case 0:
                     System.exit(0);

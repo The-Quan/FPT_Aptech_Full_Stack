@@ -5,6 +5,7 @@ import Slot_4.BaiTapCuaHang.entity.Product;
 
 import java.sql.SQLException;
 import java.sql.SQLOutput;
+import java.util.List;
 import java.util.Scanner;
 
 public class ViewStore {
@@ -13,7 +14,6 @@ public class ViewStore {
     public ViewStore() {
         this.sc = new Scanner(System.in);
     }
-    Product product = new Product();
     ControllerStore controllerStore = new ControllerStore();
 
     public void addProduct() throws SQLException {
@@ -35,6 +35,7 @@ public class ViewStore {
         System.out.println("----- Delete Product -----");
         System.out.print("Enter ID: ");
         int id = Integer.parseInt(sc.nextLine());
+        Product product = new Product();
         product.setProduct_id(id);
         controllerStore.deleteProduct(product);
         System.out.println("=> thanh cong");
@@ -42,17 +43,31 @@ public class ViewStore {
     public void searchProduct() throws SQLException {
         System.out.println("----- Search Product -----");
         System.out.print("Enter ID: ");
-        int id = Integer.parseInt(sc.nextLine());;
-         
-        System.out.println(product.getProduct_id());
-        System.out.println(product.getProduct_name());
-        System.out.println(product.getPrice());
-        System.out.println(product.isStatus());
-        controllerStore.searchProduct(product);
+        int id = Integer.parseInt(sc.nextLine());
+        Product product1 = new Product();
+        product1.setProduct_id(id);
+        controllerStore.searchProduct(product1);
+        System.out.println("Product ID: "+product1.getProduct_id());
+        System.out.println("Product Name: "+product1.getProduct_name());
+        System.out.println("Price: "+product1.getPrice());
+        System.out.println("Status: "+product1.isStatus());
+    }
+    public void allProduct() throws SQLException {
+        System.out.println("----- All Product -----");
+        Product product2 = new Product();
+        List<Product> products = controllerStore.allProduct(product2);
+
+        for (Product product : products){
+            System.out.println("Product ID: "+product.getProduct_id());
+            System.out.println("Product Name: "+product.getProduct_name());
+            System.out.println("Price: "+product.getPrice());
+            System.out.println("Status: "+product.isStatus());
+            System.out.println("--------------------");
+        }
     }
 
     public static void main(String[] args) throws SQLException {
         ViewStore viewStore = new ViewStore();
-        viewStore.searchProduct();
+        viewStore.allProduct();
     }
 }

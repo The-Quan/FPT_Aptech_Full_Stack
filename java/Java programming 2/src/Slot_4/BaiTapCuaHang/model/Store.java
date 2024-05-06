@@ -2,13 +2,13 @@ package Slot_4.BaiTapCuaHang.model;
 
 import Slot_4.BaiTapCuaHang.database.DateBaseCuaHang;
 import Slot_4.BaiTapCuaHang.entity.Product;
-import Slot_4.BaiTapThuVien.database.DatabaseThuVien;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Collections;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Store implements StoreImpl{
     public final Connection connection;
@@ -23,6 +23,7 @@ public class Store implements StoreImpl{
     public final String addProduct = "insert into product values (?,?,?,?)";
     public final String deleteProduct = "DELETE FROM product WHERE product_id = ?";
     public final String searchProduct = "SELECT * FROM product WHERE product_id LIKE ? ";
+    public final String allProduct = "SELECT * FROM product";
 
     @Override
     public void addProduct(Product product) throws SQLException {
@@ -40,11 +41,10 @@ public class Store implements StoreImpl{
         pstm.setInt(1,product.getProduct_id());
         ResultSet rs = pstm.executeQuery();
         while (rs.next()){
-            Product product1 = new Product();
-            product1.setProduct_id(rs.getInt(1));
-            product1.setProduct_name(rs.getString(2));
-            product1.setPrice(rs.getDouble(3));
-            product1.setStatus(rs.getBoolean(4));
+            product.setProduct_id(rs.getInt(1));
+            product.setProduct_name(rs.getString(2));
+            product.setPrice(rs.getDouble(3));
+            product.setStatus(rs.getBoolean(4));
         }
     }
 
@@ -53,5 +53,21 @@ public class Store implements StoreImpl{
         PreparedStatement pstm  = connection.prepareStatement(deleteProduct);
         pstm.setInt(1,product.getProduct_id());
         pstm.executeUpdate();
+    }
+
+    @Override
+    public List<Product> allProduct(Product product2) throws SQLException {
+        List<Product> products = new ArrayList<>();
+        PreparedStatement pstm = connection.prepareStatement(allProduct);
+        ResultSet rs = pstm.executeQuery();
+        while (rs.next()){
+            Product product = new Product();
+            product.setProduct_id(rs.getInt(1));
+            product.setProduct_name(rs.getString(2));
+            product.setPrice(rs.getDouble(3));
+            product.setStatus(rs.getBoolean(4));
+            products.add(product);
+        }
+        return products;
     }
 }
