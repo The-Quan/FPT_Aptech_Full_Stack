@@ -2,7 +2,6 @@ package Slot_4.BaiTapCuaHang.model;
 
 import Slot_4.BaiTapCuaHang.database.DateBaseCuaHang;
 import Slot_4.BaiTapCuaHang.entity.Product;
-import Slot_4.BaiTapThuVien.entity.NewBook;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

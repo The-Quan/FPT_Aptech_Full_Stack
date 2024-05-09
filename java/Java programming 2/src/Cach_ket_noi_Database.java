@@ -13,9 +13,7 @@ public class  Cach_ket_noi_Database {
         // cách 2
         Connection conn2 = null;
         String hostname = "localhost";
-        String dbname ="employeefpt";
-        String username = "root";
-        String password = "";
+        String dbname ="storebook";
 
         String URL = "jdbc:mysql://" + hostname + ":3306/" + dbname;
         conn2 = DriverManager.getConnection(URL,"root","");
