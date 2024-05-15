@@ -1,28 +1,28 @@
 package StoreBook_2025.entity;
 
-public class Product {
-    private int productId;
+public class Products {
+    private int product_id;
     private String name;
     private String description;
     private double price;
 
-    public Product(int productId, String name, String description, double price) {
-        this.productId = productId;
+    public Products(int product_id, String name, String description, double price) {
+        this.product_id = product_id;
         this.name = name;
         this.description = description;
         this.price = price;
     }
 
-    public Product() {
+    public Products() {
 
     }
 
-    public int getProductId() {
-        return productId;
+    public int getproduct_id() {
+        return product_id;
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setproduct_id(int product_id) {
+        this.product_id = product_id;
     }
 
     public String getName() {

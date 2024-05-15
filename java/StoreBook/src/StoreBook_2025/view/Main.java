@@ -18,12 +18,22 @@ public class Main {
         System.out.println("1. Add");
         System.out.println("2. Update");
         System.out.println("3. Delete");
-        System.out.println("4. Get ALl");
+        System.out.println("4. Search");
+        System.out.println("5. Get ALl");
         System.out.println("0. Exit");
+        System.out.print("=> Enter: ");
+    }
+    public void menuProduct(){
+        System.out.println("----- Menu Product-----");
+        System.out.println("1. Add");
+        System.out.println("2. Update");
+        System.out.println("3. Delete");
+        System.out.println("4. Search");
+        System.out.println("5. Get ALl");
+        System.out.println("0. Exit");
+        System.out.print("=> Enter: ");
     }
     public void start() throws SQLException {
-        ViewLogin viewLogin = new ViewLogin();
-        viewLogin.loginView();
         while (true){
             menu();
             Scanner sc = new Scanner(System.in);
@@ -32,18 +42,70 @@ public class Main {
                 case 1:
                     menuCustomer();
                     int i2 = sc.nextInt();
+                    ViewCustomer viewCustomer =  new ViewCustomer();
                     switch (i2){
                         case 1:
-                            ViewCustomer viewCustomer =  new ViewCustomer();
                             viewCustomer.add();
+                            break;
+                        case 2:
+                            viewCustomer.update();
+                            break;
+                        case 3:
+                            viewCustomer.delete();
+                            break;
+                        case 4:
+                            viewCustomer.search();
+                            break;
+                        case 5:
+                            viewCustomer.getAll();
                             break;
                         case 0:
                             System.exit(0);
+                            break;
+                        default:
+                            System.out.println("vui long nhap lai");
+                            break;
                     }
+                    break;
+                case 2:
+                      menuProduct();
+                      int i3 = sc.nextInt();
+                      ViewProduct viewProduct = new ViewProduct();
+                      switch (i3){
+                          case 1:
+                              viewProduct.add();
+                              break;
+                          case 2:
+                              viewProduct.update();
+                              break;
+                          case 3:
+                              viewProduct.delete();
+                              break;
+                          case 4:
+                              viewProduct.search();
+                              break;
+                          case 5:
+                              viewProduct.getAll();
+                              break;
+                          case 0:
+                              System.exit(0);
+                              break;
+                          default:
+                              System.out.println("vui long nhap lai");
+                              break;
+                      }
+                      break;
+                case 3:
+                    ViewOrder viewOrder = new ViewOrder();
+                    viewOrder.order();
+                    break;
+                case 4:
                     break;
                 case 0:
                     System.exit(0);
                     break;
+                default:
+                    System.out.println("vui long nhap lai");
             }
         }
     }
