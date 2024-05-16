@@ -1,16 +1,15 @@
 package StoreBook_2025.model;
 
-import StoreBook_2025.controller.StoreBookController;
 import StoreBook_2025.dataBase.DBStoreBook;
-import StoreBook_2025.entity.Customers;
-import StoreBook_2025.entity.Orders;
-import StoreBook_2025.entity.Products;
+import StoreBook_2025.entity.Order_detail;
 
+import javax.xml.crypto.Data;
 import java.lang.reflect.Field;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 
 public class StoreBookMD<T> implements StoreBookDao<T> {
@@ -24,8 +23,9 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
         }
     }
 
-    private String getTableName(Class<?> entityClass) {
-        String tableName = entityClass.getSimpleName();
+    private String getTableName(Class<?> entityClass) { // entityClass, thuộc kiểu Class<?>.
+        //  phương thức này nhận vào một lớp thực thể, mà lớp này có thể là bất kỳ loại nào (<?> là ký hiệu wildcard trong Java để chỉ bất kỳ loại nào).
+        String tableName = entityClass.getSimpleName(); // Phương thức getSimpleName() được sử dụng để lấy tên đơn giản của lớp thực thể mà không bao gồm phần tên gói.
         return tableName;
     }
 
@@ -258,16 +258,55 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
             throw new RuntimeException(e);
         }
     }
+    public List<Order_detail> orderDetail(Order_detail orderDetail) throws SQLException {
+        final String SQL_orderDetail = "SELECT " +
+                " o.order_id, " +
+                " c.customer_id, " +
+                " c.name AS customer_name," +
+                " p.product_id, " +
+                " p.name AS product_name," +
+                " o.address,  " +
+                " odd.datetimes,  " +
+                " odd.total " +
+                "FROM " +
+                "    orderDetail odd" +
+                " INNER JOIN " +
+                "    orders o ON odd.order_id = o.order_id" +
+                " INNER JOIN " +
+                "    customers c ON odd.customer_id = c.customer_id" +
+                " INNER JOIN " +
+                "    products p ON odd.product_id = p.product_id ";
+        PreparedStatement pstm = connection.prepareStatement(SQL_orderDetail);
+        List<Order_detail> newOrderDetail = new ArrayList<>();
+        ResultSet rs = pstm.executeQuery();
+        while (rs.next()) {
+            Order_detail orderDetail1 = new Order_detail();
+            orderDetail1.setOrder_id(rs.getInt(1));
+            orderDetail1.setCustomer_id(rs.getInt(2));
+            orderDetail1.setCustomer_name(rs.getString(3));
+            orderDetail1.setProduct_id(rs.getInt(4));
+            orderDetail1.setProduct_name(rs.getString(5));
+            orderDetail1.setAddress(rs.getString(6));
+            orderDetail1.setdatetimes(rs.getDate(7));
+            orderDetail1.setTotal(rs.getDouble(8));
+            newOrderDetail.add(orderDetail);
+        }
+        return newOrderDetail;
+    }
 
     public static void main(String[] args) throws SQLException {
-        Customers customers = new Customers();
-        customers.setCustomerId(5);
-        StoreBookController<Customers> customersStoreBookController = new StoreBookController<>();
-        List<Customers> allCustomers = customersStoreBookController.search(customers);
-        for (Customers customer : allCustomers) {
-            System.out.println(customer.getCustomerId());
-            System.out.println(customer.getName());
-            System.out.println(customer.getEmail());
+        Order_detail orderDetail = new Order_detail();
+        StoreBookMD orderDetailStoreBookMD = new StoreBookMD<>();
+        List<Order_detail> orderDetails = orderDetailStoreBookMD.orderDetail(orderDetail);
+        for (Order_detail orderDetail1 : orderDetails) {
+            System.out.println(orderDetail1.getOrderDetail_id());
+            System.out.println(orderDetail1.getOrder_id());
+            System.out.println(orderDetail1.getCustomer_id());
+            System.out.println(orderDetail1.getCustomer_name());
+            System.out.println(orderDetail1.getProduct_id());
+            System.out.println(orderDetail1.getProduct_name());
+            System.out.println(orderDetail1.getdatetimes());
+            System.out.println(orderDetail1.getTotal());
         }
     }
 
