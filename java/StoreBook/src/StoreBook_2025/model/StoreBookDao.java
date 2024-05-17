@@ -16,4 +16,6 @@ public interface StoreBookDao<T> {
     public List<T> getAll(T n) throws SQLException;
 
     public void order(T n) throws SQLException;
+    public List<T> showOrder(T n);
+    public void addOrderDetail(T n) throws IllegalAccessException;
 }

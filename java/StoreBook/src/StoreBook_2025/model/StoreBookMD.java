@@ -1,15 +1,11 @@
 package StoreBook_2025.model;
 
 import StoreBook_2025.dataBase.DBStoreBook;
-import StoreBook_2025.entity.Order_detail;
+import StoreBook_2025.entity.*;
 
-import javax.xml.crypto.Data;
 import java.lang.reflect.Field;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class StoreBookMD<T> implements StoreBookDao<T> {
@@ -258,56 +254,121 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
             throw new RuntimeException(e);
         }
     }
-    public List<Order_detail> orderDetail(Order_detail orderDetail) throws SQLException {
-        final String SQL_orderDetail = "SELECT " +
-                " o.order_id, " +
-                " c.customer_id, " +
-                " c.name AS customer_name," +
-                " p.product_id, " +
-                " p.name AS product_name," +
-                " o.address,  " +
-                " odd.datetimes,  " +
-                " odd.total " +
+
+    @Override
+    public List<T> showOrder(T entity) {
+        String tablName = getTableName(entity.getClass());
+        StringBuilder queryBuilder = new StringBuilder("SELECT * FROM ");
+        queryBuilder.append(tablName);
+        try(PreparedStatement pstm = connection.prepareStatement(queryBuilder.toString())){
+            try(ResultSet rs = pstm.executeQuery()){
+                List<T> getAllOrder = new ArrayList<>();
+                while (rs.next()){
+                    T getAll = (T) entity.getClass().newInstance();
+                    Field[] field =  entity.getClass().getDeclaredFields();
+                    for (Field field1 : field){
+                        field1.setAccessible(true);
+                        field1.set(getAll, rs.getObject(field1.getName()));
+                    }
+                    getAllOrder.add(getAll);
+                }
+                return getAllOrder;
+            }
+        } catch (SQLException | InstantiationException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void addOrderDetail(T entity) throws IllegalAccessException {
+        String tablename = getTableName(entity.getClass());
+        StringBuilder queryBuilder = new StringBuilder("INSERT INTO ");
+        queryBuilder.append(tablename).append(" (");
+        Field[] fields = entity.getClass().getDeclaredFields(); // lay danh sach cac truong
+        for (int i = 0; i < fields.length; i++){
+            if (i > 0){
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(fields[i].getName());
+        }
+        queryBuilder.append(") VALUES (");
+        for (int i = 0; i < fields.length; i++){
+            if (i > 0){
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append("?");
+        }
+        queryBuilder.append(")");
+
+        try(connection){
+            PreparedStatement pstm = connection.prepareStatement(queryBuilder.toString());
+            int paramIndex = 1;
+            for (Field field : fields){
+                field.setAccessible(true);
+                Object object = field.get(entity);
+                pstm.setObject(paramIndex++, object);
+            }
+            pstm.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    public List<ShowOrderDetail> showOrderDetail(ShowOrderDetail showOrderDetail){
+        List<ShowOrderDetail> orderDetails = new ArrayList<>();
+     final String SQL_showOrderDetail = "SELECT o.order_id, c.customer_id, c.name AS customer_name, p.product_id, p.name AS product_name, o.address, odd.date, odd.total " +
                 "FROM " +
-                "    orderDetail odd" +
+                " orderDetail odd" +
                 " INNER JOIN " +
-                "    orders o ON odd.order_id = o.order_id" +
+                " orders o ON odd.order_id = o.order_id" +
                 " INNER JOIN " +
-                "    customers c ON odd.customer_id = c.customer_id" +
+                " customers c ON odd.customer_id = c.customer_id" +
                 " INNER JOIN " +
-                "    products p ON odd.product_id = p.product_id ";
-        PreparedStatement pstm = connection.prepareStatement(SQL_orderDetail);
-        List<Order_detail> newOrderDetail = new ArrayList<>();
-        ResultSet rs = pstm.executeQuery();
-        while (rs.next()) {
-            Order_detail orderDetail1 = new Order_detail();
-            orderDetail1.setOrder_id(rs.getInt(1));
-            orderDetail1.setCustomer_id(rs.getInt(2));
-            orderDetail1.setCustomer_name(rs.getString(3));
-            orderDetail1.setProduct_id(rs.getInt(4));
-            orderDetail1.setProduct_name(rs.getString(5));
-            orderDetail1.setAddress(rs.getString(6));
-            orderDetail1.setdatetimes(rs.getDate(7));
-            orderDetail1.setTotal(rs.getDouble(8));
-            newOrderDetail.add(orderDetail);
-        }
-        return newOrderDetail;
+                " products p ON odd.product_id = p.product_id";
+     try(PreparedStatement pstm = connection.prepareStatement(SQL_showOrderDetail)){
+         ResultSet  rs = pstm.executeQuery();
+         while (rs.next()){
+             OrderDetail orderDetail = new OrderDetail();
+             orderDetail.setDatetimes(rs.getDate("date"));
+             orderDetail.setTotal(rs.getDouble("total"));
+
+             Orders orders = new Orders();
+             orders.setOrder_id(rs.getInt("order_id"));
+             orders.setAddress(rs.getString("address"));
+
+             Customers customers = new Customers();
+             customers.setCustomerId(rs.getInt("customer_id"));
+             customers.setName(rs.getString("customer_name"));
+
+             Products products = new Products();
+             products.setproduct_id(rs.getInt("product_id"));
+             products.setName(rs.getString("product_name"));
+
+             ShowOrderDetail showOrderDetail2 = new ShowOrderDetail(orders,customers,products,orderDetail);
+             orderDetails.add(showOrderDetail2);
+
+         }
+
+     } catch (SQLException e) {
+         throw new RuntimeException(e);
+     }
+     return orderDetails;
     }
 
-    public static void main(String[] args) throws SQLException {
-        Order_detail orderDetail = new Order_detail();
-        StoreBookMD orderDetailStoreBookMD = new StoreBookMD<>();
-        List<Order_detail> orderDetails = orderDetailStoreBookMD.orderDetail(orderDetail);
-        for (Order_detail orderDetail1 : orderDetails) {
-            System.out.println(orderDetail1.getOrderDetail_id());
-            System.out.println(orderDetail1.getOrder_id());
-            System.out.println(orderDetail1.getCustomer_id());
-            System.out.println(orderDetail1.getCustomer_name());
-            System.out.println(orderDetail1.getProduct_id());
-            System.out.println(orderDetail1.getProduct_name());
-            System.out.println(orderDetail1.getdatetimes());
-            System.out.println(orderDetail1.getTotal());
+    public static void main(String[] args) throws SQLException, IllegalAccessException {
+        StoreBookMD storeBookMD = new StoreBookMD();
+        ShowOrderDetail showOrderDetail = new ShowOrderDetail();
+        List<ShowOrderDetail> showOrderDetails = storeBookMD.showOrderDetail(showOrderDetail);
+        for (ShowOrderDetail showOrderDetail1: showOrderDetails){
+            System.out.println(showOrderDetail1.getOrder().getOrder_id());
+            System.out.println(showOrderDetail1.getCustomer().getCustomerId());
+            System.out.println(showOrderDetail1.getCustomer().getName());
+            System.out.println(showOrderDetail1.getProduct().getproduct_id());
+            System.out.println(showOrderDetail1.getProduct().getproduct_id());
+            System.out.println(showOrderDetail1.getOrder().getAddress());
+            System.out.println(showOrderDetail1.getOrderDetail().getDatetimes());
+            System.out.println(showOrderDetail1.getOrderDetail().getTotal());
+            System.out.println("--------------------");
         }
-    }
 
+    }
 }

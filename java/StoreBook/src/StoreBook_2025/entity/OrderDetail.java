@@ -2,30 +2,24 @@ package StoreBook_2025.entity;
 
 import java.util.Date;
 
-public class Order_detail {
+public class OrderDetail {
     private int orderDetail_id;
     private int order_id;
     private int customer_id;
-    private String customer_name;
     private int product_id;
-    private String product_name;
-    private String address;
-    private Date datetimes;
+    private Date date;
     private double total;
 
-    public Order_detail(int orderDetail_id, int order_id, int customer_id, String customer_name, int product_id, String product_name, String address, Date datetimes, double total) {
+    public OrderDetail(int orderDetail_id, int order_id, int customer_id, int product_id, Date date, double total) {
         this.orderDetail_id = orderDetail_id;
         this.order_id = order_id;
         this.customer_id = customer_id;
-        this.customer_name = customer_name;
         this.product_id = product_id;
-        this.product_name = product_name;
-        this.address = address;
-        this.datetimes = datetimes;
+        this.date = date;
         this.total = total;
     }
 
-    public Order_detail() {
+    public OrderDetail() {
 
     }
 
@@ -53,14 +47,6 @@ public class Order_detail {
         this.customer_id = customer_id;
     }
 
-    public String getCustomer_name() {
-        return customer_name;
-    }
-
-    public void setCustomer_name(String customer_name) {
-        this.customer_name = customer_name;
-    }
-
     public int getProduct_id() {
         return product_id;
     }
@@ -69,28 +55,12 @@ public class Order_detail {
         this.product_id = product_id;
     }
 
-    public String getProduct_name() {
-        return product_name;
+    public Date getDatetimes() {
+        return date;
     }
 
-    public void setProduct_name(String product_name) {
-        this.product_name = product_name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public java.sql.Date getdatetimes() {
-        return (java.sql.Date) datetimes;
-    }
-
-    public void setdatetimes(Date datetimes) {
-        this.datetimes = datetimes;
+    public void setDatetimes(Date datetimes) {
+        this.date = datetimes;
     }
 
     public double getTotal() {

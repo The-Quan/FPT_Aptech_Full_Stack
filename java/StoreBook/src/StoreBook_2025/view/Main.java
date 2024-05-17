@@ -8,8 +8,8 @@ public class Main {
         System.out.println("----- Menu -----");
         System.out.println("1. Customer");
         System.out.println("2. Product");
-        System.out.println("3. Oder");
-        System.out.println("4. Oder Detail");
+        System.out.println("3. Order");
+        System.out.println("4. Order Detail");
         System.out.println("0. Exit");
         System.out.print("=> Enter: ");
     }
@@ -33,7 +33,21 @@ public class Main {
         System.out.println("0. Exit");
         System.out.print("=> Enter: ");
     }
-    public void start() throws SQLException {
+    public void menuOrder(){
+        System.out.println("----- Order  -----");
+        System.out.println("1. add order ");
+        System.out.println("2. show order ");
+        System.out.println("0. exit");
+        System.out.print("=> Enter: ");
+    }
+    public void menuOrderDetail(){
+        System.out.println("----- Order Detail -----");
+        System.out.println("1. add order Detail");
+        System.out.println("2. show order Detail");
+        System.out.println("0. exit");
+        System.out.print("=> Enter: ");
+    }
+    public void start() throws SQLException, IllegalAccessException {
         while (true){
             menu();
             Scanner sc = new Scanner(System.in);
@@ -96,10 +110,30 @@ public class Main {
                       }
                       break;
                 case 3:
+                    menuOrder();
+                    int i5 = sc.nextInt();
                     ViewOrder viewOrder = new ViewOrder();
-                    viewOrder.order();
+                    switch (i5){
+                        case 1:
+                            viewOrder.order();
+                            break;
+                        case 2:
+                            viewOrder.showOrder();
+                            break;
+                    }
                     break;
                 case 4:
+                    menuOrderDetail();
+                    ViewOrderDetail viewOrderDetail = new ViewOrderDetail();
+                    int i4 = sc.nextInt();
+                    switch (i4){
+                        case 1:
+                            viewOrderDetail.addOrderdetail();
+                            break;
+                        case 2:
+                            viewOrderDetail.showOrderDetail();
+                            break;
+                    }
                     break;
                 case 0:
                     System.exit(0);
