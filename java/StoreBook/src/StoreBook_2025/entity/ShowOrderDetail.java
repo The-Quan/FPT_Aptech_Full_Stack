@@ -6,9 +6,6 @@ public class ShowOrderDetail {
     private Products product;
     private OrderDetail orderDetail;
 
-    // Constructor, Getters, and Setters
-
-
     public ShowOrderDetail(Orders order, Customers customer, Products product, OrderDetail orderDetail) {
         this.order = order;
         this.customer = customer;

@@ -30,6 +30,7 @@ public class ViewOrderDetail {
         orderDetail.setTotal(total);
         StoreBookController storeBookController = new StoreBookController();
         storeBookController.addOrderDetail(orderDetail);
+        System.out.println("Add Order Detail Success");
     }
     public void showOrderDetail(){
         System.out.println("----- Show Order Detail ------");

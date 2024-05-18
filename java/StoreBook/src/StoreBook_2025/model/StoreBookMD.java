@@ -27,9 +27,9 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
 
     @Override
     public boolean add(T entity) {
-        String tableName = getTableName(entity.getClass()); // lấy tên bảng ứng với lớp entity
+        String tableName = getTableName(entity.getClass()); // lấy tên bảng ứng với lớp entity và trả về đối tượng class
 
-        StringBuilder queryBuilder = new StringBuilder("INSERT INTO "); // khơi tạo StringBuilder với một chuỗi ban đầu "insert into"
+        StringBuilder queryBuilder = new StringBuilder("INSERT INTO "); // khởi tạo StringBuilder với một chuỗi ban đầu "insert into"
 
         queryBuilder.append(tableName).append(" ("); // thêm tên bảng queryBuilder sau đó thêm dấu ' ( '
 
@@ -67,7 +67,7 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
                 //  được đặt vào tham số tương ứng trong câu lệnh SQL.
             }
 
-            int rowsAdd = pstm.executeUpdate(); // thực hiện truy vẫn và kết quả được gán cho rowsInserted
+            int rowsAdd = pstm.executeUpdate(); // thực hiện truy vẫn và kết quả được gán cho rowsAdd
             return rowsAdd > 0; // thành công
         } catch (SQLException | IllegalAccessException e) {
             e.printStackTrace();
@@ -77,32 +77,32 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
 
     @Override
     public void update(T entity) {
-        String tableName = getTableName(entity.getClass());
+        String tableName = getTableName(entity.getClass()); // lấy tên bảng
 
-        StringBuilder queryBuilder = new StringBuilder(" UPDATE ");
-        queryBuilder.append(tableName).append(" SET ");
+        StringBuilder queryBuilder = new StringBuilder("UPDATE "); // khởi tạo chuỗi ban đầu
+        queryBuilder.append(tableName).append(" SET "); // nối chuỗi => Update nameTable set
 
-        Field[] fields = entity.getClass().getDeclaredFields();
+        Field[] fields = entity.getClass().getDeclaredFields(); // lấy danh sách các trường trong entity
 
         for (int i = 0; i < fields.length; i++) {
             if (i > 0) {
                 queryBuilder.append(", ");
             }
-            queryBuilder.append(fields[i].getName()).append(" = ?");
+            queryBuilder.append(fields[i].getName()).append(" = ?"); // => Update nameTable set nameField = ?,...
         }
-        queryBuilder.append(" WHERE ");
+        queryBuilder.append(" WHERE "); // Update nameTable set nameField = ?,... where
         for (int i = 0; i < fields.length; i++) {
             if (i > 0) {
                 queryBuilder.append(" OR ");
             }
-            queryBuilder.append(fields[i].getName()).append(" = ?");
+            queryBuilder.append(fields[i].getName()).append(" = ?"); // Update nameTable set nameField = ?,... where nameFile = ?,..
         }
         try (connection) {
-            PreparedStatement pstm = connection.prepareStatement(queryBuilder.toString());
+            PreparedStatement pstm = connection.prepareStatement(queryBuilder.toString()); // kết nối dữ liệu và truyền query để thực hiện truy vẫn
             int parameterIndex = 1;
             for (Field field : fields) {
-                field.setAccessible(true);
-                Object values = field.get(entity);
+                field.setAccessible(true); //yêu cầu cấp quyền truy cập vào các field
+                Object values = field.get(entity); // lấy giá trị các field
                 pstm.setObject(parameterIndex++, values);
             }
             // Thêm tham số cho phần WHERE (giá trị của các trường)
@@ -120,9 +120,8 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
     @Override
     public void delete(T entity) {
         String tableName = getTableName(entity.getClass());
-        StringBuilder queryBuilder = new StringBuilder("DELETE ");
-        queryBuilder.append("FROM ").append(tableName);
-        queryBuilder.append(" Where ");
+        StringBuilder queryBuilder = new StringBuilder("DELETE FROM ");
+        queryBuilder.append(tableName).append(" where ");
         Field[] fields = entity.getClass().getDeclaredFields();
 
         for (int i = 0; i < fields.length; i++) {
@@ -206,7 +205,7 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
                     Field[] fields = entity.getClass().getDeclaredFields();
                     for (Field field : fields) {
                         field.setAccessible(true);
-                        field.set(text, rs.getObject(field.getName()));
+                        field.set(text, rs.getObject(field.getName())); // đặt giá trị cho một trường của đối tượng text bằng giá trị tương ứng từ ResultSet.
                     }
                     getAll.add(text);
                 }
@@ -355,20 +354,6 @@ public class StoreBookMD<T> implements StoreBookDao<T> {
     }
 
     public static void main(String[] args) throws SQLException, IllegalAccessException {
-        StoreBookMD storeBookMD = new StoreBookMD();
-        ShowOrderDetail showOrderDetail = new ShowOrderDetail();
-        List<ShowOrderDetail> showOrderDetails = storeBookMD.showOrderDetail(showOrderDetail);
-        for (ShowOrderDetail showOrderDetail1: showOrderDetails){
-            System.out.println(showOrderDetail1.getOrder().getOrder_id());
-            System.out.println(showOrderDetail1.getCustomer().getCustomerId());
-            System.out.println(showOrderDetail1.getCustomer().getName());
-            System.out.println(showOrderDetail1.getProduct().getproduct_id());
-            System.out.println(showOrderDetail1.getProduct().getproduct_id());
-            System.out.println(showOrderDetail1.getOrder().getAddress());
-            System.out.println(showOrderDetail1.getOrderDetail().getDatetimes());
-            System.out.println(showOrderDetail1.getOrderDetail().getTotal());
-            System.out.println("--------------------");
-        }
 
     }
 }

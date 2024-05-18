@@ -34,14 +34,17 @@ public class StoreBookController<T> {
     public void order(T entity) throws SQLException {
         storeBookMD.order(entity);
     }
-    public List<T> showOrder(T entity){
+
+    public List<T> showOrder(T entity) {
         List<T> getAllOrder = storeBookMD.showOrder(entity);
         return getAllOrder;
     }
+
     public void addOrderDetail(T entyti) throws IllegalAccessException {
         storeBookMD.addOrderDetail(entyti);
     }
-    public List<ShowOrderDetail> showOrderDetails (ShowOrderDetail showOrderDetail){
+
+    public List<ShowOrderDetail> showOrderDetails(ShowOrderDetail showOrderDetail) {
         List<ShowOrderDetail> showOrderDetail1 = storeBookMD.showOrderDetail(showOrderDetail);
         return showOrderDetail1;
     }
