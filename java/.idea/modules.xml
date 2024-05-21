@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiThiThucHanh/BaiThiThucHanh.iml" filepath="$PROJECT_DIR$/BaiThiThucHanh/BaiThiThucHanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaiThiThucHanh2/BaiThiThucHanh2.iml" filepath="$PROJECT_DIR$/BaiThiThucHanh2/BaiThiThucHanh2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java programming 1/Java programming 1.iml" filepath="$PROJECT_DIR$/Java programming 1/Java programming 1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java programming 2/Java programming 2.iml" filepath="$PROJECT_DIR$/Java programming 2/Java programming 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JsonAppExamples/JsonAppExamples.iml" filepath="$PROJECT_DIR$/JsonAppExamples/JsonAppExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/StoreBook/StoreBook.iml" filepath="$PROJECT_DIR$/StoreBook/StoreBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
     </modules>
