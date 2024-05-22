@@ -4,11 +4,7 @@ import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonException;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
-
-import java.io.Reader;
 import java.math.BigDecimal;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Map;
 
 public class Read_JsonWeather {
@@ -68,10 +64,12 @@ public class Read_JsonWeather {
         String name = (String) parser.get("name");
         BigDecimal cod = (BigDecimal) parser.get("cod");
 
-        System.out.println("base: " + base+ "\n" +"visibility: " + visibility+ "\n" +"dt: " + dt+ "\n" +"timezone: " + timezone+ "\n" + "id: "+ id+ "\n" +"name: " + name + "\n"+"cod: "+ cod);
+        System.out.println("\nbase: " + base+ "\n" +"visibility: " + visibility+ "\n" +"dt: " + dt+ "\n" +"timezone: " + timezone+ "\n" + "id: "+ id+ "\n" +"name: " + name + "\n"+"cod: "+ cod);
+        System.out.println();
 
         Map<Object, Object> coord = (Map<Object, Object>) parser.get("coord");
         coord.forEach((key, value) -> System.out.println(key + ": " + value));
+        System.out.println();
 
         JsonArray weather = (JsonArray) parser.get("weather");
         weather.forEach(entry -> {
@@ -81,18 +79,23 @@ public class Read_JsonWeather {
             System.out.println("description: " + weathers.get("description"));
             System.out.println("icon: " + weathers.get("icon"));
         });
+        System.out.println();
 
         Map<Object, Object> main = (Map<Object, Object>) parser.get("main");
         main.forEach((key, value) -> System.out.println(key + ": " + value));
+        System.out.println();
 
         Map<Object, Object> wind = (Map<Object, Object>) parser.get("main");
         wind.forEach((key, value) -> System.out.println(key + ": " + value));
+        System.out.println();
 
         Map<Object, Object> clouds = (Map<Object, Object>) parser.get("clouds");
         clouds.forEach((key, value) -> System.out.println(key + ": " + value));
+        System.out.println();
 
         Map<Object, Object> sys = (Map<Object, Object>) parser.get("sys");
         sys.forEach((key, value) -> System.out.println(key + ": " + value));
+        System.out.println();
 
     }
 
