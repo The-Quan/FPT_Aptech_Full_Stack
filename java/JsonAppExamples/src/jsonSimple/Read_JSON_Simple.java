@@ -18,7 +18,8 @@ public class Read_JSON_Simple {
 
         // đọc object từ dòng (stream)
         JsonObject parser = (JsonObject) Jsoner.deserialize(reader); // deserialize (giải mã) dữ liệu từ một luồng đầu vào thành một đối tượng JsonObject.
-
+        // deserialize là quá trình chuyển đổi dữ liệu từ định dạng chuỗi (string) hoặc một định dạng khác như JSON, XML,
+        // hoặc nhị phân (binary) trở lại thành các đối tượng có thể được sử dụng trong mã nguồn.
 
         // read employee detail
         BigDecimal id = (BigDecimal) parser.get("id");

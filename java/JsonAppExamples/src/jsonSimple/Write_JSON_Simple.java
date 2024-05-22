@@ -58,6 +58,8 @@ public class Write_JSON_Simple {
         //Ghi file json
         Jsoner.serialize(employee,writer);//ghi ra file json thong tin cua employee
         //sau khi ghi xong thi close dong  writer
+        //Serialize là quá trình chuyển đổi một đối tượng hoặc cấu trúc dữ liệu trong bộ nhớ thành một định dạng có thể lưu trữ hoặc truyền tải được,
+        // như chuỗi (string), JSON, XML, hoặc nhị phân (binary)
         writer.close();
     }
 }
