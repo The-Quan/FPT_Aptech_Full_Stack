@@ -4,14 +4,12 @@ import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonException;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
-import com.sun.jdi.Value;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.security.Key;
 import java.util.Map;
 
 public class ReadJson {
@@ -36,7 +34,7 @@ public class ReadJson {
         System.out.println();
 
         JsonArray product = (JsonArray) parser.get("product");
-        product.forEach(entry ->{
+        product.forEach(entry -> {
             JsonObject products = (JsonObject) entry;
             System.out.println(products.get("id"));
             System.out.println(products.get("name"));

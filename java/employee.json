@@ -1,0 +1,21 @@
+{
+  "address": {
+    "zipcode": 1000,
+    "city": "hanoi",
+    "street": "ho tung mau"
+  },
+  "name": "khac thanh",
+  "project": [
+    {
+      "title": "java and json",
+      "budget": 2000
+    },
+    {
+      "title": "java and json2",
+      "budget": 20002
+    }
+  ],
+  "id": 1,
+  "email": "than@gmail.com",
+  "age": 18
+}

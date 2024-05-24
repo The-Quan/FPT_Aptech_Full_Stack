@@ -3,10 +3,8 @@ package testJson;
 import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -16,10 +14,10 @@ public class writeJson {
         BufferedWriter writer = Files.newBufferedWriter(Path.of("storeShoe.json"));
 
         JsonObject customer = new JsonObject();
-        customer.put("id",1);
+        customer.put("id", 1);
         customer.put("name", "binh");
         customer.put("email", "binh@gmail.com");
-        customer.put("sdt","0948694563");
+        customer.put("sdt", "0948694563");
 
         JsonObject address = new JsonObject();
         address.put("street", "ho tay");
@@ -49,7 +47,7 @@ public class writeJson {
         customer.put("product", product);
 
 
-        Jsoner.serialize(customer,writer);
+        Jsoner.serialize(customer, writer);
         writer.close();
     }
 }
