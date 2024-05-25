@@ -1,4 +1,4 @@
-package jsonWeather;
+package json;
 import com.google.gson.JsonObject;
 
 import java.io.BufferedReader;

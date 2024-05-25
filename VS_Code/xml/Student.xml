@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+    <class>
+        <className>t2308a</className>
+        <student>18</student>
+        <teacher>1</teacher>
+    </class>
+    <class>
+        <className>t2309a</className>
+        <student>20</student>
+        <teacher>1</teacher>
+    </class>
+</school>

@@ -1,4 +1,4 @@
-package jsonWeather;
+package json;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

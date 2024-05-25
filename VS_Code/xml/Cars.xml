@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Cars.css" type="text/css"?>
+<cars>
+    <Vehicle>
+        <menitachcer>BMW</menitachcer>
+        <Model>v20325</Model>
+        <coler>blue</coler>
+        <price>5000</price>
+        <location>vn</location>
+    </Vehicle>
+</cars>
