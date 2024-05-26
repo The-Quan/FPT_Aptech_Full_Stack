@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="test.css" type="text/css"?>
+<Order_Detail>
+    <customer>
+        <title>customer</title>
+        <id>1</id>
+        <name>nguyen van a</name>
+        <address>hanoi</address>
+        <email>a@gmail.com</email>
+    </customer>
+    <product>
+        <title>product</title>
+        <id>1</id>
+        <name>iphone</name>
+        <price>6.00</price>
+        <status>0</status>
+    </product>
+    <order>
+        <title>order</title>
+        <product_id>1</product_id>
+        <customer_id>1</customer_id>
+        <quatity>1</quatity>
+        <address>hanoi</address>
+        <date>28/01/2024</date>
+    </order>
+    <img>
+       
+    </img>
+</Order_Detail>

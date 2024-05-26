@@ -1,0 +1,18 @@
+Order_Detail{
+    background-color: aqua;
+    display: flex;
+    white-space: pre-wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+customer, product, order{
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: 1px solid red;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
