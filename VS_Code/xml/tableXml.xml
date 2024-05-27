@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tableXslt.xml"?>
+<Table>
+    <Student>
+        <ID>1</ID>
+        <FirstName>Nguyen</FirstName>
+        <LastName>Van A</LastName>
+        <Age>20</Age>
+        <Gender>Male</Gender>
+        <Major>Computer Science</Major>
+    </Student>
+    <Student>
+        <ID>2</ID>
+        <FirstName>Tran</FirstName>
+        <LastName>Thi B</LastName>
+        <Age>21</Age>
+        <Gender>Female</Gender>
+        <Major>Mathematics</Major>
+    </Student>
+    <Student>
+        <ID>3</ID>
+        <FirstName>Le</FirstName>
+        <LastName>Van C</LastName>
+        <Age>22</Age>
+        <Gender>Male</Gender>
+        <Major>Physics</Major>
+    </Student>
+</Table>
