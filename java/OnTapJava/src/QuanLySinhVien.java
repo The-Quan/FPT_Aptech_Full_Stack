@@ -86,7 +86,7 @@ public class QuanLySinhVien {
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("----- menu -----");
-            System.out.println("1, them sinh vien./   2, show sinh vien");
+            System.out.println("1, them sinh vien.   2, show sinh vien");
             System.out.print("nhap: ");
             int c = sc.nextInt();
             switch (c) {
