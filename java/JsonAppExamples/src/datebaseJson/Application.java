@@ -1,10 +1,8 @@
 package datebaseJson;
 
-import com.github.cliftonlabs.json_simple.JsonArray;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Application {

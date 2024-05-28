@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiTapJson/BaiTapJson.iml" filepath="$PROJECT_DIR$/BaiTapJson/BaiTapJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/BaiThiThucHanh/BaiThiThucHanh.iml" filepath="$PROJECT_DIR$/BaiThiThucHanh/BaiThiThucHanh.iml" />
       <module fileurl="file://$PROJECT_DIR$/BaiThiThucHanh2/BaiThiThucHanh2.iml" filepath="$PROJECT_DIR$/BaiThiThucHanh2/BaiThiThucHanh2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java programming 1/Java programming 1.iml" filepath="$PROJECT_DIR$/Java programming 1/Java programming 1.iml" />
