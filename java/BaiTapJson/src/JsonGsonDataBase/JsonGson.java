@@ -74,33 +74,46 @@ public class JsonGson {
         }
     }
 
-    private static void searchByName(Student student) {
+    private static void searchByName() {
         System.out.print("Enter Name to search: ");
         String name = sc.nextLine();
-        for (Student students : students) {
-            if (students.name.equalsIgnoreCase(name)) {
-                System.out.println(students.id);
-                System.out.println(students.name);
-                System.out.println(students.email);
-                System.out.println(students.address);
-                System.out.println(students.phone);
-                System.out.println(students.dob);
+
+        boolean found = false;
+        for (Student student : students) {
+            if (student != null && student.getName() != null && student.getName().equalsIgnoreCase(name)) {
+                System.out.println(student.getId());
+                System.out.println(student.getName());
+                System.out.println(student.getEmail());
+                System.out.println(student.getAddress());
+                System.out.println(student.getPhone());
+                System.out.println(student.getDob());
+                found = true;
+                break; // Assuming you want to find the first match only
             }
+        }
+        if (!found) {
+            System.out.println("No matching student found");
         }
     }
 
-    private static void searchByEmail(Student student) {
+    private static void searchByEmail() {
         System.out.print("Enter Email to search: ");
         String email = sc.nextLine();
-        for (Student students : students) {
-            if (student.email.equalsIgnoreCase(email)) {
-                System.out.println(students.id);
-                System.out.println(students.name);
-                System.out.println(students.email);
-                System.out.println(students.address);
-                System.out.println(students.phone);
-                System.out.println(students.dob);
+        boolean found = false;
+        for (Student student : students) {
+            if (student != null && student.getEmail() != null && student.getEmail().equalsIgnoreCase(email)) {
+                System.out.println(student.getId());
+                System.out.println(student.getName());
+                System.out.println(student.getEmail());
+                System.out.println(student.getAddress());
+                System.out.println(student.getPhone());
+                System.out.println(student.getDob());
+                found = true;
+                break; // Assuming you want to find the first match only
             }
+        }
+        if (!found) {
+            System.out.println("No matching student found");
         }
     }
 
@@ -135,10 +148,10 @@ public class JsonGson {
                         displayAllStudents();
                         break;
                     case 3:
-                        searchByName(student);
+                        searchByName();
                         break;
                     case 4:
-                        searchByEmail(student);
+                        searchByEmail();
                         break;
                     case 5:
                         System.exit(0);
