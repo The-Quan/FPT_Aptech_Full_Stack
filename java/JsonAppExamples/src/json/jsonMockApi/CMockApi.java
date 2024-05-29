@@ -11,7 +11,7 @@ public class CMockApi {
         mockApi.add(entityMockApi);
     }
     public void update(EntityMockApi entityMockApi){
-
+        mockApi.update(entityMockApi);
     }
     public List<EntityMockApi> getAll(){
         List<EntityMockApi> getALl = mockApi.getAll();

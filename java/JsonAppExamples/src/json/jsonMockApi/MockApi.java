@@ -64,6 +64,32 @@ public class MockApi implements IMockApi {
     }
     @Override
     public void update(EntityMockApi entityMockApi) {
+        try {
+            URL url = new URL("https://656ae3dcdac3630cf7276592.mockapi.io/json/" + entityMockApi.getId());
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("PUT");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setDoOutput(true);
+
+            Gson gson = new Gson();
+            String jsonData = gson.toJson(entityMockApi);
+
+            try(OutputStream os = connection.getOutputStream()) {
+                byte[] input = jsonData.getBytes("utf-8");
+                os.write(input,0,input.length);
+            }
+
+            int responseCode = connection.getResponseCode();
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                System.out.println("User updated successfully on MockAPI.");
+            } else {
+                System.out.println("Failed to update user on MockAPI. Response code: " + responseCode);
+            }
+            connection.disconnect();
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

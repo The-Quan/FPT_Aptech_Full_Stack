@@ -30,6 +30,21 @@ public class Aplication {
         EntityMockApi entityMockApi = new EntityMockApi(id,name,address,email);
         cMockApi.addMockApi(entityMockApi);
     }
+    public void update(){
+        System.out.println("---------- Update User ----------");
+        System.out.print("Enter user id to update:  ");
+        int id = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter new name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter new address: ");
+        String address = sc.nextLine();
+        System.out.print("Enter new email: ");
+        String email = sc.nextLine();
+
+        EntityMockApi updatedUser = new EntityMockApi(id, name,address, email);
+        cMockApi.update(updatedUser);
+    }
     public void getAll(){
         List<EntityMockApi> entityMockApis = cMockApi.getAll();
         System.out.println("----- Get All -----");
@@ -55,6 +70,7 @@ public class Aplication {
                     add();
                     break;
                 case 2:
+                    update();
                     break;
                 case 3:
                     delete();
