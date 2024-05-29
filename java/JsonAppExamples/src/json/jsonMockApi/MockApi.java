@@ -1,11 +1,14 @@
 package json.jsonMockApi;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Scanner;
+import java.util.List;
 
 public class MockApi implements IMockApi {
     @Override
@@ -62,6 +65,31 @@ public class MockApi implements IMockApi {
     @Override
     public void update(EntityMockApi entityMockApi) {
 
+    }
+
+    @Override
+    public List<EntityMockApi> getAll() {
+        try {
+            URL url = new URL("https://656ae3dcdac3630cf7276592.mockapi.io/json" );
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("Accept", "application/json");
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+
+            String line;
+            while ((line = reader.readLine()) != null){
+                response.append(line);
+            }
+            reader.close();
+            Gson gson = new Gson();
+            List<EntityMockApi> entityMockApis = gson.fromJson(response.toString(), new TypeToken<List<EntityMockApi>>(){}.getType());
+            connection.disconnect();
+            return entityMockApis;
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to fetch users from MockAPI.", e);
+        }
     }
 
     public static void main(String[] args) {
