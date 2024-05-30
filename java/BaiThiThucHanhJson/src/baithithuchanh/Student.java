@@ -42,4 +42,7 @@ public class Student {
         }
         return sb.toString();
     }
+
+    public void addSubject(baithithuchanh.Subject subject) {
+    }
 }
