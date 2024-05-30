@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Management {
     public static void main(String[] args) {
-        List<Student> students = FileManager.readStudentsFromFile();
+        List<Student> students = Manager.readStudentsFromFile();
 
         Scanner scanner = new Scanner(System.in);
         int choice;
@@ -27,7 +27,7 @@ public class Management {
                 case 2:
                     Student newStudent = inputStudent();
                     students.add(newStudent);
-                    FileManager.writeStudentsToFile(students);
+                    Manager.writeStudentsToFile(students);
                     System.out.println("Thêm sinh viên thành công.");
                     break;
                 case 3:
@@ -86,7 +86,7 @@ public class Management {
             if (student.getId().equals(keyword) || student.getName().equals(keyword)) {
                 // Add or remove subjects and scores
                 // Implement your logic here
-                FileManager.writeStudentsToFile(students);
+                Manager.writeStudentsToFile(students);
                 System.out.println("Student information updated successfully.");
                 return;
             }
