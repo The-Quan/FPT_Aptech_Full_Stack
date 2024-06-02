@@ -1,0 +1,15 @@
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\bin\Debug\net8.0\Ex9.exe
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\bin\Debug\net8.0\Ex9.deps.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\bin\Debug\net8.0\Ex9.runtimeconfig.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\bin\Debug\net8.0\Ex9.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\bin\Debug\net8.0\Ex9.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.AssemblyInfoInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.AssemblyInfo.cs
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.csproj.CoreCompileInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.sourcelink.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\refint\Ex9.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\Ex9.genruntimeconfig.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex9\obj\Debug\net8.0\ref\Ex9.dll

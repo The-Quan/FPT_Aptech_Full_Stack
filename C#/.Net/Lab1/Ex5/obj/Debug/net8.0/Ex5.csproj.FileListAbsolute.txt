@@ -1,0 +1,15 @@
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\bin\Debug\net8.0\Ex5.exe
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\bin\Debug\net8.0\Ex5.deps.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\bin\Debug\net8.0\Ex5.runtimeconfig.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\bin\Debug\net8.0\Ex5.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\bin\Debug\net8.0\Ex5.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.AssemblyInfoInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.AssemblyInfo.cs
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.csproj.CoreCompileInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.sourcelink.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\refint\Ex5.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\Ex5.genruntimeconfig.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Ex5\obj\Debug\net8.0\ref\Ex5.dll
