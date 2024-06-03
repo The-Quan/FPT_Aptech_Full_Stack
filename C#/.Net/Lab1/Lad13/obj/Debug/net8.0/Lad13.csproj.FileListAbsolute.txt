@@ -1,0 +1,15 @@
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.AssemblyInfoInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.AssemblyInfo.cs
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.csproj.CoreCompileInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.sourcelink.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\bin\Debug\net8.0\Lad13.exe
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\bin\Debug\net8.0\Lad13.deps.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\bin\Debug\net8.0\Lad13.runtimeconfig.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\bin\Debug\net8.0\Lad13.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\bin\Debug\net8.0\Lad13.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\refint\Lad13.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\Lad13.genruntimeconfig.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab1\Lad13\obj\Debug\net8.0\ref\Lad13.dll
