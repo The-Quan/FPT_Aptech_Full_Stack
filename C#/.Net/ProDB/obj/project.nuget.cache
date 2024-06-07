@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U06zax4QW3Y=",
+  "dgSpecHash": "c9xfP5T++b4=",
   "success": true,
-  "projectFilePath": "D:\\FPT_Aptech_Full_Stack\\C#\\.Net\\prodb\\ProDB.csproj",
+  "projectFilePath": "D:\\FPT_Aptech_Full_Stack\\C#\\.Net\\ProDB\\ProDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\songp\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\songp\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
