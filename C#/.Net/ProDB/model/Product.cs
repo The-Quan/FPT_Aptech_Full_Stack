@@ -9,8 +9,8 @@ namespace ProDB.model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public decimal price {get; set;}
-        public string description{get;set;}
+        public decimal Price {get; set;}
+        public string Description{get;set;}
 
     }
 }
