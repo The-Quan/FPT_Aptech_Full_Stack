@@ -1,0 +1,15 @@
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\bin\Debug\net8.0\Lab2.exe
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\bin\Debug\net8.0\Lab2.deps.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\bin\Debug\net8.0\Lab2.runtimeconfig.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\bin\Debug\net8.0\Lab2.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\bin\Debug\net8.0\Lab2.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.AssemblyInfoInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.AssemblyInfo.cs
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.csproj.CoreCompileInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.sourcelink.json
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\refint\Lab2.dll
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.pdb
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\Lab2.genruntimeconfig.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\Lab2\Lab2\obj\Debug\net8.0\ref\Lab2.dll
