@@ -1,0 +1,6 @@
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.csproj.AssemblyReference.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.AssemblyInfoInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.AssemblyInfo.cs
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.csproj.CoreCompileInputs.cache
+D:\FPT_Aptech_Full_Stack\C#\.Net\prodb\obj\Debug\net8.0\ProDB.sourcelink.json
