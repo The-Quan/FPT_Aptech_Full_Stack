@@ -10,10 +10,10 @@ namespace ProDB.model
         public int Id { get; set; }
         public int CustomerId { get; set; }
         public DateTime OrderDate{ get; set; }
-          
-        public List<OrderDetaill> orderDetaills{ get; set; }
+        public string Status { get; set; }
+        public List<OrderDetaill> OrderDetaills{ get; set; }
         public Order(){
-        orderDetaills = new List<OrderDetaill>();
+        OrderDetaills = new List<OrderDetaill>();
         }
     }
 }
