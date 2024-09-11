@@ -1,0 +1,13 @@
+{
+  "name": "students",
+  "version": "1.0.0",
+  "main": "model/student.js",
+  "scripts": {
+    "start": "node model/student.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.8.0"
+  }
+}
