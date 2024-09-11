@@ -2,12 +2,22 @@ const express = require('express');
 const jwt = require('jwt-simple');
 const bcrypt = require('bcryptjs');
 require('dotenv').config(); // Nạp các biến môi trường
+const admin = require('firebase-admin');
 
 const app = express();
 app.use(express.json()); // Đảm bảo rằng middleware express.json() được sử dụng
 
-// Giả sử bạn có một cơ sở dữ liệu người dùng (ví dụ: sử dụng một đối tượng hoặc cơ sở dữ liệu thực tế)
-let users = [];
+// Khởi tạo Firebase Admin SDK
+admin.initializeApp({
+  credential: admin.credential.cert({
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+  }),
+});
+
+// Khởi tạo Firestore
+const db = admin.firestore();
 
 // Middleware xác thực JWT
 const authenticateJWT = (req, res, next) => {
@@ -30,25 +40,31 @@ const authenticateJWT = (req, res, next) => {
 
 // Route đăng ký người dùng
 app.post('/signup', async (req, res) => {
-  const { email, password, username } = req.body;
+  const { email, password, username, role } = req.body;
 
   try {
-    // Kiểm tra nếu người dùng đã tồn tại
-    const existingUser = users.find(user => user.email === email);
-    if (existingUser) {
-      return res.status(400).json({ message: 'Người dùng đã tồn tại' });
-    }
+    // Tạo người dùng mới trong Firebase Authentication
+    const userRecord = await admin.auth().createUser({
+      email: email,
+      password: password,
+      displayName: username
+    });
 
-    // Mã hóa mật khẩu
-    const hashedPassword = await bcrypt.hash(password, 10);
+    // Gán vai trò cho người dùng
+    await admin.auth().setCustomUserClaims(userRecord.uid, { role: role || 'user' });
 
-    // Tạo người dùng mới
-    const newUser = { email, username, password: hashedPassword };
-    users.push(newUser);
+    // Lưu thông tin người dùng vào Firestore
+    const userRef = db.collection('users').doc(userRecord.uid);
+    await userRef.set({
+      email: email,
+      username: username,
+      role: role || 'user',
+      createdAt: admin.firestore.FieldValue.serverTimestamp()
+    });
 
     // Tạo token JWT cho người dùng mới
     const token = jwt.encode(
-      { email: newUser.email, username: newUser.username },
+      { uid: userRecord.uid, email: email, role: role || 'user' },
       process.env.JWT_SECRET,
       'HS256',
       { expiresIn: process.env.JWT_EXPIRES_IN || '1h' }
@@ -56,18 +72,29 @@ app.post('/signup', async (req, res) => {
 
     res.status(201).json({
       message: 'Tạo người dùng thành công',
-      user: { email: newUser.email, username: newUser.username },
-      token: token // Trả về token JWT
+      user: { email: email, username: username, role: role || 'user' },
+      token: token
     });
   } catch (error) {
-    console.error('Lỗi khi tạo người dùng:', error); // Log lỗi chi tiết
-    res.status(500).json({
-      message: 'Lỗi khi tạo người dùng: ' + error.message
-    });
+    console.error('Lỗi khi tạo người dùng:', error);
+    res.status(500).json({ message: 'Lỗi khi tạo người dùng: ' + error.message });
   }
 });
 
-// Ví dụ sử dụng middleware authenticateJWT cho route bảo vệ
+// Route để xem tất cả người dùng
+app.get('/users', async (req, res) => {
+  try {
+    const snapshot = await db.collection('users').get();
+    const users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+
+    res.json({ users });
+  } catch (error) {
+    console.error('Lỗi khi lấy người dùng:', error);
+    res.status(500).json({ message: 'Lỗi khi lấy người dùng: ' + error.message });
+  }
+});
+
+// Route bảo vệ với xác thực JWT
 app.get('/protected', authenticateJWT, (req, res) => {
   res.json({ message: 'Đây là thông tin bảo vệ', user: req.user });
 });
