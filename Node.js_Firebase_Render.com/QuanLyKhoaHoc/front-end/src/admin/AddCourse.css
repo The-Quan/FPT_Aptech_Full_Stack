@@ -1,0 +1,66 @@
+/* AddCourse.css */
+.add-course-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-course-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-course-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-course-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .add-course-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .add-course-container input[type="text"],
+  .add-course-container input[type="number"],
+  .add-course-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .add-course-container textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .add-course-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-course-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-course-container .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  

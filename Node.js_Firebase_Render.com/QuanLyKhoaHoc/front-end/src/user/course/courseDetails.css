@@ -1,0 +1,34 @@
+/* src/components/CourseDetails.css */
+.course-container {
+    padding: 20px;
+  }
+  
+  .course-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .course-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .course-description {
+    margin: 10px 0;
+  }
+  
+  .course-info {
+    margin: 5px 0;
+  }
+  /* courseDetails.css */
+.success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  

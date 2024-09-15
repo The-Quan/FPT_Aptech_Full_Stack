@@ -1,0 +1,64 @@
+/* Định dạng cho container đăng ký */
+.register-container {
+    display: flex;               /* Kích hoạt flexbox */
+    flex-direction: column;      /* Sắp xếp các phần tử con theo chiều dọc */
+    justify-content: center;     /* Căn giữa nội dung theo chiều dọc */
+    align-items: center;         /* Căn giữa nội dung theo chiều ngang */
+    width: 100vw;                /* Chiều rộng toàn bộ viewport */
+    height: 100vh;               /* Chiều cao toàn bộ viewport */
+    padding: 20px;               /* Thêm một số padding xung quanh container */
+    box-sizing: border-box;      /* Bao gồm padding trong tổng chiều rộng và chiều cao của phần tử */
+  }
+  
+  .register-title {
+    margin-bottom: 20px;         /* Khoảng cách giữa tiêu đề và form */
+  }
+  
+  .register-form {
+    width: 100%;                 /* Chiều rộng toàn bộ container */
+    max-width: 400px;            /* Chiều rộng tối đa cho form */
+    padding: 20px;               /* Padding bên trong form */
+    border: 1px solid #ddd;      /* Viền màu xám nhạt */
+    border-radius: 8px;          /* Góc bo tròn */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ để tạo chiều sâu */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;         /* Khoảng cách giữa các phần tử trong form */
+  }
+  
+  .form-label {
+    display: block;              /* Hiển thị label dưới dạng khối để xếp trên input */
+    margin-bottom: 5px;          /* Khoảng cách giữa label và input */
+  }
+  
+  .form-input {
+    width: 90%;                 /* Chiều rộng toàn bộ container */
+    padding: 10px;               /* Padding bên trong các trường input */
+    border: 1px solid #ccc;      /* Màu viền nhẹ */
+    border-radius: 4px;          /* Góc bo tròn cho các input */
+  }
+  
+  .form-error {
+    color: red;                  /* Màu chữ đỏ cho thông báo lỗi */
+  }
+  
+  .form-success {
+    color: green;                /* Màu chữ xanh lá cho thông báo thành công */
+  }
+  
+  .register-button1 {
+    width: 95%;
+    padding: 10px 20px;          /* Padding bên trong nút */
+    border: none;                /* Loại bỏ viền mặc định */
+    border-radius: 4px;          /* Góc bo tròn cho nút */
+    background-color: #007bff;   /* Màu nền xanh dương */
+    color: white;                /* Màu chữ trắng */
+    cursor: pointer;             /* Con trỏ dạng tay khi hover */
+    font-size: 16px;             /* Kích thước chữ cho nút */
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;   /* Màu nền xanh dương đậm hơn khi hover */
+  }
+  
