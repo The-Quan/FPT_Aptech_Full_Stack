@@ -68,7 +68,7 @@ router.delete('/:id', authenticateJWT, checkRole('admin'), async (req, res) => {
         await collection.doc(req.params.id).delete();
         res.status(200).send('Course deleted successfully');
     } catch (error) {
-        res.status(500).send({ message: "Error" });
+            res.status(500).send({ message: "Error" });
     }
 });
 
