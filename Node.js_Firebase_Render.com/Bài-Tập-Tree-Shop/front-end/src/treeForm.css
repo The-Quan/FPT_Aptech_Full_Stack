@@ -1,0 +1,168 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Container chính */
+  .tree-shop-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .tree-shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img{
+    width: 500px;
+    height: 350px;
+    padding: 0 30px 0 0;
+    float: left;
+    margin-top: 60px;
+
+  }
+  .tree-shop-title {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #4C7C5F;
+  }
+  
+  .tree-shop-nav a {
+    text-decoration: none;
+    color: #4C7C5F;
+    font-size: 16px;
+  }
+  
+  /* Form */
+  .tree-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .tree-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .tree-form-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .tree-form-input,
+  .tree-form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .tree-form-textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .tree-form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tree-form-button-add,
+  .tree-form-button-reset {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tree-form-button-add {
+    background-color: #4C7C5F;
+    color: white;
+  }
+  
+  .tree-form-button-reset {
+    background-color: #D9534F;
+    color: white;
+  }
+  
+  /* Bảng hiển thị dữ liệu */
+  .tree-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tree-table thead th {
+    background-color: #4C7C5F;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .tree-table tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .tree-table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .tree-table-button-edit,
+  .tree-table-button-delete {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tree-table-button-edit {
+    background-color: #5bc0de;
+  }
+  
+  .tree-table-button-delete {
+    background-color: #D9534F;
+  }
+  
+  /* Footer */
+  .tree-shop-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+  }
+  
+  .tree-shop-footer p {
+    color: #555;
+  }
+  
