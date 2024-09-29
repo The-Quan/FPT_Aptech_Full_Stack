@@ -76,6 +76,7 @@ const TreeForm = () => {
         formData
       );
       const imageUrl = uploadResponse.data.secure_url;
+      
       setImage(imageUrl); // Set uploaded image URL
     } catch (error) {
       if (error.response) {
@@ -99,7 +100,7 @@ const TreeForm = () => {
 
   return (
     <div className="tree-shop-container">
-      <img className='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUOVdfMjIsddmCLy0Io2WfUEfmjfndB5FkfQtvd46oyYLUBhb' alt='tree shop' />
+      <img className='img' src='https://hoalan360.com/upload/UploadFiles/images/hinh-anh-hoa-lan-my-mieu-mong-manh.jpg' alt='tree shop' />
       <h1 className="tree-shop-title">Tree Shop</h1>
 
       <form onSubmit={handleAdd} className="tree-form">

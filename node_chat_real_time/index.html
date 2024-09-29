@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Chat Real-Time</title>
+</head>
+<body>
+    <ul id="messages"></ul>
+    <p id="typing"></p>
+    <form id="form" action="">
+        <input id="input" type="input" autocapitalize="off" />
+        <button>Gửi</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+        var typingIndicator = document.getElementById('typing');
+        var typingTimeout;
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input.value) {
+                socket.emit('chat message', input.value);
+                input.value = '';
+                socket.emit('stop typing'); // Nếu bạn có sự kiện này, có thể xử lý
+            }
+        });
+
+        input.addEventListener('input', function() {
+            socket.emit('typing');
+            clearTimeout(typingTimeout);
+            typingTimeout = setTimeout(function() {
+                socket.emit('stop typing');
+            }, 1000);
+        });
+
+        socket.on('chat message', function(msg) {
+            var item = document.createElement('li');
+            item.textContent = msg;
+            document.getElementById('messages').appendChild(item);
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
+        socket.on('typing', function() {
+            typingIndicator.textContent = 'đang gõ...';
+        });
+
+        socket.on('stop typing', function() {
+            typingIndicator.textContent = '';
+        });
+    </script>
+</body>
+</html>
