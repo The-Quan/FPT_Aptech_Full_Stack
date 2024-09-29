@@ -76,3 +76,4 @@ function restartGame() {
     document.getElementById("gameStatus").textContent = "";
     socket.emit("restartGame", roomId); // gửi yêu cầu khởi động lại tới server
 }
+
