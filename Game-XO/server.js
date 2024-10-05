@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   console.log('A user connected:', socket.id);
 
   // Xử lý sự kiện tạo phòng
-  socket.on('createRoom', ({ roomId, playerName }) => {
+  socket.on('createRoom', ({ roomId, playerName }) => { 
     socket.join(roomId);
 
     if (!rooms[roomId]) {
@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
 
     if (rooms[roomId].players.length === 2) {
       io.in(roomId).emit('startGame', {
-        message: `Trò chơi bắt đầu! ${rooms[roomId].players[0].name} là người đi trước.`,
+        message: `Trò chơi bắt đầu! ${rooms[roomId].players[0].name} là người đi trước (${rooms[roomId].currentPlayer}).`,
       });
     }
   });
@@ -72,7 +72,7 @@ io.on('connection', (socket) => {
 
     if (rooms[roomId].players.length === 2) {
       io.in(roomId).emit('startGame', {
-        message: `Trò chơi bắt đầu! ${rooms[roomId].players[0].name} là người đi trước.`,
+        message: `Trò chơi bắt đầu! ${rooms[roomId].players[0].name} là người đi trước (${rooms[roomId].currentPlayer}).`,
       });
     }
   });
@@ -89,7 +89,7 @@ io.on('connection', (socket) => {
       // Gửi thông tin reset tới tất cả người chơi trong phòng
       io.in(roomId).emit('updateBoard', room.board);
       io.in(roomId).emit('startGame', {
-        message: `Trò chơi bắt đầu lại! ${room.players[0].name} là người đi trước.`,
+        message: `Trò chơi bắt đầu! ${rooms[roomId].players[0].name} là người đi trước (${rooms[roomId].currentPlayer}).`,
       });
     }
   });

@@ -14,6 +14,7 @@ function joinRoom() {
         document.getElementById("joinRoom").classList.add("hidden");
         document.getElementById("gameBoardContainer").classList.remove("hidden");
         document.getElementById("roomIdDisplay").textContent =` Phòng: ${roomId}`;
+        document.getElementById("playerNameDisplay").textContent =` Player Name: ${playerName}`;
     }
 }
 
@@ -58,7 +59,7 @@ socket.on("startGame", ({ message }) => {
 
 // Lắng nghe sự kiện game kết thúc
 socket.on("gameOver", ({ winner }) => {
-    if (winner === "draw") {
+        if (winner === "draw") {
         document.getElementById("gameStatus").textContent = "Trận đấu hòa!";
     } else {
         document.getElementById("gameStatus").textContent = `${winner} thắng!`;

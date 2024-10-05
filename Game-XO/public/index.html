@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-Tac-Toe Multiplayer</title>
-    <link rel="stylesheet" href="./style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game-XO</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
-  <body>
-    <div class="container">
-      <h1>Tic-Tac-Toe Multiplayer</h1>
-      
-      <div id="joinRoom">
-        <input type="text" id="playerName" placeholder="Nhập tên người chơi" />
-        <input type="text" id="roomId" placeholder="Nhập ID phòng hoặc tạo phòng mới" />
-        <button onclick="joinRoom()">Tham gia phòng</button>
-      </div>
 
-      <div id="gameBoardContainer" class="hidden">
-        <h2 id="roomIdDisplay"></h2>
-        <div id="gameBoard" class="board"></div>
-        <h2 id="gameStatus"></h2>
-      </div>
+<body>
+  <div class="container">
+    <h1>Game-XO</h1>
 
-      <button id="restartButton" class="hidden" onclick="restartGame()">Restart Game</button>
+    <div id="joinRoom">
+      <input type="text" id="playerName" placeholder="Nhập tên người chơi" />
+      <input type="text" id="roomId" placeholder="Nhập ID phòng hoặc tạo phòng mới" />
+      <button onclick="joinRoom()">Tham gia phòng</button>
     </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./script.js"></script>
+    <div id="gameBoardContainer" class="hidden">
+      <h2 id="roomIdDisplay"></h2>
+      <h2 id="playerNameDisplay"></h2>
+      <div id="gameBoard" class="board"></div>
+      <h2 id="gameStatus"></h2>
+    </div>
+
+    <button id="restartButton" class="hidden" onclick="restartGame()">Restart Game</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
